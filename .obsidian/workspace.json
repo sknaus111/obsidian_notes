@@ -165,11 +165,13 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "d0e65eda855c3ee1",
+  "active": "9fd9b243eaf52270",
   "lastOpenFiles": [
+    "Textdokument (neu).txt",
     "MA Hausübung 1 Stefan Knaus.md",
     "DI Fragen.md",
     "ADM/Reelle Zahlen.md",
