@@ -1,0 +1,1 @@
+Die #Modulo Operation gibt den Rest einer Division [[Natürliche Zahlen]] zurück. Bei einer Modulo Operation, in der die, welche geteilt wird negativ ist, wird wie folgt vorgegangen. Die Zahl b wird so lange zu der ersten Zahl addiert, bis das Ergebnis eine Zahl zwischen 0 und b-1 ergibt.
