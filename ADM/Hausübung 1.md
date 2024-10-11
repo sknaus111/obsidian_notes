@@ -102,4 +102,4 @@ Sei nun $max\{a, b\} = n + 1$. Dann ist $max\{a − 1, b − 1\} = n$, und es fo
 
 Max kann nicht eines Beweises verwendet werden.
 
-Setzt man für a und b 0 ein würde man mit -1 außerhalb der natürlichen Zahlen geraten.
+Setzt man für a und b 0 ein würde die Gleichung $max\{a-1,b-1\}=-1$ ergeben. Dies liegt außerhalb der natürlichen Zahlen $\mathbb{N}$ und somit liegt kein gültiger Beweis vor.
