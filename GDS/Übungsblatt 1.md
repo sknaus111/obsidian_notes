@@ -64,10 +64,77 @@ $14 ~mod~16=14$
 $239_{10}=EF_{16}$
 
 Nachkommaanteil:
-$\lfloor 0.3359375 *16 \rfloor= $
+$\lfloor 0.3359375 *16 \rfloor= \lfloor 3.359375+6*0.3359375 \rfloor$
+$0.3359375*6$
+$2.0156250$
+$3.359375 +$
+$5.375$
+$\lfloor 5.375 \rfloor = 5$
+$\lfloor 0.375 *16 \rfloor = \lfloor 3.75+6*0.375 \rfloor$
+$0.375*6$
+$2.25$
+$3.75+$
+$6$
+$\lfloor 6 \rfloor = 6$
+
+Nicht gerundet/gerundetes Ergebnis $EF.56_{16}$
+
+Vorkommaanteil:
+
+$53 ~mo d~ 16 = 5$
+$3 ~mo d~16=3$
+
+$53_{10}=35_{16}$
+
+Nachkommaanteil:
+$\lfloor 0.625*16 \rfloor = \lfloor 6.25 + 6*0.625 \rfloor$
+$0.625*6$
+$3.75$
+$6.25+$
+$10$
+$\lfloor 10 \rfloor=10$
+
+Nicht gerundet/gerundetes Ergebnis $35.A_{16}$
 
 - c) Oktalsystem (Zahl zur Basis $b = 8$), $n = 1$
 
+Vorkommaanteil:
+$239 ~mo d~8=7$
+$29 ~mo d~8=5$
+$3 ~mo d~8 = 3$
+
+$239_{10}=357_{8}$
+
+Nachkommaanteil:
+$\lfloor 0.3359375*8 \rfloor$
+$0.3359375*8$
+$2.6875$
+$\lfloor 2.6875 \rfloor = 2$ 
+$\lfloor 0.6875 *8\rfloor$
+$5.5$
+$\lfloor 5.5 \rfloor = 5$
+$\lfloor 0.5*8 \rfloor$
+$4.0$
+$\lfloor 4.0 \rfloor = 4$
+
+$0.3359375_{10}=254_{8}$
+
+Nicht gerundetes Ergebnis $357.254_{8}$
+Gerundetes Ergebnis $357.2_{8}$
+
+Vorkommaanteil:
+
+$53 ~mo d~8=5$
+$6 ~mo d~8=6$
+
+$53_{10}=65_{8}$
+
+Nachkommaanteil
+$\lfloor 0.625*8 \rfloor$
+$5.0$
+$\lfloor 5.0 \rfloor = 5$
+
+Nicht gerundetes/Gerundetes Ergebnis $65.5_{8}$
 ## Aufgabe 2 [[Zahlenumwandlungen]]
 
 Führen Sie die folgenden Umwandlungen ohne Umweg über das Dezimalsystem durch.
