@@ -1,26 +1,149 @@
 ## Aufgabe 1 [[Zahlenumwandlungen]] 
 
-Gegeben sind folgende Zahlen $A=(239.3359375)_{10}$ und $B = (53.625)$.
+Gegeben sind folgende Zahlen $A=(239.3359375)_{10}$ und $B = (53.625)_{10}$.
 
 Wandeln Sie die Zahlen A und B direkt in die nachfolgend angegebenen Zahlensysteme um. Geben Sie zuerst das nicht gerundete Ergebnis und danach das gerundete Ergebnis auf n Nachkommastellen an. Runden Sie Ihr Ergebnis durch Abschneiden der späteren Nachkommastellen.
 
-- ) Binärsystem (Zahl zur Basis b = 2), n = 4
+- a) Binärsystem (Zahl zur Basis $b = 2$), $n = 4$
 
+Vorkommaanteil:
+$239 ~mod~ 2 = 1$
+$119 ~mod ~2 = 1$
+$59 ~mo d~ 2 = 1$
+$29 ~mo d~ 2=1$
+$14 ~mo d~2=0$
+$7 ~mo d~2=1$
+$3 ~mo d~2=1$
+$1 ~mo d~2=1$
 
-- ) Hexadezimalsystem (Zahl zur Basis b = 16), n = 2
+$239_{10} = (11101111)_{2}$
 
+Nachkommaanteil:
 
-- ) Oktalsystem (Zahl zur Basis b = 8), n = 1
+$\lfloor 0.3359375 * 2  \rfloor = \lfloor 0.671875 \rfloor = 0$
+$\lfloor 0.671875 *2 \rfloor = \lfloor 1.343750 \rfloor = 1$
+$\lfloor 0.34375 *2 \rfloor = \lfloor 0.68750 \rfloor = 0$
+$\lfloor 0.6875*2 \rfloor = \lfloor 1.3750 \rfloor = 1$
+$\lfloor 0.375*2 \rfloor = \lfloor 0.75 \rfloor = 0$
+$\lfloor 0.75*2 \rfloor = \lfloor 1.5 \rfloor = 1$
+$\lfloor 0.5*2 \rfloor = \lfloor 1 \rfloor = 1$
+$\lfloor 0*2 \rfloor$ Abbruch
 
+$0.3359375_{10}=0.0101011_{2}$
+
+Nicht gerundetes Ergebnis $11101111.0101011_{2}$
+Gerundetes Ergebnis $11101111.0101_{2}$
+
+Vorkommaanteil:
+$53 ~mo d~2=1$
+$26 ~mo d~2=0$
+$13 ~mo d~2=1$
+$6 ~mo d~2=0$
+$3 ~mo d~2=1$
+$1 ~mo d~2 = 1$
+
+$53_{10}=110101_{2}$
+
+Nachkommaanteil:
+$\lfloor 0.625*2 \rfloor = \lfloor 1.25 \rfloor = 1$
+$\lfloor 0.25 * 2 \rfloor = \lfloor 0.5 \rfloor=0$
+$\lfloor 0.5*2 \rfloor = \lfloor 1.0 \rfloor=1$
+$\lfloor 0*2 \rfloor$Abbruch
+
+$0.625_{10}=0.101$
+
+Nicht gerundetes/gerundetes Ergebnis $110101.101_{2}$
+
+- b) Hexadezimalsystem (Zahl zur Basis $b = 16$), $n = 2$
+
+Vorkommaanteil:
+
+$239 ~mod~ 16 = 15$
+$14 ~mod~16=14$
+
+$239_{10}=EF_{16}$
+
+Nachkommaanteil:
+$\lfloor 0.3359375 *16 \rfloor= \lfloor 3.359375+6*0.3359375 \rfloor$
+$0.3359375*6$
+$2.0156250$
+$3.359375 +$
+$5.375$
+$\lfloor 5.375 \rfloor = 5$
+$\lfloor 0.375 *16 \rfloor = \lfloor 3.75+6*0.375 \rfloor$
+$0.375*6$
+$2.25$
+$3.75+$
+$6$
+$\lfloor 6 \rfloor = 6$
+
+Nicht gerundet/gerundetes Ergebnis $EF.56_{16}$
+
+Vorkommaanteil:
+
+$53 ~mo d~ 16 = 5$
+$3 ~mo d~16=3$
+
+$53_{10}=35_{16}$
+
+Nachkommaanteil:
+$\lfloor 0.625*16 \rfloor = \lfloor 6.25 + 6*0.625 \rfloor$
+$0.625*6$
+$3.75$
+$6.25+$
+$10$
+$\lfloor 10 \rfloor=10$
+
+Nicht gerundet/gerundetes Ergebnis $35.A_{16}$
+
+- c) Oktalsystem (Zahl zur Basis $b = 8$), $n = 1$
+
+Vorkommaanteil:
+$239 ~mo d~8=7$
+$29 ~mo d~8=5$
+$3 ~mo d~8 = 3$
+
+$239_{10}=357_{8}$
+
+Nachkommaanteil:
+$\lfloor 0.3359375*8 \rfloor$
+$0.3359375*8$
+$2.6875$
+$\lfloor 2.6875 \rfloor = 2$ 
+$\lfloor 0.6875 *8\rfloor$
+$5.5$
+$\lfloor 5.5 \rfloor = 5$
+$\lfloor 0.5*8 \rfloor$
+$4.0$
+$\lfloor 4.0 \rfloor = 4$
+
+$0.3359375_{10}=254_{8}$
+
+Nicht gerundetes Ergebnis $357.254_{8}$
+Gerundetes Ergebnis $357.2_{8}$
+
+Vorkommaanteil:
+
+$53 ~mo d~8=5$
+$6 ~mo d~8=6$
+
+$53_{10}=65_{8}$
+
+Nachkommaanteil
+$\lfloor 0.625*8 \rfloor$
+$5.0$
+$\lfloor 5.0 \rfloor = 5$
+
+Nicht gerundetes/Gerundetes Ergebnis $65.5_{8}$
 ## Aufgabe 2 [[Zahlenumwandlungen]]
 
 Führen Sie die folgenden Umwandlungen ohne Umweg über das Dezimalsystem durch.
 
-- )  Wandeln Sie die Binärzahl (1001 1111.1011 0101)2 in eine quarternäre Zahl (Zahl zur Basis b = 4) um.
+- a)  Wandeln Sie die Binärzahl $(1001 1111.1011 0101)_{2}$ in eine quarternäre Zahl (Zahl zur Basis $b = 4$) um.
 
-- ) Wandeln Sie die Hexadezimalzahl (27F5.B6)16 in eine binäre Zahl um.
+- b) Wandeln Sie die Hexadezimalzahl $(27F5.B6)_{16}$ in eine binäre Zahl um.
 
-- ) Wandeln Sie die ternäre Zahl (22201001.110221)3 in eine Zahl zur Basis b = 9 um
+- c) Wandeln Sie die ternäre Zahl $(22201001.110221)_{3}$ in eine Zahl zur Basis $b = 9$ um
 
 ## Aufgabe 3 [[Rechnen im Binärsystem]]
 Es sind folgende Zahlen gegeben
@@ -30,41 +153,44 @@ $C = (10.01)_{2}$
 $D = (–1010.1)_{2}$
 $E = (1100100.001)_{2}$
 
-F¨uhren Sie mit diesen Zahlen die folgenden arithmetischen Operationen bin¨ar durch. Berechnen Sie
-die Ergebnisse exakt und geben Sie Ihren Rechenweg an.
-a) Addition: A + B
-b) Subtraktion: A – B
-c) Multiplikation: A · D
-Hinweis: Anzahl der Nachkommastellen des Produkts = Summe der Anz. d. NKSt der Faktoren
-d) Division: E
-C
-Hinweis: Komma kann bei Divisor und Dividend um dieselbe Anzahl in dieselbe Richtung ver-
-schoben werden, ohne das Ergebnis zu beeinflussen
-Aufgabe 4: Zahlendarstellungen
+Führen Sie mit diesen Zahlen die folgenden arithmetischen Operationen binär durch. 
+Berechnen Sie die Ergebnisse exakt und geben Sie Ihren Rechenweg an.
+
+- a) Addition: A + B
+- b) Subtraktion: $A – B$
+- c) Multiplikation: $A*D$
+	Hinweis: Anzahl der Nachkommastellen des Produkts = Summe der Anz. d. NKSt der Faktoren
+- d) Division: $\frac{E}{C}$
+	Hinweis: Komma kann bei Divisor und Dividend um dieselbe Anzahl in dieselbe Richtung verschoben werden, ohne das Ergebnis zu beeinflussen
+
+
+## Aufgabe 4: [[Zahlendarstellungen]]
 Es sind folgende Zahlen gegeben:
-A = (–90)10
-B = (DB)16
-C = (0)9
-Geben Sie die Zahlen A, B und C als 9 Bit lange Maschinenw¨orter in den nachfolgenden Zahlendar-
-stellungen jeweils in bin¨arer und in hexadezimaler Notation an. Falls es in einer Zahlendarstellung f¨ur
-dieselbe Zahl unterschiedliche Darstellungen gibt, geben Sie alle an.
-Beispiel f¨ur Notationen:
-bin¨are Notation: (1 1110 0111)2
-hexadezimale Notation: (1E7)16
-a) Vorzeichen und Betrag
-b) Einerkomplementdarstellung
-c) Zweierkomplementdarstellung
-d) Exzessdarstellung (Exzess = 28 – 1)
-Aufgabe 5: Rechnen in unterschiedlichen Zahlendarstellungen
-Folgende Maschinenw¨orter sind gegeben: Z1 = (10100001)2 und Z2 = (00001011)2.
-Interpretieren Sie Z1 und Z2 als Bin¨arzahlen, die beide jeweils in einer der nachfolgend angegebenen
-Darstellungen a) bis c) codiert sind. F¨uhren Sie damit die Berechnung
-–(Z1 + Z2) (Addition von Z1 und Z2 und anschließende arithmetische Negation des Ergebnisses)
-mit einer Maschinenwortl¨ange von 8 Bit bin¨ar durch und geben Sie Zwischenschritte an. Geben Sie
+$$A = (–90)_{10}
+B = (DB)_{16}
+C = (0)_{9}$$
+Geben Sie die Zahlen A, B und C als 9 Bit lange Maschinenwörter in den nachfolgenden Zahlendarstellungen jeweils in binärer und in hexadezimaler Notation an. Falls es in einer Zahlendarstellung für dieselbe Zahl unterschiedliche Darstellungen gibt, geben Sie alle an.
+Beispiel für Notationen:
+
+binäre Notation: $(1 1110 0111)_2$
+hexadezimale Notation: $(1E7)_{16}$
+
+- a) Vorzeichen und Betrag
+- b) Einerkomplementdarstellung
+- c) Zweierkomplementdarstellung
+- d) Exzessdarstellung ($Exzess = 28 – 1$)
+## Aufgabe 5: Rechnen in unterschiedlichen [[Zahlendarstellungen]]
+Folgende Maschinenwörter sind gegeben: $Z1 = (10100001)_{2}$ und $Z2 = (00001011)_{2}$.
+Interpretieren Sie $Z1$ und $Z2$ als Binärzahlen, die beide jeweils in einer der nachfolgend angegebenen Darstellungen a) bis c) codiert sind. Führen Sie damit die Berechnung
+$–(Z1 + Z2)$ (Addition von $Z1$ und $Z2$ und anschließende arithmetische Negation des Ergebnisses)
+mit einer Maschinenwortlänge von 8 Bit binär durch und geben Sie Zwischenschritte an. Geben Sie
 das Endergebnis der Berechnung auch als decodierte Dezimalzahl an.
-a) Darstellung durch Vorzeichen und Betrag
-b) Zweierkomplementdarstellung
-c) Exzessdarstellung mit Exzess e = (01100100)2
+
+- a) Darstellung durch Vorzeichen und Betrag
+- b) Zweierkomplementdarstellung
+- c) Exzessdarstellung mit Exzess $e = (01100100)_{2}$
+
+
 Aufgabe 6: Genauigkeit von Zahlenumwandlungen
 Wandeln Sie die Zahl (14.8198)10 in eine Bin¨arzahl mit 2 Nachkommastellen um – alle weiteren Nach-
 kommastellen werden abgeschnitten (truncate, Rundung durch Abschneiden).

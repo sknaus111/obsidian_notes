@@ -65,4 +65,4 @@ $a_{1} = Z_{1}~mod~2=1,Z_{2}=\frac{3-1}{2}=1$
 $a_{2}=Z_{2}~mod~2=1,Z_{3}=\frac{1-1}{2}=0$
 Aus den Resten von unten nach oben die Binärzahl bilden. $6_{10} = 110_{2}$
 
-Doch wie sieht das ganze mit [[Zahlen mit Nachkomma]] aus?
+Doch wie sieht das ganze mit [[Zahlen mit Nachkomma]] aus oder [[Zahlensysteme Allgemein]]?
