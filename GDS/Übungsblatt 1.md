@@ -149,9 +149,29 @@ $10 ~mod~ 100_2=2_{4}$
 
 $1001 1111_{2}=2133_{4}$
 
+Nachkommateil:
+$1011 0101_{2} ~mo d~100_{2}=1_{4}$
+$1011 01_{2} ~mo d~100_{2}=1_{4}$
+$1011_{2}~mo d~100_{2}=3_{4}$
+$10_{2}~mo d~100_{2}=2_{4}$
+
+$10110101_{2}=1132_{4}$
+
+$1001 1111.1011 0101_{2} = 2133.1132_{4}$
+
 - b) Wandeln Sie die Hexadezimalzahl $(27F5.B6)_{16}$ in eine binäre Zahl um.
 
+Vorkommateil:
+$5*2^{4^0}+15*2^{4^1}+7*2$
+
+$27F5_{16} ~mo d~2=1$
+$13FA ~mo d~2=0$
+$9FD$
+
 - c) Wandeln Sie die ternäre Zahl $(22201001.110221)_{3}$ in eine Zahl zur Basis $b = 9$ um
+
+Vorkommateil:
+$22201001 ~mo d~9=$
 
 ## Aufgabe 3 [[Rechnen im Binärsystem]]
 Es sind folgende Zahlen gegeben
@@ -165,7 +185,13 @@ Führen Sie mit diesen Zahlen die folgenden arithmetischen Operationen binär du
 Berechnen Sie die Ergebnisse exakt und geben Sie Ihren Rechenweg an.
 
 - a) Addition: A + B
+
+$~~101011.101$
+$~~011010.110+$
+$1000110.011$
 - b) Subtraktion: $A – B$
+
+
 - c) Multiplikation: $A*D$
 	Hinweis: Anzahl der Nachkommastellen des Produkts = Summe der Anz. d. NKSt der Faktoren
 - d) Division: $\frac{E}{C}$
