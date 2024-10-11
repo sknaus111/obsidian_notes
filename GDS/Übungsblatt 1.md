@@ -141,6 +141,14 @@ Führen Sie die folgenden Umwandlungen ohne Umweg über das Dezimalsystem durch.
 
 - a)  Wandeln Sie die Binärzahl $(1001 1111.1011 0101)_{2}$ in eine quarternäre Zahl (Zahl zur Basis $b = 4$) um.
 
+Vorkommateil:
+$1001 1111_{2} ~m od~100_{2}=11_{2} = 3_{4}$
+$1001 11_{2} ~mo d~100_{2}=3_{4}$
+$1001 ~mo d~100_{2}=1_{3}$
+$10 ~mod~ 100_2=2_{4}$
+
+$1001 1111_{2}=2133_{4}$
+
 - b) Wandeln Sie die Hexadezimalzahl $(27F5.B6)_{16}$ in eine binäre Zahl um.
 
 - c) Wandeln Sie die ternäre Zahl $(22201001.110221)_{3}$ in eine Zahl zur Basis $b = 9$ um
