@@ -119,19 +119,4 @@ $$
 x=\sqrt{ 2 }
 $$
 Der Beweis dafür sieht wie folgt aus:
-Man nimmt an es existiert eine Lösung für x in den rationalen Zahlen
-
-$\Q:={\frac{m}{n}:m\in \Z, n \in \N \\{0} }$
-
-$\Z={\dots,-2,-1,0,1,2,\dots}$ 
-
-$r=\frac{m}{n}, s=\frac{k}{l},r<s pfeil ml<nk$
-$r<s \implies r<\frac{(r+s)}{2}<s$
-
-$\Q$ liegt dicht auf der Zahlengerade. Es existieren unendlich rationale Zahlen zwischen zwei beliebigen rationalen Zahlen.
-
-Satz: $x^2=2$ ist unlösbar in $\Q$
-Beweis: Ann $\E x = \frac{a}{b}\in\Q:x^2=2,~ggT(a,b)=1,~b\in\N\\{0},a\in\Z$
-$x^2=\frac{a^2}{b^2}=2 \implies a^2 =2*b^2 \implies a^2 gerade \implies a gerade$
-$\implies \Ec\in\Z: a=2c \implies a^2=2b^2 \pfeil 4c^2=2b^2 \pfeil 2c^2=b^2$
-$\implies b~gerade \blitz$
+Man nimmt an es existiert eine Lösung für x in den rationalen Zahlen. Also ist $x=\frac{m}{n}$ eine rationale Lösung zur Gleichung $x^2=2$. Somit wäre $\left( \frac{m}{n} \right)^2=2$ bzw. $\frac{m^2}{n^2}=2$  oder $m^2=2*n^2$. Auch ist anzunehmen das $\frac{m}{n}$ so weit gekürzt wurde wie möglich und eine der beiden Zahlen ungerade ist. Wäre dies nicht der Fall so könnte man den Bruch durch zwei kürzen um auf ein neues m und n zu kommen. Da die Gleichung $m^2=2*n^2$ zeigt, dass m gerade sein muss kann $m$ durch eine neue Zahl $k$ ersetzt werden, welche $2*k = m, k=\frac{m}{2}$ entspricht. In die ursprüngliche Gleichung eingesetzt ergibt dies $(2*k)^2=2*n^2$ umformuliert zu $4k^2=2n^2$ und $2k^2=n^2$. Da aus dieser Gleichung folgt, dass n ebenfalls gerade sein muss, ist es zu einem Wiederspruch gekommen. Daher ist eine Lösung für $x^2=2$ in den rationalen Zahlen nicht möglich.

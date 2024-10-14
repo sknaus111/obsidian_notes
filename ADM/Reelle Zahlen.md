@@ -1,3 +1,5 @@
+
+
 natürliche Zahl $129 = (129)10 = 1*10^2+2*10^1+9*10^0, 10^0:=1$
 $n\in\N\implies\Ec_{0},c_{1},\dots,c_{k}\in{0,1,2,\dots,9}:n=\Summe$
 
