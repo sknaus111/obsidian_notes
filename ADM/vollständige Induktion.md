@@ -1,7 +1,5 @@
 
-P(n) sei eine Eigenschaft, welche für eine natürliche Zahl gelten kann.
-
-#P #Eigenschaft #Natürliche_Zahlen 
+#P(n) sei eine #Eigenschaft, welche für eine Zahl aus den #Natürliche_Zahlen gelten kann.
 
 Es gilt zu untersuchen ob P(n) für jede natürliche Zahl gilt. 
 
@@ -9,7 +7,7 @@ $$
 \forall n \in \mathbb{N} :P(n)
 $$
 
-Laut der Vorgehensweise des Induktion muss zuerst untersucht werden ob die Eigenschaft P auf die natürliche Zahl 0 zutrifft. Ebenfalls muss überprüft werden ob sich mit der Annahme, dass die Eigenschaft auf eine natürliche Zahl n zutrifft, diese Eigenschaft sich auf den Nachfolger n' übertragen lässt. #Induktion #Induktionsanfang #Induktionsschritt
+Laut der Vorgehensweise der #Induktion muss zuerst untersucht werden ob die Eigenschaft P auf die natürliche Zahl 0 zutrifft. Ebenfalls muss überprüft werden ob sich mit der Annahme, dass die Eigenschaft auf eine natürliche Zahl n zutrifft, diese Eigenschaft sich auf den Nachfolger n' übertragen lässt. #Induktionsanfang #Induktionsschritt
 $$
 P(0) 
 $$
@@ -40,7 +38,7 @@ Die Summe von $n+1$ entspricht der Summe aus $n$ mit $n+1$ addiert.
 $$
 \displaystyle\sum_{k=0}^{n+1}k=\displaystyle\sum_{k=0}^nk+(n+1)
 $$
-Da die Induktionsvoraussetzung voraussetzt, dass $P(n)$ wahr ist kann die Summe mit dem rechten Teil der Behauptung ausgetauscht werden.
+Da die #Induktionsvoraussetzung voraussetzt, dass $P(n)$ wahr ist kann die Summe mit dem rechten Teil der Behauptung ausgetauscht werden.
 $$
 = \frac{n(n+1)}{2}+(n+1)
 $$
@@ -56,12 +54,12 @@ Die 2 lässt sich in die erste Klammer hineinmultiplizieren und löst die halbe 
 $$
 = \frac{(n+2)(n+1)}{2}
 $$
-Vergleicht man das Ergebnis mit der Induktionsbehauptung sieht man, dass dieses übereinstimmt.
+Vergleicht man das Ergebnis mit der #Induktionsbehauptung sieht man, dass dieses übereinstimmt.
 $$
 \frac{(n+1)((n+1)+1)}{2} = \frac{(n+2)(n+1)}{2}
 $$
 ### Beispiel 1.2
-In diesem Beispiel soll demonstriert werden, dass der Induktionsanfang verschiebbar ist. Somit gilt die Eigenschaft für
+In diesem Beispiel soll demonstriert werden, dass der #Induktionsanfang verschiebbar ist. Somit gilt die Eigenschaft für
 
 $$
 \forall n \geq n_{0}
@@ -81,11 +79,11 @@ $$
 $$
 2^2>n+2
 $$
-Da keiner dieser Aussagen wahr ist wird der Induktionsanfang auf $P(3)$ verschoben.
+Da keiner dieser Aussagen wahr ist wird der #Induktionsanfang auf $P(3)$ verschoben.
 $$
 2^3>n+2
 $$
-Da anzunehmen ist, dass die Eigenschaft für alle n größer als 3 gilt wird nun die Induktionsbehauptung überprüft.
+Da anzunehmen ist, dass die Eigenschaft für alle n größer als 3 gilt wird nun die #Induktionsbehauptung überprüft.
 $$
 2^{n+1} > (n+1) +2
 $$

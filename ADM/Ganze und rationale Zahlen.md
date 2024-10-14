@@ -34,7 +34,7 @@ Der Begriff negative Zahl wird wie folgt definiert.
 
 $-(-n) = n \text{ für }n>0$
 
-Mit dieser Festlegung wird auch die Subtraktion definiert.
+Mit dieser Festlegung wird auch die #Subtraktion definiert.
 
 $n-m=n+(-m)$
 
@@ -44,7 +44,7 @@ $n-m=n+(-m)$
 
 $$r^{-1}=\frac{1}{r} \text{ für }r=\frac{m}{n} \not = 0$$
 
-So hat ist der Kehrwert folgender rationaler Zahl zu erkennen.
+So hat ist der #Kehrwert folgender rationaler Zahl zu erkennen.
 
 $$\left( \frac{m}{n} \right)^{-1}=\frac{1}{\frac{m}{n}}=\frac{n}{m}$$
 
@@ -65,7 +65,7 @@ und
 $$
 r:s=\frac{r}{s}=r*\frac{1}{s}, (s \not=0)
 $$
-So wie die natürlichen und ganzen Zahlen geordnet sind, so sind auch die rationalen Zahlen geordnet. Die Zahlengerade veranschaulicht wie rationale Zahlen geordnet sind.
+So wie die natürlichen und ganzen Zahlen geordnet sind, so sind auch die rationalen Zahlen geordnet. Die #Zahlengerade veranschaulicht wie rationale Zahlen geordnet sind.
 
 ```tikz 
 \usepackage{amsmath}
@@ -108,7 +108,7 @@ Eine weitere Beobachtung ist die Existenz einer weiteren rationalen Zahlen zwisc
 $$
 r< \frac{r+s}{2} < s
 $$
-So könnte man auf die Aussage schließen, dass die rationalen Zahlen auf der Zahlengerade lückenlos sind. Dies ist jedoch bei genauerer Betrachtung falsch.
+So könnte man auf die Aussage schließen, dass die rationalen Zahlen auf der #Zahlengerade lückenlos sind. Dies ist jedoch bei genauerer Betrachtung falsch.
 
 Beispielsweise lässt sich folgende Gleichung im Rahmen der rationalen Zahlen nicht lösen.
 $$

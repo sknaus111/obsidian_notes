@@ -1,8 +1,8 @@
-Natürlichen Zahlen beschreiben eine Menge an Zahlen, wie man sie in der Volksschule das erste Mal kennengelernt hat 0, 1, 2, 3, …. Ebenfalls besitzt jede natürliche Zahl n einen Nachfolger $n' = n+1$. #Natürliche_Zahlen #Menge 
+#Natürliche_Zahlen beschreiben eine #Menge an Zahlen, wie man sie in der Volksschule das erste Mal kennengelernt hat 0, 1, 2, 3, …. Ebenfalls besitzt jede natürliche Zahl n einen Nachfolger $n' = n+1$.  
 $$
 0 \xrightarrow{} 1 \xrightarrow{} 2 \xrightarrow{} 3 \xrightarrow{} 4
 $$
-Streng genommen können die natürlichen Zahlen durch die Peanoaxiome charakterisiert werden.
+Streng genommen können die natürlichen Zahlen durch die #Peanoaxiome charakterisiert werden.
 
 1. 0 (Null) ist eine natürliche Zahl
 2. Jede natürliche Zahl n hat genau einen Nachfolger
@@ -12,7 +12,7 @@ Streng genommen können die natürlichen Zahlen durch die Peanoaxiome charakteri
 
 #Axiom 
 
-Aufgrund der Peanoaxiome ist eine andere Struktur der natürlichen Zahlen nicht möglich.
+Aufgrund der #Peanoaxiome ist eine andere Struktur der natürlichen Zahlen nicht möglich.
 
 ```tikz 
 \begin{document} \begin{tikzpicture}
@@ -113,11 +113,11 @@ Aufgrund der Peanoaxiome ist eine andere Struktur der natürlichen Zahlen nicht 
 \end{document} 
 ```
 
-Aus den natürlichen Zahlen ergibt sich eine natürliche Ordnung bilden, in welcher folgende Fälle auftreten können. In der folgenden Tabelle seien m und n natürliche Zahl, m wird im Sachverhalt immer als erstes angegeben und das Verhältnis zu n wird beschrieben.
+Aus den natürlichen Zahlen ergibt sich eine natürliche #Ordnung bilden, in welcher folgende Fälle auftreten können. In der folgenden Tabelle seien m und n natürliche Zahl, m wird im Sachverhalt immer als erstes angegeben und das Verhältnis zu n wird beschrieben.
 
 $$
 \begin{array}{|c|c|} \hline m~kleiner~als~n & m<n  \\ \hline m~gleich~groß~wie~n & m=n \\ \hline m~größer~als~n & m>n \\ \hline m~größer~oder~gleich~groß~wie~n & m\geq n \\ \hline m~kleiner~oder~gleich~groß~wie~n & m\leq n\\ \hline \end{array}
 $$
 
 
-Das interessanteste Axiom stellt sich herbei als das 5te da. Aus diesem lässt sich nämlich die [[vollständige Induktion]] ableiten.
+Das interessanteste #Axiom stellt sich herbei als das 5te da. Aus diesem lässt sich nämlich die [[vollständige Induktion]] ableiten.
