@@ -1,5 +1,5 @@
-#Induktion 
-In der Verlaufsinduktion wird anstatt dem #Induktionsschritt die Information aus den vorigen $P(k)$ genutzt. Man nimmt an, dass $P(0)$, $P(1)$ bis $P(n)$ gültig sind und leitet daraus $P(n+1)$ ab.
+
+In der #Verlaufsinduktion wird anstatt dem #Induktionsschritt die Information aus den vorigen $P(k)$ genutzt. Man nimmt an, dass $P(0)$, $P(1)$ bis $P(n)$ gültig sind und leitet daraus $P(n+1)$ ab.
 #Induktionsbehauptung 
 Diese Variante der vollständigen Induktion in logischer Schreibweise
 
