@@ -26,7 +26,7 @@ $$
 k'*n=k*n+n
 $$
 ## Eigenschaften
-Für das Rechnen mit natürlichen Zahlen gelten folgende Eigenschaften.
+Für das Rechnen mit natürlichen Zahlen gelten folgende #Gesetze.
 1. #Kommutativgesetz: $$
 n+m = n+m, n*m = m*n
 $$

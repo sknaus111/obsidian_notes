@@ -1,4 +1,4 @@
-Z,Q 
+
 Da nicht alle Gleichungen in den natürlichen Zahlen lösbar sind fügt man die #Ganzen_Zahlen und die #Rationalen_Zahlen hinzu.
 
 Man nehme $m,n \in \mathbb{N}$.
