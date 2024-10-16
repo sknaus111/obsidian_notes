@@ -4,18 +4,17 @@ Man zeige durch [[vollständige Induktion ]]dass $7^n − 1$ für alle $n \in \m
 
 Die #Induktionsvoraussetzung ist 
 
-$7^n-1 ~mod~6=0$
+$$\frac{7^n-1 }{6}\in\mathbb{N}$$
 
 Zuerst #Induktionsanfang beweisen.
 
-$7^0-1 ~mod~ 6 = 0$
-$1-1 ~mod~6=0$
-$0 ~mod~6=0$
+$$\frac{7^0-1 }{6} \in\mathbb{N}$$
 
 Danach Induktionsschritt
-$7^{n+1}-1=7*7^n-1$
-$= 6*7^n+7^n-1$
-$=6*7^n+(7^n-1)$
+$$\frac{7^{n+1}-1}{6}\in\mathbb{N}$$
+$$=\frac{7*7^n-1}{6}$$
+$$= \frac{6*7^n+7^n-1}{6}$$
+$$=7^n+\frac{7^n-1}{6} \in\mathbb{N}$$
 
 Linker Term vom plus mit 6 multipliziert, also durch 6 wieder teilbar. Rechter Term in der Voraussetzung als durch 6 teilbar definiert.
 
