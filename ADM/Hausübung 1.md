@@ -106,3 +106,37 @@ Sei nun $max\{a, b\} = n + 1$. Dann ist $max\{a − 1, b − 1\} = n$, und es fo
 Max kann nicht eines Beweises verwendet werden.
 
 Setzt man für a und b 0 ein würde die Gleichung $max\{a-1,b-1\}=-1$ ergeben. Dies liegt außerhalb der natürlichen Zahlen $\mathbb{N}$ und somit liegt kein gültiger Beweis vor.
+
+Anderes Ansatz
+Setzt man für a und b 1 ein würde die Gleichung $max\{a-1,b-1\}=0$ ergeben. Da $0$ kein Nachfolger einer natürlichen Zahl ist, werden die #Peanoaxiome verletzt und es liegt kein gültiger Beweise vor.
+
+# Präsenzbeispiel
+Induktion: Für welche $n\in\mathbb{N}$ gilt $2n^2 +1 \leq3^n$
+
+$2*0^2+1\leq 3^0$
+$1\leq 1$
+
+Behaupten
+$$
+2(n+1)^2
++1 \leq 3^{n+1}$$
+$$
+2(n^2+1)+1\leq 3^{n+1}
+$$
+$$
+2n^2+1+2 \leq 3^{n+1}
+$$
+$$
+3^n+2\leq 3^{n+1}
+$$
+$$
+3^n+2\leq 3 * 3^{n}
+$$
+$$
+3^n+2 \leq 3^n +2*3^n
+$$
+$$
+2 \leq 2*3^n
+$$
+
+log?

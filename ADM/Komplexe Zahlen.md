@@ -17,7 +17,7 @@ Beispielsweise ist $z=3+2i$ eine komplexe Zahl mit einem Realteil von $3$ und ei
 
 
 ## Polarkoordinaten
-Um komplexe Zahlen auf der Zahlengerade darzustellen muss diese mit dem hinzufügen einer y-Achse zur #Gaußschen_Ebene erweitert werden. In dieser werden komplexe Zahlen als #Zeiger dargestellt. Dieser Zeiger startet vom Ursprung bis zu den Koordinaten der komplexen Zahl. Als x Koordinate dient der Realteil und als y Koordinate der Imaginärteil. Die Länge des Zeigers wird auch als Betrag bezeichnet.
+Um komplexe Zahlen auf der #Zahlengerade darzustellen muss diese mit dem hinzufügen einer y-Achse zur #Gaußschen_Ebene erweitert werden. In dieser werden komplexe Zahlen als #Zeiger dargestellt. Dieser Zeiger startet vom Ursprung bis zu den Koordinaten der komplexen Zahl. Als x Koordinate dient der Realteil und als y Koordinate der Imaginärteil. Die Länge des Zeigers wird auch als Betrag bezeichnet.
 
 $$
 r = |z| =\sqrt{ a^2+b^2 }
