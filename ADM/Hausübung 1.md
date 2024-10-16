@@ -10,17 +10,18 @@ Zuerst #Induktionsanfang beweisen.
 
 $$\frac{7^0-1 }{6} \in\mathbb{N}$$
 
-Danach Induktionsschritt
+#Induktionsbehauptung 
 $$\frac{7^{n+1}-1}{6}\in\mathbb{N}$$
+#Induktionsschritt 
 $$=\frac{7*7^n-1}{6}$$
 $$= \frac{6*7^n+7^n-1}{6}$$
 $$=7^n+\frac{7^n-1}{6} \in\mathbb{N}$$
 
-Linker Term vom plus mit 6 multipliziert, also durch 6 wieder teilbar. Rechter Term in der Voraussetzung als durch 6 teilbar definiert.
 
 ## 4) 
+#Induktionsvoraussetzung 
 $$\sum_{j=2}^{n}j(j-1)=\frac{(n-1)n(n+1)}{3}, (n\geq2)$$
-Induktionsanfang
+#Induktionsanfang
 
 $$
 \sum_{j=2}^{2}j(j-1) = \frac{(2-1)2(2+1)}{3}
@@ -34,7 +35,7 @@ $$
 $$
 2=2
 $$
-Induktionsbehauptung
+#Induktionsbehauptung
 
 $$
 \sum_{j=2}^{n+1}j(j-1) = \frac{((n+1)-1)(n+1)((n+1)+1)}{3}
@@ -42,7 +43,7 @@ $$
 $$
 \sum_{j=2}^{n+1}j(j-1) = \frac{n*(n+1)*(n+2)}{3}
 $$
-Induktionsschritt
+#Induktionsschritt
 $$
 \sum_{j=2}^{n+1}j(j-1)=\sum_{j=2}^{n}j(j-1)+(n+1)((n+1)-1)
 $$
@@ -67,6 +68,9 @@ $$
 ## 15)
 Man zeige mittels vollständiger Induktion, dass für die rekursiv definierte Folge $x_{0} = 1$ und $x_{k+1}= x_{k} + 18k + 15$ für $k \geq 0$ allgemein gilt: $x_{n} = (3n + 1)^2$ für alle n ≥ 0.
 
+Induktionsvoraussetzung
+$x_{k+1}= x_{k} + 18k + 15$
+
 Induktionsanfang
 $x_{0}=(3*0+1)^2, x_{0} =1$
 $1 = (0+1)^2$
@@ -80,7 +84,7 @@ $(3n+4)^2$
 Induktionsschritt
 $x_{n+1}=x_{n}+18n+15$
 $(3n+4)^2 = x_{n}+18n+15$
- = (3n + 1)^2+18n+15$
+$= (3n + 1)^2+18n+15$
 $=15+18n+9n^2+6n+1$
 $=16+24n+9n^2$
 $=9n^2+24n+16$
