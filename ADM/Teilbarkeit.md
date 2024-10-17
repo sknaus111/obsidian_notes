@@ -1,10 +1,10 @@
-Definition: Es seien $a,b$ ganze Zahlen. Man sagt $b$ **teilt** $a$, in Zeichen $b|a$, wenn es eine ganze Zahl $c$ mit $a=b*c$ gibt, also wenn $\frac{a}{b}$ wieder eine ganze Zahl ist.
+Definition: Es seien $a,b$ ganze Zahlen. Man sagt $b$ **teilt** $a$, in Zeichen $b\mid a$, wenn es eine ganze Zahl $c$ mit $a=b*c$ gibt, also wenn $\frac{a}{b}$ wieder eine ganze Zahl ist.
 
 
 ## Größter gemeinsamer Teiler
 Definition: Für $a,b \in \mathbb{Z}$ heißt $d = ggT(a,b)$ ein **größter gemeinsamer Teiler**, wenn folgend zwei Eigenschaften erfüllt sind.
-- (i) $d|a$ und $d|b$
-- (ii) Ist $t$ gemeinsamer Teiler von $a$ und $b$, d.h. $t|a$ und $t|b$,dann gilt auch $t|d$
+- (i) $d|a$ und $d \mid b$
+- (ii) Ist $t$ gemeinsamer Teiler von $a$ und $b$, d.h. $t\mid a$ und $t\mid b$,dann gilt auch $t\mid d$
 Man beachte, dass der größte gemeinsame Teiler $d$ mit dem Abstand zur null gemessen werden. So muss man negativen Zahlen mit deren Absolutbetrag vergleichen.
 
 Zwei Zahlen sind #teilerfremd, wenn $ggT(a,b) = 1$
@@ -41,8 +41,8 @@ $$
 so wird diese Aufgrund von $b>r_{0}>r_{1}>r_{2}>\dots>0$ einmal abbrechen. Der letzte Rest $r_{k} \not =0$ ist dann der größte gemeinsame Teiler $ggT(a,b)$
 
 ### Beweis
-Es folgt aus $r_{k}|r_{k-1}$ auch $r_{k}|r_{k-2}$ und $r_{k}|r_{j}$ für $0\leq j<k$. Schließlich hat dies $r_{k}|a$ und $r_{k}|b$ zur Folge.
-Gilt $t|a$ und $t|b$ so folgt $t|(a-q_{0}b)=r_{0}$ daraufhin $t|r_{1}$ und induktiv $t|r_{k}$
+Es folgt aus $r_{k}\mid r_{k-1}$ auch $r_{k}\mid r_{k-2}$ und $r_{k}\mid r_{j}$ für $0\leq j<k$. Schließlich hat dies $r_{k}\mid a$ und $r_{k}\mid b$ zur Folge.
+Gilt $t\mid a$ und $t\mid b$ so folgt $t\mid (a-q_{0}b)=r_{0}$ daraufhin $t\mid r_{1}$ und induktiv $t\mid r_{k}$
 Daher ist $r_{k}=ggT(a,b)$
 
 Die Anzahl der Divisonsschritte ist aus $r_{k-2}\geq r_{k-1}+r_{k}\geq2*r_{k}$ gefolgt
@@ -82,7 +82,8 @@ $$
 $$
 = 3*59-16*11
 $$
-**Satz**: ist d der größte gemeinsame Teiler der von Null verschiedenen ganzen Zahlen $a,b$ , so gibt es ganze Zahlen $e,f$ mit
+### Satz
+Ist d der größte gemeinsame Teiler der von Null verschiedenen ganzen Zahlen $a,b$ , so gibt es ganze Zahlen $e,f$ mit
 $$
 ea+fb=d
 $$
