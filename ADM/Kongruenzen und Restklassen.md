@@ -46,3 +46,38 @@ $$
 \overline{a}+\overline{b}=\overline{a+b}, ~~~~~\text{ und }~~~~~\overline{a}*\overline{b}=\overline{a*b}
 $$
 ## Beispiel
+Für $m = 3$ besteht $\mathbb{Z_{3}} = \{\overline{0},\overline{1},\overline{2}\}$ aus 3 Elementen. Die Rechenoperationen für diese sind wie folgt definiert mit Hilfe der Rechenregeln $\overline{a} + \overline{b} = \overline{a+b}$
+
+| +              | $\overline{0}$ | $\overline{1}$ | $\overline{2}$ |
+| -------------- | -------------- | -------------- | -------------- |
+| $\overline{0}$ | $\overline{0}$ | $\overline{1}$ | $\overline{2}$ |
+| $\overline{1}$ | $\overline{1}$ | $\overline{2}$ | $\overline{0}$ |
+| $\overline{2}$ | $\overline{2}$ | $\overline{0}$ | $\overline{1}$ |
+
+| *              | $\overline{0}$ | $\overline{1}$ | $\overline{2}$ |
+| -------------- | -------------- | -------------- | -------------- |
+| $\overline{0}$ | $\overline{0}$ | $\overline{0}$ | $\overline{0}$ |
+| $\overline{1}$ | $\overline{0}$ | $\overline{1}$ | $\overline{2}$ |
+| $\overline{2}$ | $\overline{0}$ | $\overline{2}$ | $\overline{1}$ |
+Für jede Restklasse $\overline{a}$ gibt es auch eine negative Restklasse $-\overline{a}=\overline{-a}$
+
+Nun wollen wir untersuchen welche Restklassen eine **multiplikativ inverse Restklasse** besitzen. Also eine Restklasse $\overline{b}$ invers von der Restklasse $\overline{a}$, welche $\overline{a}*\overline{b} = 1$. Im vorherigen Beispiel besitzen die Restklassen $\overline{1}$ und $\overline{2}$  inverse Restklassen $\overline{1}^{-1}$ und $\overline{2}^{-1}$.
+
+## Satz
+Eine Restklasse $\overline{a} \in \mathbb{Z}$ besitzt genau dann eine multiplikativ inverse Restklasse, wenn $\text{ggT}(a,m) = 1$ ist.
+
+## Beweis
+Für eine Restklasse $\overline{a}$ und ihre inverse Restklasse $\overline{b}$ gilt $a*b=1+q*m$. Also gilt auch $1=a*b-q*m$. Jeder gemeinsame Teiler von $a$ und $m$ teilt daher auch $1$. Somit ist $\text{ggT}(a,m)=1$
+Umgekehrt der $\text{ggT}(a,m)=1$ so gibt eine inverse Restklasse $\overline{b}$.
+
+## Beispiel
+Man sucht die inverse Restklasse von $\overline{15}$ modulo $17$. Da $\text{ggT}(15,17) = 1$ kann man mit Hilfe des Euklidischen Algorithmus die ganzen Zahlen $8$ und $-7$ finden.
+$$
+1=8*15-7*17
+$$
+Daraus ist abzulesen, dass die inverse Restklasse von $\overline{15}^{-1} = \overline{8}$ ist.
+
+Division von Kongruenzen ist möglich wenn Divisor und Modul teilerfremd sind.
+$$
+a*c=b*c \text{ mod }m, \text{ ggT}(c,m)=1 \implies a \equiv b \text{ mod }m
+$$Für ein Primzahlmodul m alle Restklassen $\overline{a}\not=0$ invertierbar sind.
