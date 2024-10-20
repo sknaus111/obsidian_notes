@@ -17,7 +17,7 @@ Für jede positive natürliche Zahl $m$, gibt es genau $m$ Restklassen
 $$
 \mathbb{Z}_{m} = \{\overline{0},\overline{1},\dots,\overline{m-1}\}
 $$
-## Beweis
+### Beweis
 Dividiert man eine ganze Zahl $n$ durch $m$, so gilt $n=mq+r$ mit $0\leq r<m$.
 Also ist $n \equiv r \text{ mod }m$ und demnach $n \in \overline{r}$
 Es seien zwei Kongruenzklassen $\overline{a},\overline{b}$ mit $0\leq a<b<m$. Angenommen $\overline{a}$ und $\overline{b}$ hätte eine Zahl $n$ gemeinsam. So würde gelten, dass $m \mid (n-a)$ und $m \mid (n-b)$. Daraus würde aber schließen, dass $m \mid (b-a)$ gilt. Da dies aber unmöglich ist gibt es genau $m$ Restklassen, welche durch $\overline{0},\overline{1},\dots,\overline{m-1}$ repräsentiert werden.
@@ -81,3 +81,40 @@ Division von Kongruenzen ist möglich wenn Divisor und Modul teilerfremd sind.
 $$
 a*c=b*c \text{ mod }m, \text{ ggT}(c,m)=1 \implies a \equiv b \text{ mod }m
 $$Für ein Primzahlmodul m alle Restklassen $\overline{a}\not=0$ invertierbar sind.
+
+Eine Anwendung für dieses mathematische Konzept gibt es als Prüfziffern wie bei den **ISBN** von Büchern. dieser ist wie folgt aufgebaut
+$$
+10a_{^1}+9a_{2}+8a_{3}+7a_{4}+6a_{5}+5a_{6}+4a_{7}+3a_{8}+2a_{9}+p \equiv 0 \text{ mod }11
+$$
+So gilt folgende Formel für die Prüfziffer $p \equiv a_{1}+2a_{2}+\dots+9a_{9} \text{ mod }11$ und $p \in \{0,1,2,\dots,10\}$
+
+## Fehlererkennung
+Jeder Fehler in einer Ziffer sowie alle Vertauschungen zweier Ziffern werden vom ISBN-Code erkannt.
+
+## Eulersche $\varphi$-Funktion 
+#Eulersche_Funktion $\varphi(m)$ gibt die Anzahl der invertierbaren Restklassen modulo $m$ an:
+$$
+\varphi(m)=|\{a\in\mathbb{Z}|1\leq a\leq m,\text{ggT}(a,m)=1\}|
+$$
+Beispielsweise ist die Eulersche $\varphi$-Funktion $\varphi(6)=2$. Die Eulersche $\varphi$-Funktion kann mit Hilfe einer einfachen Formel berechnet werden.
+
+## Satz
+Es sei $m=p_{1}^{e_{1}}\dots p_{r}^{e_{r}}$ die Primfaktorzerlegung von $m$ (wobei die $p_{j} \in \mathbb{P}$ paarweise verschieden sind und $e_{j}>0$) gilt
+$$
+\varphi(m)=m*1\left(1- \frac{1}{p_{1}}\right)*\dots*\left( 1- \frac{1}{p_{r}}\right)
+$$
+Für eine Primzahlpotenz $p^k$ ist diese Formel einsichtig, denn
+$$
+\varphi(p_{k})=p^k-p^{k-1}=p^{k-1}*(p-1)=p^k*\left( 1- \frac{1}{p} \right)
+$$
+Eine wichtiger Anwendungsfall für diese Funktion ist folgender Sachverhalt.
+## Kleiner Satz von Fermat
+Für teilerfremde ganze Zahlen $a,m$ gilt
+$$
+a^{\varphi(m)}\equiv1\text{ mod }m
+$$
+### Beweis
+Ist $m=p$ eine Primzahl so vereinfacht sich das zu
+$$
+p \nmid a \implies a^{p-1}\equiv_{1} \text{ mod }p \text{ bzw. }p \mid(a^{p-1}-1)
+$$Eine erste Zahlentheoretische Anwendung ist auch das [[RSA-Verfahren]]
