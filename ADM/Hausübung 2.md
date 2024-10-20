@@ -52,7 +52,7 @@ $$
 $$
 -8a^2-8b^2+80a-128<0
 $$
-
+# Nicht fertig
 ## 58) 
 Man bestimme zwei ganze Zahlen $x, y$, welche die Gleichung $451x + 176y = 11$ erfüllen
 
