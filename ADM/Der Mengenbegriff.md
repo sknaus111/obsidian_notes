@@ -27,6 +27,8 @@ $$
 A=\{x\in B,P(x)\}
 $$
 Oft ist es auch verallgemeinerte Mengen zu betrachteten in denen Elemente öfters vorkommen können wie $A=\{1,1,2,2,2,3,4,4\}$. Diese werden auch als #Multimengen bezeichnet. Die #Kardinaliät auch Größe einer Menge, ist bei endlichen Mengen einfach zu bestimmen. Schwieriger wird dies bei unendlichen Mengen.
+
+## Kardinalität
 Zwei Mengen sind gleich mächtig sind diese gleich groß. Es kann zu jedem Element einer Menge ein Element der anderen Menge zugeordnet werden. Unendliche Mengen sind jedoch immer gleich mächtig.
 Um nun zwischen endlichen und unendlichen Mengen zu unterscheiden stellt man fest das für jede natürliche Zahl $n$ die Mengen $\{k\in\mathbb{N},k<n\}=\{0,1,2,\dots,n-1\}$ genau $n$ Elemente enthalten. Sie hat also die Mächtigkeit $n$. Gibt es eine Menge $A$, für die es eine Menge von einem $n$ gibt, welche gleich mächtig ist, ist $A$ eine endliche Menge. Jede Menge auf die dies nicht zutrifft ist unendlich.
 
