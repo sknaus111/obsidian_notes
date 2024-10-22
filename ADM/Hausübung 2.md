@@ -29,13 +29,17 @@ Zum Multiplizieren würde man die komplexe Zahl $z_{1}$ um 3 erweitern. Dann die
 Welche Teilmenge der komplexen Zahlenebene beschreibt die angegebene Ungleichung?
 
 $$|\frac{z+4}{z-4}|<3$$
-Anders kann der Bruch von dem Betrag komplexer Zahlen wie folgt geschrieben werden.
+Beschreibt einen Bruch zweier komplexen Zahlen. 
+
 $$
 \frac{\sqrt{ (a^2+4)+b^2 }}{\sqrt{ (a^2-4) +b^2}} <3
 $$
 Dass kann mit dem Nenner multipliziert werden
 $$
-\sqrt{ (a+4)^2+b^2 } <3\sqrt{ (a-4)^2 +b^2}
+|z+4| <3|z-4|
+$$
+$$
+\sqrt{ (a+4)^2+b^2 }<3\sqrt{ (a-4)^2+b^2 }
 $$
 $$
 (a+4)^2+b^2  <9 ((a-4)^2 +b^2)
@@ -52,12 +56,40 @@ $$
 $$
 -8a^2-8b^2+80a-128<0
 $$
-# Nicht fertig
+$$
+-a^2-b^2+10a-16<0
+$$
+$$
+a^2+b^2-10a+16>0
+$$
+$$
+a^2+b^2-2*5a+16>0
+$$
+$$
+a^2+b^2-2*5a+25-9>0
+$$
+$$
+b^2+a^2-2*5a+25>9
+$$
+$$
+b^2+(a-5)^2>9
+$$
+$$
+(a-5)^2+b^2>9
+$$
+$$
+|z-5|^2>9
+$$
+$$
+|z-5|>3
+$$
+Die Lösungsmenge ist alles außerhalb eines Kreises am Punkt 5,0 mit Betrag 3(Radius).
+
 ## 58) 
 Man bestimme zwei ganze Zahlen $x, y$, welche die Gleichung $451x + 176y = 11$ erfüllen
 
-$451x+176=11$
-$41x+16=1$
+$451x+176y=11$
+$41x+16y=1$
 
 Man wende den Euklidischen Algorithmus an.
 $$
