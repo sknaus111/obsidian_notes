@@ -4,10 +4,14 @@ Zeigen Sie, dass $\sqrt{ 30 }$ irrational ist.
 
 Man nehme an für $\sqrt{ 30 }$ gäbe es zwei Zahlen $a,b \in \mathbb{Z}$ für welche $\sqrt{ 30 } =\frac{a}{b} \in\mathbb{Q}, b>0, ggT(a,b)=1$ 
 $30=\frac{a^2}{b^2} \implies 30*b^2=a^2$
-$a=30*k$
-$30*b^2=(30*k)^2$
+$2*3*5*b^2 = a^2$
+Also ist $a$ teilbar durch $2,3,5$.
+$a=2*3*5*k$
+$30*b^2=(2*3*5*k)^2$
+$30*b^2=25*9*4*k^2$
 $30*b^2=900*k^2$
 $b^2=30*k^2$
+$b^2=2*3*5*k^2$
 Würde bedeuten, dass a und b durch 30 teilbar sind. Somit ist der Annahme widersprochen, dass $a$ und $b$ teilerfremd sind und es kommt zu einem Widerspruch.
 
 ## 35) 
@@ -29,11 +33,7 @@ Zum Multiplizieren würde man die komplexe Zahl $z_{1}$ um 3 erweitern. Dann die
 Welche Teilmenge der komplexen Zahlenebene beschreibt die angegebene Ungleichung?
 
 $$|\frac{z+4}{z-4}|<3$$
-Beschreibt einen Bruch zweier komplexen Zahlen. 
 
-$$
-\frac{\sqrt{ (a^2+4)+b^2 }}{\sqrt{ (a^2-4) +b^2}} <3
-$$
 Dass kann mit dem Nenner multipliziert werden
 $$
 |z+4| <3|z-4|
@@ -78,13 +78,27 @@ $$
 (a-5)^2+b^2>9
 $$
 $$
-|z-5|^2>9
+\sqrt{  |z-5|^2}>\sqrt{ 9 }
 $$
 $$
 |z-5|>3
 $$
 Die Lösungsmenge ist alles außerhalb eines Kreises am Punkt 5,0 mit Betrag 3(Radius).
+```tikz
+\begin{document}
+\begin{tikzpicture}
+% Draw the coordinate axes 
+\draw[->] (-1,0) -- (10,0) node[right] {$x$}; % x-axis 
+\draw[->] (0,-5) -- (0,6) node[above] {$y$}; % y-axis % Draw the circle with center at (5, 0) and radius 3 
+\draw (5,0) circle (3); % Mark the center of the circle 
+\filldraw (5,0) circle (2pt) node[below right] {$(5,0)$};  
 
+\node at (6.5,-0.5) {3}; % Draw grid (optional) 
+\draw[help lines] (-1,-5) grid (10,6);
+
+\end{tikzpicture}
+\end{document}
+```
 ## 58) 
 Man bestimme zwei ganze Zahlen $x, y$, welche die Gleichung $451x + 176y = 11$ erfüllen
 
@@ -105,6 +119,9 @@ $$
 $$
 2=1*2+0
 $$
+Mit letzten Gleichung
+$7-2*3=1$
+
 In andere Richtung
 $$
 1=7-2*3
@@ -113,21 +130,43 @@ $$
 =7-(9-7*1)*3
 $$
 $$
+=7-9*3+7*3
+$$
+$$
+=7+7*3-3*9
+$$
+$$
 =4*7-3*9
 $$
 $$
-4*(16-9*1)-3*9
+=4*(16-9*1)-3*9
 $$
 $$
-4*16-7*9
+=4*16-4*9-3*9
 $$
 $$
-4*16-7*(41-16*2)
+=4*16-7*9
 $$
 $$
-18*16-7*41
+=4*16-7*(41-16*2)
+$$
+$$
+=4*16-7*41+16*2*7
+$$
+$$
+=4*16+7*2*16-7*41
+$$
+$$
+=4*16+14*16-7*41
+$$
+$$
+=18*16-7*41
 $$
 $$x=-7, y=18$$
 $$
+-7*41+18*16=1
+$$
+$$
 -7*451+18*176=11
 $$
+
