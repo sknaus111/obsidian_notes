@@ -13,7 +13,7 @@ Allgemein kann das Produkt endlich vieler Mengen wie folgt definiert werden.
 $$
 A_{1}\times A_{2}\times\dots\times A_{n}=\{(a_{1},a_{2},\dots,a_{n})|a_{1} \in A_{1}, a_{2} \in A_{2},\dots,a_{n}\in A_{n}\}
 $$
-Sind alle Mengen, welche multipliziert werden gleich so kann auch $A^n$ geschrieben werden.
+Sind alle Mengen, welche multipliziert werden, gleich so kann auch $A^n$ geschrieben werden.
 
 Kartesisch lässt sich das ganze ebenfalls darstellen.
 
@@ -120,7 +120,7 @@ Die Mengen werden durch Venndiagramme dargestellt und die Paare mit Pfeilen verb
 ```
 
 ### Graph einer binären Relation
-Da in einer binären Relation $A=B$,  $A\times A=A^{2}$ nur eine Menge dargestellt werden muss. Der Graph $G(R)$ besteht aus **Knoten**, der Elemente und **gerichteten Kanten**, ihrer Verbindungen.
+Da in einer binären Relation $A=B$,  $A\times A=A^{2}$ nur eine Menge dargestellt werden muss. Der Graph $G(R)$ besteht aus #Knoten, der Elemente und **gerichteten** #Kanten, ihrer Verbindungen.
 
 ```tikz
 \begin{document}
