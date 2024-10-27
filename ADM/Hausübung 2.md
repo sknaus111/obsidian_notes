@@ -28,7 +28,7 @@ $z_{3}=z_{1}+z_{2}=5+0+3i+2i=5+5i$
 $z_{4}=z_{1}*z_{2}=(0*5-3*2)+(5*3+2*0)i=-6+15i$
 
 Zum graphischen Darstellen kann bei der Summe ein Parallelogramm gezeichnet werden.
-Zum Multiplizieren würde man die komplexe Zahl $z_{1}$ um 3 erweitern. Dann diese von Ursprung aus um einen viertel Kreisdrehung gegen den Uhrzeigersinn verschieben.
+Zum Multiplizieren würde man die komplexe Zahl $z_{1}$ um 3 erweitern(multiplizieren). Dann diese von Ursprung aus um einen viertel Kreisdrehung gegen den Uhrzeigersinn verschieben.
 ## 48) 
 Welche Teilmenge der komplexen Zahlenebene beschreibt die angegebene Ungleichung?
 
@@ -90,7 +90,7 @@ Die Lösungsmenge ist alles außerhalb eines Kreises am Punkt 5,0 mit Betrag 3(R
 % Draw the coordinate axes 
 \draw[->] (-1,0) -- (10,0) node[right] {$x$}; % x-axis 
 \draw[->] (0,-5) -- (0,6) node[above] {$y$}; % y-axis % Draw the circle with center at (5, 0) and radius 3 
-\draw (5,0) circle (3); % Mark the center of the circle 
+\draw[dashed] (5,0) circle (3); % Mark the center of the circle 
 \filldraw (5,0) circle (2pt) node[below right] {$(5,0)$};  
 
 \node at (6.5,-0.5) {3}; % Draw grid (optional) 
@@ -170,3 +170,38 @@ $$
 -7*451+18*176=11
 $$
 
+## Präsenz
+
+$$
+\frac{1}{z}=\frac{\bar{z}}{z*\bar{z}}=\frac{\bar{z}}{|z|^2}
+$$
+$$
+\overline{z}=|z|^2\frac{1}{z}
+$$
+$$
+|z|=\sqrt{ z*\overline{z} }
+$$
+$$
+\overline{z}=\frac{\sqrt{ z*\overline{z} }}{z}
+$$
+$$
+\left(\frac{\sqrt{ z*\overline{z} }}{z}\right )^2=\frac{1}{\frac{\sqrt{ z*\overline{z} }}{z}}
+$$
+$$
+\frac{z*\overline{z}}{z^2}=\frac{z}{\sqrt{ z*\overline{z} }}
+$$
+$$
+\frac{\overline{z}}{z}=\frac{z}{|z|}
+$$
+$$
+\frac{\overline{z}*|z|}{z}=z
+$$
+Für welche $z \in  \mathbb{C}$ gilt $\overline{z}^2=\frac{1}{\overline{z}}$
+
+$$
+(a-bi)^2=\left (\frac{(a+b)^2}{a+bi}\right)^{2}=\frac{1}{\overline{a-bi}}
+$$
+
+$$
+
+$$
