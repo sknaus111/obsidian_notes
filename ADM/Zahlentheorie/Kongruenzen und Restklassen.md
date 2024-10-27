@@ -31,7 +31,7 @@ $$
 a\pm b=c\pm d ~~~~~\text{ und }~~~~~a*b=c*d \text{ mod }m
 $$
 ## Beispiel
-Für $m=9$ gilt $10 \equiv 1 \text{ mod }9$ und daher auch $10^j\equiv_{1} \text{ mod }9$ für alle $j\geq1$. Daher gilt auch für jede natürliche Zahl $n$ in ihrer Dezimalentwicklung.
+Für $m=9$ gilt $10 \equiv 1 \text{ mod }9$ und daher auch $10^j\equiv1 \text{ mod }9$ für alle $j\geq1$. Daher gilt auch für jede natürliche Zahl $n$ in ihrer Dezimalentwicklung.
 $$
 n = c_{0}+10c_{1}+\dots+10^kc_{k}\equiv c_{0}+c_{1}+\dots+c_{k} \text{ mod }9
 $$Dies bedeutet die Summe der Ziffern von $n$ ist zu $n$ kongruent modulo 9. So ist $n$ durch 9 teilbar, wenn die Ziffernsumme von $n$ durch 9 teilbar ist.
