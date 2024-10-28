@@ -1,22 +1,12 @@
-Auch ist es möglich mit Kongruenzen und Restklassen zu rechnen. Man nehme an
-$$
-a \equiv c \text{ mod }m ~~~~~\text{ und }~~~~~ b \equiv d \text{ mod }m
-$$
-Man hat also $c=a+q_{1}m$ und $d = b+q_{2}m$ für gewisse $q_{1},q_{2}$. 
-	$cd = ab + (q_{1}b+q_{2}a+q_{1}q_{2}m)m$
-	$a*b=c*d \text{ mod }m$
-	
+$a\equiv b \text{ mod } m\implies a \text{ mod }m =b \text{ mod }m$
+
+$ac \equiv bc$
+
+$m|b-a$
 
 63) Beweisen Sie die folgenden Behauptungen oder widerlegen Sie sie durch ein konkretes Gegenbeispiel.
 - a) Falls $ac ≡ bc$ mod $m$, $c \not = 0$ und $c | m$, dann gilt auch $a ≡ b$ mod $\frac{m}{c}$  .
-	$b=a+q*m$
-	$c=c+0*m$
-	$bc=(a+qm)*(c)$
-	$bc = ac+qmc$
-	$b=a+qm$
-	$b=a+qm * \frac{c}{c}$
-	$b=a+\frac{qmc}{c}$
-	$q=(q*c)$
+	$bc=ac +qm$
 	$b=a+\frac{qm}{c}$
 	$b=a+q\frac{m}{c}$
 	$a\equiv b \text{ mod } \frac{m}{c}$
@@ -53,7 +43,6 @@ Man hat also $c=a+q_{1}m$ und $d = b+q_{2}m$ für gewisse $q_{1},q_{2}$.
 	$x=4*q+3$
 	
  Essenz ist ob $x$ kürzbar ist oder nicht
- 
  
 81) $(a ∧ ¬b) ∧ ¬c ⇐⇒ a ∧ ¬(b ∧ ¬c)$
 Entscheiden Sie mit Hilfe einer Wahrheitstafel, ob die folgenden Äquivalenzen richtig sind.
