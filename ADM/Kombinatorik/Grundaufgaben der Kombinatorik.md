@@ -54,3 +54,59 @@ $$
 Aus der Menge $A$ wird eine Teilmenge mit $k$ Elementen ohne Zurücklegen genommen.
 
 ### Auswahlen einer Teilmultimenge
+Eine Auswahl in der die Elemente von $A$ mehrmals vorkommen können. Diese Auswahl wird auch als #Kombination_mit_Wiederholung bezeichnet. 
+
+#### Beispiel
+Man nehme von der Menge $A$ eine Teilmenge bestehend aus $7$ Elementen
+$$
+A =\{a_{1},a_{2},a_{3},a_{4}\}, ~~~~~~~~~T=\{a_{1},a_{1},a_{1},a_{2},a_{2},a_{4},a_{4}\} 
+$$
+Wenn man nun alle Kugeln nicht gefüllt färben will gibt es keine Möglichkeit ihre ursprünglichen Werte zu unterscheiden. Aufgrund dessen setzen wir Trennkugeln $n-$ dazwischen.
+$$
+a_{1},a_{1},a_{1},\bullet ,a_{2},a_{2},\bullet,\bullet,a_{4},a_{4}
+$$
+Nun Ist es möglich aus rein gefüllten und nicht gefüllten die ursprünglichen Elemente zu rekonstruieren.
+$$
+\circ \circ \circ  \bullet  \circ \circ \bullet \bullet \circ \circ
+$$
+Aufgrund der Gleichheitsregel ist die Anzahl möglicher Auswahlmöglichkeiten von Elementen von $A$ die Anzahl der Permutationen von $k$ nicht gefüllten Kugeln und $n-1$ gefüllten Kugeln
+$$
+\frac{(k+n-1)!}{k!(n-1)!}=\binom{k+n-1}{k}
+$$
+## Aufteilungsprobleme
+
+In den Aufteilungsproblemen geht es darum eine Menge in mehrere Teilmengen, auch #Partitionen , aufzuteilen.
+
+Die Anzahl möglicher Partitionen einer Menge aus $n$ Elementen in $k$ Teile werden dargestellt durch die #Stirlingzahlen_2_Art .
+$$
+S_{n,k}=\frac{1}{k!}\sum_{j=0}^{k}(-1)^{k-j}\binom{k}{j}j^{n}, ~~~(0\leq k\leq n)
+$$
+Diese erfüllen auch folgende Rekursion
+$$
+S_{n+1,k}=S_{n,k-1}+k*S_{n,k}~~~~~~~~~~S_{n,n}=1, n>0 ~~~~~S_{n,0}=0, n\geq1
+$$
+Die Anzahl aller möglichen Partitionen einer einer Menge aus $n$ Elementen werden auch als #Bellzahlen bezeichnet.
+$$
+B_{n}=\sum ^{n}_{k=0}S_{n,k}
+$$
+Diese erfüllen folgende Rekursion
+$$
+B_{n+1}=\sum ^{n}_{k=0}\binom{n}{k}B_{k} ~~~~~~~~~~~~~~B_{1}=1
+$$
+### Zahlpartitionen
+Auch ist es möglich natürliche Zahlen in ihre Summanden aufzuteilen. Zum Beispiel kann die Zahl $4$ wie folgt aufgeteilt werden
+$$
+1+1+1+1, 1+1+2, 2+2, 1+3, 4
+$$
+Somit ist $p(4)=5$, da es $5$ verschiedene Reihenfolgen unabhängige Möglichkeiten gibt $4$ als Summe von natürlichen Zahlen darzustellen.
+
+Die #Partitionsfunktion $p(n)$ beschreibt alle möglichen Partitionen einer natürlichen Zahl
+Ist nun ein $p(n,k)$ gegeben wo die Partitionen je aus $k$ Summanden bestehen, so ist folgende rekursive Definition gegeben.
+$$
+p(n,k) = p(n-k,k) + p(n-1,k-1) ~~~~~~~~~~~~~p(n,1)=p(n,n)=1
+$$
+
+## Schubfachprinzip
+Ähnlich wie bei den Partitionen wird eine Menge aus $n$ Elementen in mehrere Teilmengen aufgeteilt. Beim Schubfachprinzip jedoch können die Teilmengen auch leer sein. Bildlich kann man sich eine Menge aus $n$ Elementen vorstellen die in $k$ Teilmengen (Schubladen) aufgeteilt wird. Beispielsweise kann man 13 Personen in Geburtsmonate aufteilen oder Zahlen in Restklassen. 
+
+Ist $n>k$ so ist in einer Schublade mehr als $1$ Element enthalten.
