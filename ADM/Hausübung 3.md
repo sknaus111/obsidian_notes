@@ -79,3 +79,24 @@ konkretes Gegenbeispiel an
 
 Stimmt in zwei Fällen nicht. 
 Bsp. Im Fall $Element \in A$, $Element \in B$, $Element \not\in C$
+
+## Präsenzaufgabe
+
+10101 * 10001
+01010 * 100010 -
+00101 * 1000100
+00010 * 10001000
+00001 * 100010000
+
+
+000010001
+001000100
+100010000
+101100101
+
+2^4 + +2^3 +2^2 +2^1 +2^0 * 10001
+
+10001
+10001 * 2^2 = 1000100
+10001 * 2^4 = 100010000
+
