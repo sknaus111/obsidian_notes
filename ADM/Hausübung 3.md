@@ -4,7 +4,8 @@ $ac \equiv bc$
 
 $m|b-a$
 
-63) Beweisen Sie die folgenden Behauptungen oder widerlegen Sie sie durch ein konkretes Gegenbeispiel.
+## 63)
+Beweisen Sie die folgenden Behauptungen oder widerlegen Sie sie durch ein konkretes Gegenbeispiel.
 - a) Falls $ac ≡ bc$ mod $m$, $c \not = 0$ und $c | m$, dann gilt auch $a ≡ b$ mod $\frac{m}{c}$  .
 	$bc=ac +qm$
 	$b=a+\frac{qm}{c}$
@@ -29,7 +30,8 @@ $m|b-a$
 	$4 \equiv 9 \text{ mod }5$ probiert $2 \equiv 3 \text{ mod }5$
 	Gegenbeispiel. Behauptung funktioniert nicht. 
 
-66) a) $3x ≡ 9 \text{ mod } 11$, b) $3x ≡ 9 \text{ mod } 12$
+## 66) 
+a) $3x ≡ 9 \text{ mod } 11$, b) $3x ≡ 9 \text{ mod } 12$
 	Bestimmen Sie alle Lösungen der folgenden Kongruenzen bzw. beweisen Sie die Unlösbarkeit (in Z):
 
 	$3x\equiv9 \text{ mod }11$
@@ -44,7 +46,8 @@ $m|b-a$
 	
  Essenz ist ob $x$ kürzbar ist oder nicht
  
-81) $(a ∧ ¬b) ∧ ¬c ⇐⇒ a ∧ ¬(b ∧ ¬c)$
+## 81) 
+$(a ∧ ¬b) ∧ ¬c ⇐⇒ a ∧ ¬(b ∧ ¬c)$
 Entscheiden Sie mit Hilfe einer Wahrheitstafel, ob die folgenden Äquivalenzen richtig sind.
 $→$ und $↔$ bezeichnen Sub- bzw. Bijunktion.
 
@@ -61,7 +64,8 @@ $→$ und $↔$ bezeichnen Sub- bzw. Bijunktion.
  
  Stimmt in zwei Fällen nicht.
 
-100) $A △ (B ∩ C) = (A △ B) ∩ (A △ C)$
+## 100) 
+$A △ (B ∩ C) = (A △ B) ∩ (A △ C)$
 Beweisen Sie die folgenden Beziehungen mit Hilfe von Elementtafeln oder geben Sie ein
 konkretes Gegenbeispiel an
 
