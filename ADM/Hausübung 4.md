@@ -4,7 +4,6 @@ $$(a, b)R(c, d) :⇔ a − c = b − d$$
 Zeigen Sie, dass $R$ eine Äquivalenzrelation ist, und bestimmen Sie die durch $R$ induzierte Partition
 von $M$.
 
-<<<<<<< HEAD
 - Reflexivität
 	$a-a=b-b$
 - Symmetrie
@@ -12,10 +11,12 @@ von $M$.
 	
 	$a-c=b-d \implies c-a=d-b \implies c+b=d+a \implies d+a=c+b$
 - Transitivität
-	
-=======
+	$(a,b),(c,d),(e,f) \in M$
+	$c-a=d-b \implies e-c=f-d$
+	$a+d=b+c \implies d+e=c+f \implies$
+
 alle Zahlen wo Differenz zwischen den Zahlenpaaren gleich ist
->>>>>>> 2bf9d08a4ef866a0ce373a3393e98ae308b4f918
+
 ## 128) 
 Für $k, n \in \{1, 3, 4, . . . , 10\}$ sei $kRn$, falls $k$ ein Teiler von $n$ ist und $k$ und $n$
 $k$ teilerfremd sind. Man untersuche, ob die Relation $R$ eine Halbordnung ist, und ermittle gegebenfalls das Hassediagramm.
