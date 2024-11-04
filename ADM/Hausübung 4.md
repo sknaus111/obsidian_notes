@@ -41,6 +41,7 @@ Für $k, n \in \{1, 3, 4, . . . , 10\}$ sei $kRn$, falls $k$ ein Teiler von $n$ 
 	$kRn \implies n=k*1 \implies n=k$
 	$nRk \implies k=n*1 \implies k=n$
 - Transitivität
+	$kRl$
 	$kRn ~~~ nRl$
 	$n=k*p$
 	$l=n*q \implies l=k*p*q \implies l=k*r \implies k|l$
@@ -95,6 +96,7 @@ $mRn \iff m^2 = n^2$
 - Transitivität
 	$mRn \iff m^2=n^2 \land nRo \iff n^2=o^2$
 	$m^2=n^2=o^2 \implies m^2=o^2 \implies mRo$
+
 - Antisymmetrie
 	$m,-m\in\mathbb{Z}$
 	$mR-m ~\iff m^2=-m^2 \land -m^2=m^2$
@@ -107,8 +109,9 @@ die Menge aller positiven reellen Zahlen.)
 $R = \{(log_{2}x, x)|x ∈ \mathbb{R}^+\}, A = B = \mathbb{R}$
 
 $\log_{2}x \rightarrow x \in\mathbb{R}^+$
+$f(\log_{2}x)=x$
 
-- injektiv (Wertemenge max 1mal)
+- injektiv (Wertemenge max 1mal benutzt)
 	Angenommen stimmt nicht
 	$f(\log_{2}x_{1})=f(\log_{2}x_{2})=x~~~~~~~~ x_{1}\not=x_{2}$
 	$x_{1}=x_{2}$ Widerspruch
@@ -116,7 +119,7 @@ $\log_{2}x \rightarrow x \in\mathbb{R}^+$
 	Da Gegenannahme nicht stimmt ist die Funktion injektiv
 
 
-- surjektiv (Wertemenge min 1mal)
+- surjektiv (Wertemenge min 1mal benutzt)
 	$f(\log_{2}x)$ mit $x\leq1$ nicht definiert für $R^+$
 
 	Nicht surjektiv
