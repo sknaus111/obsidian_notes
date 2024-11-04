@@ -4,13 +4,21 @@ $$(a, b)R(c, d) :⇔ a − c = b − d$$
 Zeigen Sie, dass $R$ eine Äquivalenzrelation ist, und bestimmen Sie die durch $R$ induzierte Partition
 von $M$.
 
+- Reflexivität
+	$a-a=b-b$
+- Symmetrie
+	$a-c=b-d \implies a+d=b+c$
+	
+	$a-c=b-d \implies c-a=d-b \implies c+b=d+a \implies d+a=c+b$
+- Transitivität
+	
 ## 128) 
 Für $k, n \in \{1, 3, 4, . . . , 10\}$ sei $kRn$, falls $k$ ein Teiler von $n$ ist und $k$ und $n$
 $k$ teilerfremd sind. Man untersuche, ob die Relation $R$ eine Halbordnung ist, und ermittle gegebenfalls das Hassediagramm.
 
 ## 131) 
 Welche der Eigenschaften Reflexivität, Symmetrie, Antisymmetrie und Transitivität
-haben folgende Relationen $R$ auf $Z$:
+haben folgende Relationen $R$ auf $\mathbb{Z}$:
 
 $mRn ⇐⇒ m^2 = n^2$
 
