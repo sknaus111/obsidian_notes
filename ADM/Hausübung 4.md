@@ -125,3 +125,15 @@ $f(\log_{2}x)=x$
 	Nicht surjektiv
 - bijektiv (beides)
 	Da es nicht surjektiv ist, ist die Funktion auch nicht bijektiv
+
+
+## Präsenzaufgabe
+
+- reflexiv
+	$\forall x \in A: x\in\triangle \implies xRx=xRx$
+- symmetrisch 
+	$\forall x,y \in A: xRy \land xR^{-1}y\implies:xRy\land yRx$
+- transitiv
+	$\forall x,y \in A: \exists z \in R\circ R: xRz \land zRy$
+- antisymmetrisch
+	$\triangle \subseteq R\land R^{-1}\not= R$
