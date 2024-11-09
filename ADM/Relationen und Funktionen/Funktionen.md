@@ -101,7 +101,7 @@ Eine Funktion $f: A\rightarrow B$ heißt #surjektiv oder #Surjketion, wenn es je
 \end{document}
 ```
 ## Bijektive Funktion
-Eine Funktion $f: A\rightarrow B$ heißt #bijektiv oder #Bikektion, wenn es zu jedem $b\in B$ **genau ein** $a\in A$ mit $b=f(a)\in B$ gibt
+Eine Funktion $f: A\rightarrow B$ heißt #bijektiv oder #Bijektion, wenn es zu jedem $b\in B$ **genau ein** $a\in A$ mit $b=f(a)\in B$ gibt
 
 ```tikz
 \begin{document}

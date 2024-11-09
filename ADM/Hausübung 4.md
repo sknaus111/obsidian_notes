@@ -110,6 +110,7 @@ $R = \{(log_{2}x, x)|x ∈ \mathbb{R}^+\}, A = B = \mathbb{R}$
 
 $\log_{2}x \rightarrow x \in\mathbb{R}^+$
 $f(\log_{2}x)=x$
+$f(x)=2^x$
 
 - injektiv (Wertemenge max 1mal benutzt)
 	Angenommen stimmt nicht
@@ -120,8 +121,8 @@ $f(\log_{2}x)=x$
 
 
 - surjektiv (Wertemenge min 1mal benutzt)
-	$f(\log_{2}x)$ mit $x\leq1$ nicht definiert für $R^+$
-
-	Nicht surjektiv
+	für alle $b \in B$ existiert ein $a\in A$ mit $f(a)=b$
+	da die Funktion nur für $\mathbb{R}^+$ definiert ist und nicht für negative reelle Zahlen gibt es kein $a$, welches man in $2^x$ einsetzen könnte um Zahl $\leq1$ zu bekommen
+	
 - bijektiv (beides)
 	Da es nicht surjektiv ist, ist die Funktion auch nicht bijektiv
