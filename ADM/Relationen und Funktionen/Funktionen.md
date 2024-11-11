@@ -148,7 +148,7 @@ Sind $f:A\rightarrow B$ und $g:C\rightarrow D$ Funktionen, so wird die Zusammens
 Sind $f:A\rightarrow C$ und $g:C\rightarrow D$ injektiv, so ist auch $g\circ f:A\rightarrow C$ injektiv/surjektiv/bijektiv.
 
 ### Beweis
-Seien $g$ und $f$ injektiv. Daraus folgt, dass $f(a_{1})=f(a_{2})\implies a_{1}=a_{2}$ und $g(b_{1})=g(b_{2})\implies g_{1}=g_{2}$. Ist $(g\circ f)(a_{1})=g(f(a_{1}))=g(f(a_{2}))=(g\circ f)(a_{2})$, dann folgt aus der Injektivität der Funktion $g$ , dass $f(a_{1})=f(a_{2})$ und aus der Injektivität von $f$ folgt $a_{1}=a_{2}$ Somit ist auch $g\circ f$ injektiv.
+Seien $g$ und $f$ injektiv. Daraus folgt, dass $f(a_{1})=f(a_{2})\implies a_{1}=a_{2}$ und $g(b_{1})=g(b_{2})\implies b_{1}=b_{2}$. Ist $(g\circ f)(a_{1})=g(f(a_{1}))=g(f(a_{2}))=(g\circ f)(a_{2})$, dann folgt aus der Injektivität der Funktion $g$ , dass $f(a_{1})=f(a_{2})$ und aus der Injektivität von $f$ folgt $a_{1}=a_{2}$ Somit ist auch $g\circ f$ injektiv.
 
 Sind $f$ und $g$ surjektiv so gibt es ein $c\in C$ mit $b\in B$ in $g(b)=c$ und damit auch eine $a\in A$ mit $f(a)=b$. Insgesamt gilt $(g\circ f)(a)=g(f(a))=g(b)=c$
 
