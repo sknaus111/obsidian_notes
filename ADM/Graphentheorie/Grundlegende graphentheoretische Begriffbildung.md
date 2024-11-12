@@ -96,7 +96,24 @@ Ist der Graph gerichtet gilt
 $$
 d^{+}(v_{i})=\sum ^{n}_{j=1}a_{ij} \text{ und }d^{-}(v_{i})=\sum ^{n}_{j=1}a_{ji}
 $$
-Weiters kann mit Hilfe der Potenzen der Adjazentmatrix die Erreichbarkeit beschrieben werden. Ist $a_{ij}^{[k]}$ die Anzahl der Kantenfolgen der Länge $k$ von $v_{i}$ nach $v_{j}$ so
+Weiters kann mit Hilfe der Potenzen der Adjazentmatrix die Erreichbarkeit beschrieben werden. Ist $a_{ij}^{[k]}$ die Anzahl der Kantenfolgen der Länge $k$ von $v_{i}$ nach $v_{j}$ so ist
 $$
 A(G)^{k}=(a_{ij}^{[k]})
 $$
+das $i-j$-te Element der $k$-ten Potenz positiv und es gibt eine Kantenfolge. Doch kann die Länge eines Weges/Bahn nicht länger als $|E|$ bzw. $|V|-1$ sein.
+$$
+C=(c_{ij})=\sum_{k=0}^{m}A(G)^{k} ~~~~~ \text{ mit }~~~~~m=min\{ |E(G)|,|V(G)|-1 \}
+$$
+so ist $v_{j}$ von $v_{i}$ erreichbar, wenn $c_{ij} > 0$ ist
+
+## Zusammenhängende Graphen
+Ein ungerichteter Graph heißt #zusammenhängend, wenn es zwischen je zwei $v,w \in V(G)$ eine Kantenfolge von $v$ nach $w$ gibt. Die maximalen zusammenhängenden #Teilgraphen heißen #Komponenten von $G$
+
+Ein gerichteter Graph heißt stark zusammenhängend, wenn für je zwei $v,w \in V(G)$ eine gerichtete Kantenfolge von $v$ nach $w$ existiert. 
+Ein gerichteter Graph heißt schwach zusammenhängend, wenn für je zwei $v,w \in V(G)$ eine Kantenfolge ohne Berücksichtigung der Richtung der Kante existiert.
+Die maximalen starken/schwachen Teilkomponenten eines gerichteten Graphen heißen starke/schwache #Zusammenhangskomponenten oder Komponenten des starken/schwachen Zusammenhangs.
+
+Mit Hilfe der Adjazentmatrix lässt sich die Anzahl der Kantenfolgen der Länge $k$ zwischen zwei Knoten berechnen.
+
+### Satz von Menger
+Sei $G$ ein ungerichteter Graph und $v,w$ zwei verschiedene Knoten. Dann ist die maximale Anzahl von kantendisjunkten Wegen, die $v$ und $w$ verbinden gleich der minimalen Anzahl von Kanten, die man aus $G$ entfernen muss, um $v$ und $w$ in $G$ zu trennen
