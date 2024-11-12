@@ -2,14 +2,16 @@
 Seien $f : A → B$ und $g : B → C$ zwei Abbildungen, sodass $g ◦ f$ surjektiv und $g$ injektiv ist.
 Man zeige, dass dann auch $f$ surjektiv ist.
 
-Gegeben: Für $g\circ f$ Zu jedem $b\in B$ gibt es ein $a\in A$, für $g$ zu jedem $c\in C$ höchstens ein $b\in B$
-$g(f(a))=g(b_{1})=b_{2}$
-$g(b_{1})=g(b_{2})\implies b_{1}=b_{2}$
+Gegeben: Für $g\circ f$ Zu jedem $c\in C$ gibt es ein $a\in A$ mit $g(f(a))=c$, für $g$ zu jedem $c\in C$ höchstens ein $b\in B$
+$\forall c \in C \exists a \in A g(f(a))=c$
+$\forall b_{1},b_{2} \in B:b_{1}\not=b_{2}\implies g(b_{1})\not=g(b_{2})$
 
-$g(f(a_{1}))=g(b_{1})=b_{2}=b_{1}=g(b_{2})=g(f(a_{2}))$
-
-Beweisen: Für $f$ Zu jedem $b\in B$ gibt es ein $a\in A$, $f(a)=b$?
-
+Gegenbeispiel: f ist nicht surjektiv
+$\exists b\in B: \not\exists a\in A:f(a)=b$
+$(\exists b\in B: \not\exists a\in A:f(a)=b \land \forall b_{1},b_{2} \in B:b_{1}\not=b_{2}\implies g(b_{1})\not=g(b_{2})) \implies \exists c\in C:\not\exists a\in A:g(f(a))=c$
+Der linke Ausdruck sagt aus dass es einen Wert in der Menge B gibt, für welchen kein Wert aus der Menge A mit der Abbildung zu diesem führt.
+Der rechte Ausdruck sagt aus das jeder versch. Wert in der Menge b zu einem versch. Wert in der Menge C führt.
+Daraus schließt, dass der Wert in der Menge B, welcher keinen korrespondierenden Wert in der Menge A hat, einzigartig zu einem Wert in der Menge C führt. So mit hat der Wert in der Menge C nur den einen Wert in der Menge B welcher keinen Wert in der Menge A hat, womit C keinen Wert in der Menge A hat. Dies steht im Widerspruch zur Annahme das $g\circ f$ surjektiv ist.
 ## 167) 
 Wieviele Möglichkeiten gibt es, aus einem $50$-bändigen Lexikon genau $6$ Bücher auszuwählen,
 wobei zwischen zwei ausgewählten Bänden immer mindestens drei im Regal stehen bleiben sollen?
@@ -21,7 +23,7 @@ $n$ ist wie im Kugelbeispiel des Buches ein Trenner. Diese kommen 5 mal zwischen
 $5+2=7=n$
 
 Auswahl einer Teilmultimenge
-$$\binom{n-k-1}{k}=\binom{7+29-1}{29}=\binom{35}{29}$$
+$$\binom{n+k-1}{k}=\binom{7+29-1}{29}=\binom{35}{29}$$
 
 ## 170) 
 Man bestimme die Anzahl der möglichen Tototipps $(1, 2, x)$ bei $12$ Spielen und die Anzahl
