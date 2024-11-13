@@ -17,7 +17,7 @@ Wieviele Möglichkeiten gibt es, aus einem $50$-bändigen Lexikon genau $6$ Büc
 wobei zwischen zwei ausgewählten Bänden immer mindestens drei im Regal stehen bleiben sollen?
 
 Anders überlegt zieht man 5 mal Bücher mit den drei leeren Büchern danach + 1 Buch am Ende.
-$5*4+1=29=k$
+$50-(5*4+1)=29=k$
 
 $n$ ist wie im Kugelbeispiel des Buches ein Trenner. Diese kommen 5 mal zwischen den Büchern und vor und nach ihnen vor
 $5+2=7=n$
@@ -72,3 +72,8 @@ Somit
 $$
 5040-24-720+6=4302
 $$
+## Präsenzaufgabe
+Zeige mittels Schubfach-Prinzip
+Unter je neun Punkten in einem Würfel der Kantenlänge 2 gibt es stets 2 Punkte mit Abstand höchstens $\sqrt{ 3 }$
+
+gilt für Seiten 5 und 6. Somit muss 4

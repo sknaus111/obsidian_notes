@@ -110,7 +110,7 @@ Setzt man für a und b 0 ein würde die Gleichung $max\{a-1,b-1\}=-1$ ergeben. D
 Anderes Ansatz
 Setzt man für a und b 1 ein würde die Gleichung $max\{a-1,b-1\}=0$ ergeben. Da $0$ kein Nachfolger einer natürlichen Zahl ist, werden die #Peanoaxiome verletzt und es liegt kein gültiger Beweise vor.
 
-# Präsenzbeispiel
+# Präsenzaufgabe
 Induktion: Für welche $n\in\mathbb{N}$ gilt $2n^2 +1 \leq3^n$
 
 $2*0^2+1\leq 3^0$

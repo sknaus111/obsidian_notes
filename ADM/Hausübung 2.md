@@ -170,7 +170,7 @@ $$
 -7*451+18*176=11
 $$
 
-## Präsenz
+## Präsenzaufgabe
 
 $$
 \frac{1}{z}=\frac{\bar{z}}{z*\bar{z}}=\frac{\bar{z}}{|z|^2}
