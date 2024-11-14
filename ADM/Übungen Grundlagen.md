@@ -809,5 +809,223 @@ $$
 ## Buch 1.11
 Man zeige, dass für alle natürlichen Zahlen $n$ die beiden Teilbarkeitseigenschaften $2|(n^{2}+n)$ und $6|(n^{3}-n+12)$ gelten.
 
+$$
+2*p=n^{2}+n=n*n+n=(n)(n+1)
+$$
+Da entweder $n$ oder $n+1$ gerade sein müssen ist das Produkt der beiden Zahlen gerade und somit durch zwei teilbar.
+
+$$
+6*p=n^{3}-n+12=(n-1)(n)(n+1)+12
+$$
+Da zwölf insich schon durch sechs teilbar ist sieht man sich den linken Teil des Terms an. Da eine der drei Zahlen durch drei teilbar ist also ein vielfaches von drei und zumindest eine der drei Zahlen gerade also ein vielfaches von 2 ist das Produkt der drei Zahlen ein Vielfaches von $2*3=6$ und somit durch $6$ teilbar.
+
+## Buch 1.12
+
+Man bestimme den $ggT(7469,2464)$ sowie den $ggT(1109,4999)$ mit Hilfe des Euklidischen Algorithmus.
+
+$$
+7469 = 2464 * 3 + 77 , 2464*3=7392 , 7469-7392=69+8=77
+$$
+$$
+2464 = 77 * 32 + 0, 30*77=2310 + 77 = 2387 + 77 = 
+$$
+$$
+ggT()=77
+$$
+$$
+4999 = 1109 * 4 + 578, 1104*4=4412, 4999-4412=500-1+88=587  
+$$
+$$
+1109 = 578 * 1 + 531, 1109-578=22+400+109=531
+$$
+$$
+578 = 531 * 1 + 47, 19+28=38+9=47
+$$
+$$
+531=47* 11+14 , 11 * 47 = 470 + 47 = 517  
+$$
+$$
+47 = 14 * 3 + 5
+$$
+$$
+14 = 5 * 2 + 4
+$$
+$$
+5 = 4 * 1 + 1
+$$
+$$
+4 = 1 * 4 +0
+$$
+$$
+ggT()=1
+$$
+## Buch 1.13
+
+Man bestimme alle ganzen Zahlen $x,y$, welche die Gleichung $243x+198y=9$ erfüllen.
+
+$$
+243x + 198y = 9, \frac{243}{9}=9*20=180+9*5=225 + 234, 243 = 9*27, 198 = 9 * 20 + 2 * 9
+$$
+$$
+27x + 22y = 1 
+$$
+$$
+27 = 22 * 1 + 5
+$$
+$$
+22 = 5 * 4 + 2
+$$
+$$
+5 = 2 * 2 + 1
+$$
+$$
+2 = 1 * 2 +0
+$$
+$$
+1=5-2*2
+$$
+$$
+1=5-2*(22-5*4)
+$$
+$$
+1=5 - 2 * 22 + 5 * 4 * 2
+$$
+$$
+1 = 9 * 5 - 2 * 22
+$$
+$$
+1 = 9 * (27-22) - 2 * 22 
+$$
+$$
+1 = 27 * 9 - 11 * 22
+$$
+$$
+x=9, y=-11
+$$
+## Buch 1.14
+
+Man zeige für alle natürliche Zahlen $a,b$ die Eigenschaft $ggT(a,b) * kgV(a,b)=a*b$
+
+$$
+ggT(a,b) = \prod_{p\in\mathbb{P}}p^{min\{ v_{p}(a),v_{p}(b) \}}, ~~~~~ kgV(a,b) = \prod_{p\in \mathbb{P}}p^{max\{ v_{p}(a),v_{p}(b) \}}
+$$
+Multipliziert man die beiden Primfaktor tritt entweder der Primfaktor von $a$ im ggT oder im kgV auf, gleiches für b, somit setzt sich die Multiplikation aus allen Primfaktoren zusammen und entspricht einer Multiplikation der beiden Zahlen.
+
+## Buch 1.15
+
+Man zeige, dass jede ganze Zahl der Form $n^{4}+4^{n}$ mit $n>1$ keine Primzahl ist. (Hinweis: Man unterscheide zwischen geradem $n$ und ungeradem $n$ Insbesondere betrachte man bei ungeradem $n$ die Zerlegung $(n^{2}+2^{n}+n2^{(n+1)/2})(n^{2}+2^{n}-n2^{(n+1)/2})$.)
+
+### Nochmal schauen
+## Buch 1.16
+
+Lösen Sie die folgenden Kongruenzen bzw. beweisen Sie deren Unlösbarkeit
+
+### a
+$$
+8x \equiv 4 \mod 16
+$$
+$$
+2x \equiv 1 \mod 4
+$$
+Unlösbar da keine gerade Zahl durch 4 einen Rest von $1$ haben kann. $ggT(2,4)=2$
+
+### b
+$$
+8x \equiv 4 \mod 15
+$$
+$$
+2x \equiv 1 \mod 15
+$$
+$$
+2x=1+q*15
+$$
+$$
+2x = 1+15
+$$
+$$
+x=8
+$$
+### c
+$$
+3x \equiv 9 \mod 11
+$$
+$$
+x \equiv 3 \mod 11
+$$
+$$
+x=3+11*p
+$$
+$$
+x=3
+$$
+### d
+$$
+3x \equiv 9 \mod 12
+$$
+$$
+x \equiv 3 \mod 4
+$$
+$$
+x=3+4*p
+$$
+$$
+x=3
+$$
+### e
+$$
+x^{2}-3x+2\equiv0 \mod 5
+$$
+$$
+x^{2}-3x+2=0+5*q
+$$
+$$
+(x-1)(x-2)=5*q
+$$
+#### Nochmal anschauen
+
+### f
+$$
+x^{2}-3x+2\equiv0 \mod 6
+$$
+## Buch 1.17
+Im europäischen Artikelnummersystem EAN werden Zahlen mit 13 Dezimalziffern der Form $a_{1},a_{2},\dots,a_{12}p$ verwendet. Dabei wird die letzte der 13 Ziffern, das ist die Prüfziffer $p$, im EAN-Code so bestimmt, dass
+$$
+a_{1}+3a_{2}+a_{3}+3a_{4}+\dots+a_{11}+3a_{12}+p \equiv 0 \mod 10
+$$
+gilt. Man zeige, dass beim EAN-Code ein Fehler in einer einzelnen Ziffer stets erkannt wird, während eine Vertauschung von zwei benachbarten Ziffern genau dann nicht erkannt wird, wenn die beiden Ziffern gleich sind oder sich um 5 unterscheiden
+
+Man nehme zwei EAN Codes an, welche sich an der Stelle $j$ unterscheiden
+$$
+s + n * x_{j} \equiv s + n * y_{j} \mod 10
+$$
+Da $ggT(n,10)=1$, wobei $n$ entweder $1$ oder $3$ ist, folgt
+$$
+x_{j}\equiv y_{j} \mod 10
+$$
+und da $x_{j}$ und $y_{j}$ per Definition Ziffern zwischen $\{ 0,1,\dots,9 \}$ sind folgt.
+$$
+x_{j} = y_{j}
+$$
+Eine Vertauschung zweier benachbarter Ziffern würde bedeuten.
+
+$$
+s + 3 * a + b \equiv s + a + 3*b \mod 10 \implies (3-1)(a-b) \equiv 0 \mod 10
+$$
+$$
+2(a-b) \equiv 0 \mod 10
+$$
+$$
+2a\equiv 2b \mod 10
+$$$$
+a \equiv b \mod 5 
+$$
+$$
+a=b
+$$
+So ist eine Vertauschung erkannt, es sei denn der Unterschied zwischen den beiden Zahlen beträgt 5
+## Buch 1.18
+Sei $a$ die Aussage "Es gibt eine größte natürliche Zahl" und $b$ die Aussage "0 ist die größte natürliche Zahl". Man entscheide, ob die Aussagen $a\implies b$ bzw. $b\implies a$ wahr oder falsch sind.
+
+$b\implies a$ ist wahr da eine falsche Aussage immer eine richtige Implikation ist. $a \implies b$ ist wahr da beide Aussagen falsch sind. 
 ## Buch 1.19
 
