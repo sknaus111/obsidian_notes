@@ -1028,4 +1028,183 @@ Sei $a$ die Aussage "Es gibt eine größte natürliche Zahl" und $b$ die Aussage
 
 $b\implies a$ ist wahr da eine falsche Aussage immer eine richtige Implikation ist. $a \implies b$ ist wahr da beide Aussagen falsch sind. 
 ## Buch 1.19
+Entscheiden Sie mit Hilfe einer Wahrheitstafel, ob die folgenden Äquivalenzen richtig sind:
 
+### a
+$$
+a \lor (b\lor c) \implies (a \lor b) \lor c
+$$
+### b
+### c
+### d
+### e
+### f
+
+## Buch 1.20
+
+### a
+### l
+
+## Buch 1.21
+Sei $M$ eine nichtleere endliche Menge. Man zeige, dass $M$ gleich viele Teilmengen mit gerader Elementanzahl wie solche mit ungerade Elementanzahl besitzt, indem man ein Verfahren angebe, das aus den Teilmengen der einen Art umkehrbar eindeutig die der anderen Art erzeugt.
+
+$$
+
+$$
+
+## Buch 1.22
+Sei $A = \{ 1,2,\dots,8 \}$ und $R$ eine binäre Relation auf $A$, definiert durch
+$$
+a R b \iff a=b
+ \text{ oder }ggT(a,b)=2$$
+ Man gebe explizit die Relation $R$ sowie ihren Graphen $G(R)$ an
+
+Die Relation beschreibt, ob die Zahlen gleich oder gerade sind.
+
+Der Graph verbindet jede Zahl mit einer Schlinge zu sich selbst und die gerade Zahlen miteinander.
+## Buch 1.23
+
+Man untersuche nachstehend angeführte Relationen $R \subseteq M^{2}$ in Hinblick auf die Eigenschaften Reflexivität. Symmetrie, Transitivität und Antisymmetrie
+
+### a
+$M =$ Menge aller Einwohner von Wien, $aRb \iff a$ ist verheiratet mit $b$
+
+nicht Reflexiv da man nicht mit sich selber verheiratet sein kann. Symmetrisch und daher nicht antisymmetrisch. Auch nicht transitiv.
+### b
+$M$ wie oben, $aRb \iff a$ ist nicht älter als $b$
+
+Reflexiv, da gleich alt auch nicht älter bedeuten kann. Antisymmetrisch da es ein kleiner gleich vergleich ist. Transitiv ist ebenfalls wahr.
+### c
+$M$ wie oben, $aRb \iff a$ ist so groß wie $b$
+
+Reflexiv, symmetrisch und antisymmetrisch, transitiv
+### d
+$M=\mathbb{R}, aRb \iff a-b \in \mathbb{Z}$
+
+Reflexiv da 
+$a-a=a-a=0$
+Antiymmetrisch
+
+$$
+a-b=b-a
+$$
+$$
+a+a=b+b
+$$
+$$
+2(a)=2(b)
+$$
+$$
+a=b
+$$
+Dadurch auch nicht symmetrisch
+Transitiv
+$$
+a-b=z_{1}, b-c=z_{2}
+$$
+$$
+a-c=
+$$
+#### Nochmal anschauen
+### e
+$M=\mathbb{R}^{n}, (x_{1},\dots,x_{n)}R(y_{1},\dots,y_{n}) \iff x_{i}\leq y_{i}(i=1,\dots,n)$
+
+#### Nochmal anschauen
+
+## Buch 1.24
+Man zeige, dass durch $aRb \iff 3|a^{2}-b^{2}$ für alle $a,b \in \mathbb{Z}$ eine Äquivalenzrelation $R$ in der Menge $\mathbb{Z}$ erklärt wird, und bestimme die zugehörende Partition
+
+Reflexivität
+$$
+3*q=a^{2}-a^{2}
+$$
+$$
+3*q=0
+$$
+
+Symmetrie
+
+$$
+3*q = a^{2}-b^{2} \iff 3* p = -a^{2} + b^{2} ,~~~~~~~~(p=q*-1)
+$$
+Transitivität
+$$
+3 * q = a^{2}-b^{2}, 3*p = b^{2}-c^{2}
+$$
+$$
+b^{2}=a^{2}-3*q
+$$
+$$
+3*p=a^{2}-3*q-c^{2}
+$$
+$$
+3*p+3*q=a^{2} - c^{2}
+$$
+$$
+3(p+q)=a^{2}-c^{2}
+$$
+$$
+3r=a^{2}-c^{2}
+$$
+
+$$
+K(0) = \{ a\in \mathbb{Z}| ~ a \equiv 0 \mod 3 \}
+$$
+$$
+K(1) = \{ a \in \mathbb{Z} | a \equiv1 \mod 3 \}
+$$
+$$
+K(2) = \{ a \in \mathbb{Z} | a \equiv 2 \mod3 \}
+$$
+
+## Buch 1.25
+Sei $f: A \rightarrow B$ eine Funktion. Man zeige, dass durch $x \equiv y \iff f(x) = f(y)$ eine Äquivalenzrelation $\equiv$ auf der Menge $A$ definiert wird
+
+### Nochmal anschauen
+
+## Buch 1.26
+Untersuchen Sie, ob die Relation $ARB \iff A\vartriangle B = \emptyset$ auf der Potenzmenge einer Menge $M$ eine Äquivalenzrelation bildet ($\vartriangle$ bezeichnet die symmetrische Differenz)
+
+Reflexivität
+$$
+A \vartriangle A = \emptyset
+$$
+Symmetrie
+$$
+A \vartriangle B = (A \backslash B ) \cup (A\backslash B) \iff (B\backslash A) \cup (A\backslash B) = B \vartriangle A 
+$$
+Transitivität
+$$
+A \vartriangle B \land B \vartriangle C \iff ((A \cap B)' \cap (A \cup B)) \cap ((B\cap C)'\cap(B\cup C))
+$$
+$$
+\iff ((A' \cup B') \cap (A \cup B)) \cap ((B' \cup C') \cap (B \cup C))
+$$
+$$
+\iff (A \cap (A'\cup B'))\cup(B \cap(A' \cup B')) \cap (B \cap(B' \cup C') \cup(C \cap (B' \cup C')) )
+$$
+$$
+(B'\cup B)
+$$
+
+### Nochmal anschauen
+
+
+
+$$
+A \vartriangle B \land B \vartriangle C \iff ((A\backslash B) \cup (B\backslash A)) \land ((B\backslash C)\cup(C\backslash B))
+$$
+$$
+
+$$
+## Buch 1.27
+Man vergleiche die Hassediagramme der beiden Halbordnungen $(P(\{ a,b,c \}),\subseteq)$ und $(T_{70},|)$, wobei $T_{70}=\{ n \in \mathbb{N} | ~n|70 \}$
+
+### Später anschauen
+## Buch 1.28
+### Ich kann diese Funktionscheiße nicht mehr
+
+## Buch 1.29
+## Buch 1.30
+## Buch 1.31
+## Buch 1.32
