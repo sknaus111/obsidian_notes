@@ -149,4 +149,10 @@ $$
 ### f
 Auf wie viele Arten können 8 Türme auf ein Schachbrett gestellt werden derart, dass sie einander nicht schlagen und die weiße Diagonale frei bleibt? (Ein Turm schlägt eine andere Figur, die horizontal oder vertikal auf gleicher Höhe steht, sofern keine weitere Figur dazwischen steht)
 
+
+Schwarze Felder
+$$
+4*4*3*3*2*2 = 576
+$$
 #### Nochmal anschauen
+
