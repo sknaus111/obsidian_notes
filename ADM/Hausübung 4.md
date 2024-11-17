@@ -25,6 +25,7 @@ von $M$.
 
 alle Paare aus Zahlenpaare mit gleicher Differenz
 $K=\{ (a,b) \in \mathbb{R}^2|a-b=c-d|(c,d)\in\mathbb{R}^2\}$
+$K(a,b) = \{ c-d \in \mathbb{R}^{2} | c-d = a-b\}$
 
 ## 128) 
 Für $k, n \in \{1, 3, 4, . . . , 10\}$ sei $kRn$, falls $k$ ein Teiler von $n$ ist und $k$ und $\frac{n}{k}$ teilerfremd sind. Man untersuche, ob die Relation $R$ eine Halbordnung ist, und ermittle gegebenfalls das Hassediagramm.
