@@ -678,7 +678,7 @@ kB alles weiter aufzuschreiben, ins buch schauen
 
 Diese Methode funktioniert da dies der Binärentwicklung entspricht wenn man sich zumindest den ersten Faktor im Binärsystem anschaut.
 
-$10101 ~~~~~ 10001
+$10101 ~~~~~ 10001$
 $2^{0}(1*2^{4}+0*2^{3}+1*2^{2}+0*2^{1}+1*2^{0})+0(\dots)+0(\dots)+0(\dots)+2^{4}(1*2^{4}+0*2^{3}+1*2^{2}+0*2^{1}+1*2^{0})$
 $$=357_{10}$$
 ## Buch 1.5
@@ -1029,3 +1029,37 @@ Sei $a$ die Aussage "Es gibt eine größte natürliche Zahl" und $b$ die Aussage
 $b\implies a$ ist wahr da eine falsche Aussage immer eine richtige Implikation ist. $a \implies b$ ist wahr da beide Aussagen falsch sind. 
 ## Buch 1.19
 
+$\mathbb{C}$
+$\left({}\right)$
+$\left(\right)$
+
+$\sqrt[5]{10}$
+
+#Induktionsvoraussetzung
+$$
+
+$$
+#Induktionsanfang
+$$
+
+$$
+#Induktionsbehauptung
+$$
+
+$$
+#Induktionsschritt
+$$
+\mathbb{C}
+$$
+$z_{1,2} = -\frac{p}{2}\pm \sqrt{ \frac{p^2}{4}-q }$
+
+$bigup$
+$\bigcup$
+$\bigcup$
+$\vartriangle$
+$\left(\right)$
+$\left[\right]$
+$$\left| \frac{3+\sqrt{ 2 }}{3}\right|$$
+$\binom{}{}$
+$\subseteq$
+$||$

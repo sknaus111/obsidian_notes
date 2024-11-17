@@ -77,3 +77,6 @@ Zeige mittels Schubfach-Prinzip
 Unter je neun Punkten in einem Würfel der Kantenlänge 2 gibt es stets 2 Punkte mit Abstand höchstens $\sqrt{ 3 }$
 
 gilt für Seiten 5 und 6. Somit muss 4
+
+$\lnot$
+$\mod 2$
