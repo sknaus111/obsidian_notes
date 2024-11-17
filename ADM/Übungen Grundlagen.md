@@ -902,8 +902,22 @@ Multipliziert man die beiden Primfaktor tritt entweder der Primfaktor von $a$ im
 
 Man zeige, dass jede ganze Zahl der Form $n^{4}+4^{n}$ mit $n>1$ keine Primzahl ist. (Hinweis: Man unterscheide zwischen geradem $n$ und ungeradem $n$ Insbesondere betrachte man bei ungeradem $n$ die Zerlegung $(n^{2}+2^{n}+n2^{(n+1)/2})(n^{2}+2^{n}-n2^{(n+1)/2})$.)
 
-### Nochmal schauen
+ist n gerade so werden offensichtlich zwei gerade zahlen addiert
+
+ist n ungerade so kann der Term $n^{4}+4n$ auch als Faktor von einer Zerlegung dargestellt werden. Somit muss man nur noch beweisen, dass keiner der beiden Einzelteile gleich 1 ist.
+Bei $n^{2}+2^{n}+n 2^{(n+1)/2}$ ist dies offensichtlich da nur zahlen addiert werden. Bei $n^{2}+2^{n}-n2^{(n+1)/2}$ ist dies der Fall, da $n=2k+1$ ist die gleichung
+$$
+(2k+1)^{2}+2^{2k+1}-(2k+1)2^{(2k+2)/2}
+$$
+$$
+4k^{2}+4k+1+2*2^{2k}-2*2^{k}*(2k+1)
+$$
+$$
+4k^{2}+4k+1+2*2^{k}(2^{k}-2k-1)
+$$
+Da für ein k von 1 der Gesamte Ausdruck >1 ist, und für jedes größere k ein positiver klammerausdruck folgt, ist dies wieder eine addition aus nur positiven termen für k>1 und eine faktor ungleich 1.
 ## Buch 1.16
+
 
 Lösen Sie die folgenden Kongruenzen bzw. beweisen Sie deren Unlösbarkeit
 
