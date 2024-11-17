@@ -1027,35 +1027,407 @@ So ist eine Vertauschung erkannt, es sei denn der Unterschied zwischen den beide
 ## Buch 1.18
 Sei $a$ die Aussage "Es gibt eine größte natürliche Zahl" und $b$ die Aussage "0 ist die größte natürliche Zahl". Man entscheide, ob die Aussagen $a\implies b$ bzw. $b\implies a$ wahr oder falsch sind.
 $b\implies a$ ist wahr da eine falsche Aussage immer eine richtige Implikation ist. $a \implies b$ ist wahr da beide Aussagen falsch sind. 
-## Buch 1.19
-$\mathbb{C}$
-$\left({}\right)$
-$\left(\right)$
-$\sqrt[5]{10}$
-#Induktionsvoraussetzung
+## Buch 1.21
+
+Sei M eine nichtleere endliche Menge. Man zeige, dass M gleich viele Teilmengen mit gerader Elementanzahl wie solche mit ungerader Elementanzahl besitzt, indem man ein Verfahren angebe, das aus den Teilmengen der einen Art umkehrbar eindeutig die der anderen Art erzeugt
+
+Teilmengen mit $0\leq j\leq n$ Elementen
+k-elementigen Teilmengen mit $\binom{n}{k}$ Permutationen
+Insgesamt $2^{n}$ Teilmengen
+
+Ein Verfahren wäre zu jede Teilmenge ihrer Differenz zur gesamten Menge zuzuweisen. So hätte in einer Menge $\{ 1,2,3 \}$ die Teilmenge $\{ 1,2 \}$ das Gegenstück $\{ 3 \}$ oder die Teilmenge $\{ 1,2,3 \}$ das Gegenstück $\emptyset$.
+
+## Buch 1.22
+Sei $A=\{ 1,2,\dots,8 \}$ und $R$ eine binäre Relation auf $A$ definiert durch
+$$
+aRb \iff a=b \text{ oder } ggT(a,b) = 2
+$$
+Man gebe explizit die Relation $R$ sowie ihren Graphen $G(R)$ an
+
+$$
+R = \{ (1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(7,7),(8,8),(2,4),(2,6),(2,8),(4,2),(4,6),(6,2),(6,4),(6,8),(8,2),(8,6) \}
+$$
+
+
+## Buch 1.23
+Man untersuche nachstehend angeführte Relationen $R \subseteq M^{2}$ in Hinblick auf die Eigenschaften Reflexivität, Symmetrie, Transitivität und Antisymmetrie
+
+### a
+$M =$ Menge aller Einwohner von Wien $a R b \iff a$ ist verheiratet mit $b$
+Menschen sind nicht mit sich selbst verheiratet also nicht reflexiv
+Relation ist Symmetrisch
+Relation ist nicht Antisymmetrisch
+Relation ist nicht transitiv
+
+### b
+$M$ wie oben, $aRb \iff a$ ist nicht älter als b
+Relation ist reflexiv
+Relation ist antisymmetrisch
+Relation ist nicht symmetrisch
+Relation ist transitiv
+
+### c
+$M$ wie oben, $aRb \iff a$ ist so groß wie $b$
+Relation ist reflexiv
+Relation ist Symmetrisch und Antisymmetrisch
+Relation ist transitiv
+
+### d
+$M = \mathbb{R} ~~aRb \iff a-b \in \mathbb{Z}$
+Relation ist reflexiv
+Relation ist symmetrisch
+Relation ist nicht antisymmetrisch
+Relation ist transitiv
+
+### e
+$M = \mathbb{R}^{n}, (x_{1},x_{2},\dots,x_{n})R(y_{1},y_{2},\dots,y_{n}) \iff x_{i}\leq y_{1} (i=1,\dots,n)$
+Relation ist Reflexiv
+Relation ist nicht Symmetrisch
+Relation ist Antisymmetrisch
+Relation ist transitiv
+
+## Buch 1.24
+Man zeige, dass durch $aRb \iff 3|a^{2}-b^{2}$ für alle $a,b \in \mathbb{Z}$ eine Äquivalenzrelation $R$ in der Menge $\mathbb{Z}$ erklärt wird und bestimme die zugehörende Partition
+
+Reflexivität
+$$
+\forall a \in \mathbb{Z}: aRa \iff
+3|a^{2}-a^{2} = 3| 0 
+$$
+Symmetrie
+$$
+\forall a,b \in \mathbb{Z}: aRb \implies bRa
+$$
+$$
+3| a^{2}-b^{2} \implies 3 | b^{2} - a^{2}
+$$
+$$
+3*p=a^{2}-b^{2} \implies 3*q = b^{2}- a^{2} ~~~~p,q \in \mathbb{Z}
+$$
+$$
+3*p= a^{2}-b^{2} \implies 3*q*(-1)=a^{2}-b^{2}
+$$
+$$
+3*p = a^{2}-b^{2} \implies 3*q_{2} = a_{2} - b^{2} ~~~~~q_{2} \in \mathbb{Z}
+$$
+
+Transitivität
+$$
+aRb \land bRc \implies aRc
+$$
+$$
+3 * p = a^{2}-b^{2} \land 3 * q = b^{2}-c^{2}
+$$
+$$
+3*p+3*q=a^{2}-b^{2}+b^{2}-c^{2}
+$$
+$$
+q=0, 3*p=a^{2}-c^{2}
 $$
 
 $$
-#Induktionsanfang
+K(a) = \{ b \in \mathbb{Z} | b^2-a^{2} \equiv 0 \mod 3 \} 
+$$
+
+## Buch 1.25
+Sei $f: A \rightarrow B$ eine Funktion. Man zeige, dass durch $x\equiv y \iff f(x)=f(y)$ eine Äquivalenzrelation $\equiv$ auf der Menge $A$ definiert wird.
+
+Reflexivität
+$$
+x \equiv x \iff f(x) = f(x)
+$$
+Symmetrie
+$$
+x \equiv y \implies y \equiv x : f(x) = f(y) \implies f(y) = f(x)
+$$
+Transitivität
+$$
+x \equiv y \land y \equiv z \implies x \equiv z : f(x)=f(y) \land f(y)=f(x) \implies f(x) = f(z)
+$$
+## Buch 1.26
+Untersuchen Sie ob die Relation $ARB \iff A \vartriangle B = \emptyset$ Auf der Potenzmenge einer Menge $M$ eine Äquivalenzrelation bildet
+
+Reflexivität
+$$
+A \vartriangle A = \emptyset \implies A = A
+$$
+
+Symmetrie
+$$
+A /B \cup  B/A = \emptyset : B/A \cup A/B = \emptyset
+$$
+$$
+A/B \cup B/A = B/A \cup A/B = \emptyset
+$$
+$$
+A = B
+$$
+Transitivität
+$$
+A \vartriangle B = \emptyset\land B \vartriangle C=\emptyset \implies A \vartriangle C = \emptyset
+$$
+Da die Mengen gleich sein müssen kann man schreiben
+$$
+A = B \land B = C \implies A = C
+$$
+## Buch 1.27
+Man vergleiche die Hassediagramme der beiden Halbordnungen $(P(\{ a,b,c \}),\subseteq)$ und $(T_{70},|)$ wobei $T_{70} = \{ n\in \mathbb{N}:n|70 \}$
+
+Die Hassediagramme schauen gleich aus wenn man sie aufzeichnet,
+
+## Buch 1.28
+Für $k,n \in \{ 1,2,3,\dots,10 \}$
+[[Hausübung 4#128)]]
+
+## Buch 1.29
+Man zeige: $(\mathbb{C},\leq)$ ist Halbordnung mit $z = a+ib \leq w=c+id$, falls $a<c$ oder $a=c$ und $b\leq d$. Weiters gebe man drei verschiedene komplexe Zahlen $z_{1},z_{2},z_{3} \in C \setminus \{ 0 \}$ an für die $z_{1}\leq z_{2}$ und $z_{3}\geq 0$ aber $z_{3}z_{1}\geq z_{3}z_{2}$ 
+
+Reflexivität
+$$
+zRz: a\leq a \land b\leq b 
+$$
+
+Antisymmetrie
+$$
+(a\leq c \land b \leq d) \land (c \leq a \land d \leq b)
+$$
+$$
+\implies a = c \land b = d
+$$
+Transitivität
+$$
+(a\leq c \land b \leq d) \land (c \leq e \land d \leq f) \implies (a \leq e) \land (b \leq f)
+$$
+$$
+a\leq c \leq e \implies a\leq e, b \leq d \leq f \implies b\leq f
 $$
 
 $$
-#Induktionsbehauptung
+z_{1}*z_{3} = (a_{1}a_{3}-b_{1}b_{3} )+ i(a_{1}b_{3}+a_{3}b_{1})
+$$
+$$
+z_{2}*z_{3} = (a_{2}a_{3}-b_{2}b_{3} )+ i(a_{2}b_{3}+a_{3}b_{2})
+$$
+$$
+z_{1} = 1 + i 2, z_{2} = 2 + 10 i , z_{3} = 2 +i 1
+$$
+$$
+a_{13}=1*2-2*1 = 0, a_{23} = 2*2-10 = -6
 $$
 
+## Buch 1.30
+Untersuchen Sie, ob es sich bei folgenden Relationen $R \subseteq A \times B$ um Funktionen, injektive Funktionen, surjektive Funktionen, bzw. bijektive Funktionen handelt
+
+### a
+$R = \left\{  \left( x^{2}, \frac{1}{x^{2}} \right) | x \in \mathbb{R}^{+}  \right\}, A=B=\mathbb{R}$
 $$
-#Induktionsschritt
+f(x^{2}) = \frac{1}{x^{2}}
 $$
-\mathbb{C}
+Da Der Menge $\mathbb{R}^{-}$ keine Werte zugeordnet werden handelt es sich hier nicht um eine Funktion
+### b
+$R$ wie oben jedoch $A=B=\mathbb{R}^{+}$
+
+Jedes $x \in \mathbb{R}^{+}$ bildet auf einen anderen Wert in $\mathbb{R}^{+}$ einmal ab, somit handelt es sich hier um eine Funktion
+
 $$
-$z_{1,2} = -\frac{p}{2}\pm \sqrt{ \frac{p^2}{4}-q }$
-$bigup$
-$\bigcup$
-$\bigcup$
-$\vartriangle$
-$\left(\right)$
-$\left[\right]$
-$$\left| \frac{3+\sqrt{ 2 }}{3}\right|$$
-$\binom{}{}$
-$\subseteq$
-$||$
+f(x^{2}) = \frac{1}{x^{2}}
+$$
+$$
+f(x) = \sqrt{ \frac{1}{x^{2}} } = \frac{1}{x}
+$$
+injektiv
+$$
+f(x_{1})=f(x_{2})\implies x_{1}=x_{2}
+$$
+$$
+\frac{1}{x_{1}}=\frac{1}{x_{2}}
+$$
+$$
+x_{2}=x_{1} \implies x_{1}=x_{2}
+$$
+
+
+surjektivität
+ $\frac{1}{x}$ ist in $R^{+}$ surjektiv, weil $∀b∈B∃a∈A:b=f⁡(a)$ gilt. (für jedes Element des Bildbereichs B lässt sich ein zugehöriges Element aus dem Definitionsbereich A finden)
+### Beweisen?
+
+bijektivität 
+die die Funktion surjektiv und injektiv ist, ist sie auch bijektiv
+
+### c
+$R = \{ log_{2}x,x | x \in \mathbb{R}^{+} \}, A=B=\mathbb{R}$
+[[Hausübung 4#139)]]
+## Buch 1.31
+Zu den nahestehenden Abbildungen $f$ bzw. $g$ auf der Menge $\{ 0,1,\dots,9 \}$ bestimme man jeweils den zugehörenden Graphen und untersuche die angegebene Zuordnung auf Injektivität, Surjektivität und Bijektivität
+
+### a
+$f(x)=x^{2} \mod 10$
+$$
+x = 0 \implies 0
+$$
+$$
+x = 1 \implies 1
+$$
+$$
+x = 2 \implies 4
+$$
+$$
+x = 3 \implies 9
+$$
+$$
+x = 4 \implies 6
+$$
+$$
+x = 5 \implies 5
+$$
+$$
+x = 6 \implies 6
+$$
+$$
+x = 7 \implies 9
+$$
+$$
+x = 8 \implies 4
+$$
+$$
+x = 9 \implies 1
+$$
+Weder injektiv da 4,1 6 und 9 mehrfach vorkommen und nicht surjektiv da 2 3 6 und 8 garnicht vorkommen
+### b
+$g(x)=x^{3} \mod 10$
+
+$$
+x=0 \implies 0
+$$
+$$
+x= 1 \implies 1
+$$
+$$
+x = 2 \implies 8
+$$
+$$
+x = 3 \implies7
+$$
+$$
+x = 4 \implies 4
+$$
+$$
+x = 5 \implies 5
+$$
+$$
+x = 6 \implies 6
+$$
+$$
+x = 7 \implies 3
+$$
+$$
+x = 8 \implies  2
+$$
+$$
+x = 9 \implies 9
+$$
+Die Funktion ist surjektiv, injektiv und daher auch bijektiv
+## Buch 1.32
+Man zeige, dass die Funktion bijektiv ist, und bestimme ihre Umkehrfunktion
+
+### a
+$f: \mathbb{R}\setminus \{ 7 \} \rightarrow \mathbb{R}\setminus \{ 2 \},x\rightarrow \frac{2x+1}{x-7}$
+
+Injektivität
+$$
+f(x_{1})=f(x_{2}) \implies x_{1} = x_{2}
+$$
+$$
+\frac{2x_{1}+1}{x_{1}-7}=
+\frac{2x_{2}+1}{x_{2}-7}
+$$
+$$
+(2x_{1}+1)(x_{2}-7)=(2x_{2}+1)(x_{1}-7)
+$$
+$$
+2x_{1}x_{2}-14x_{1}+x_{2}-7=2x_{1}x_{2}-14x_{2}+x_{1}-7
+$$
+$$
+x_{2}-14x_{1}=x_{1}-14x_{2}
+$$
+$$
+15x_{1}=15x_{2}
+$$
+$$
+x_{1}=x_{2}
+$$
+Surjektivität
+$$
+\forall y \in \mathbb{R} \setminus \{ 2 \} \exists x:f(x)=y
+$$
+$$
+y=\frac{2x+1}{x-7}
+$$
+$$
+y(x-7)=2x+1
+$$
+$$
+xy-7y=2x+1
+$$
+$$
+-1-7y=2x-xy
+$$
+$$
+-1-7y=x(2-y)
+$$
+$$
+\frac{-1-7y}{2-y}=x
+$$
+$$
+f^{-1}=\frac{-1-7y}{2-y}
+$$
+### b
+$f: \mathbb{R}\setminus\{ 2 \}\rightarrow \mathbb{R}\setminus\{ -1 \},x\rightarrow \frac{x+3}{2-x}$
+
+Injektivität
+$$
+f(x_{1})=f(x_{2})\implies x_{1}=x_{2}
+$$
+$$
+\frac{x_{1}+3}{2-x_{1}}=\frac{x_{2}+3}{2-x_{2}}
+$$
+$$
+(x_{1}+3)(2-x_{2})=(x_{2}+3)(2-x_{1})
+$$
+$$
+2x_{1}-x_{1}x_{2}+6-3x_{2}=2x_{2}-x_{1}x_{2}+6-3x_{1}
+$$
+$$
+2x_{1}-3x_{2}=2x_{2}-3x_{1}
+$$
+$$
+5x_{1}=5x_{2}
+$$
+$$
+x_{1}=x_{2}
+$$
+Surjektivität
+$$
+\forall y \in \mathbb{R} \setminus \{ -1 \} \exists x: f(x) =y
+$$
+$$
+y=\frac{x+3}{2-x}
+$$
+$$
+y(2-x)=x+3
+$$
+$$
+2y-yx=x+3
+$$
+$$
+2y-3=x+xy
+$$
+$$
+2y-3=x(1+y)
+$$
+$$
+\frac{2y-3}{1+y}=x
+$$
+$$
+f^{-1}=\frac{2y-3}{1+y}
+$$
