@@ -436,10 +436,28 @@ $$
 F_{n+2}=F_{n+1}+F_{n}
 $$
 $$
-=\frac{1}{\sqrt{ 5 }}  \bigg [ \bigg (     \frac{1+\sqrt{ 5 }}{2}     \bigg)^{n+1}-\bigg (    \frac{1-\sqrt{ 5 }}{2}   \bigg)^{n+1}\bigg ] + \frac{1}{\sqrt{ 5 }}  \bigg [ \bigg (     \frac{1+\sqrt{ 5 }}{2}     \bigg)^n-\bigg (    \frac{1-\sqrt{ 5 }}{2}   \bigg)^n\bigg ]
+F_{n+2}=\frac{1}{\sqrt{ 5 }}  \bigg [ \bigg (     \frac{1+\sqrt{ 5 }}{2}     \bigg)^{n+1}-\bigg (    \frac{1-\sqrt{ 5 }}{2}   \bigg)^{n+1}\bigg ] + \frac{1}{\sqrt{ 5 }}  \bigg [ \bigg (     \frac{1+\sqrt{ 5 }}{2}     \bigg)^n-\bigg (    \frac{1-\sqrt{ 5 }}{2}   \bigg)^n\bigg ]
 $$
 $$
-= \frac{1}{\sqrt{ 5 }} 
+= \frac{1}{\sqrt{ 5 }} (a^{n+1}-b^{n+1})+\frac{1}{\sqrt{ 5 }} (a^{n}-b^{n})
+$$
+$$
+=\frac{a*a^{n}}{\sqrt{ 5 }} - \frac{b*b^{n}}{\sqrt{ 5 }}+\frac{a^{n}}{\sqrt{ 5 }} -\frac{b^{n}}{\sqrt{ 5 }}
+$$
+$$
+=(a^{n})\left( \frac{a}{\sqrt{ 5 }} +\frac{1}{\sqrt{ 5 }} \right) - (b^{n})\left( \frac{b}{\sqrt{ 5 }} + \frac{1}{\sqrt{ 5 }} \right)
+$$
+$$
+=a^{n} \left( \frac{\frac{1+\sqrt{ 5 }}{2}}{\sqrt{ 5 } } + \frac{1}{\sqrt{ 5 }} \right) - b^{n}\left( \frac{\frac{1-\sqrt{ 5 }}{2}}{\sqrt{ 5 }} +\frac{1}{\sqrt{ 5 }} \right)
+$$
+$$
+a^{n}\left( \frac{1+\sqrt{ 5 }}{2*\sqrt{ 5 }} +\frac{2}{2*\sqrt{ 5 }} \right) - b^{n} \left( \frac{1-\sqrt{ 5 }}{2*\sqrt{ 5 }} + \frac{2}{\sqrt{ 5 }} \right)
+$$
+$$
+a^{n}\left( \frac{3+\sqrt{ 5 }}{2*\sqrt{ 5 }} \right) - b^{n}\left( \frac{3-\sqrt{ 5 }}{2*\sqrt{ 5 }} \right)
+$$
+$$
+\frac{1}{\sqrt{ 5 }}\left( \frac{3*a^{n}+\sqrt{ 5 }*a^{n}}{2} \right) - \frac{1}{\sqrt{ 5 }} \left( \frac{3*b^{n}+\sqrt{ 5 }*b^{n})}{2}\right)
 $$
 ### VOWI
 ## [[Hausübung 1#15)]]
@@ -468,6 +486,21 @@ $$
 $$
 \sum_{j=1}^{n+1} j(j+1) =\frac{ (n+1)}{6} ( 2 *(n+1)^{2}+6(n+1)+4)
 $$
+$$
+= \frac{n+1}{6}*(2*(n^{2}+2n+1)+6n+6+4)
+$$
+$$
+= \frac{n+1}{6 } *(2n^{2}+4n+2+6n+6+4)
+$$
+$$
+= \frac{n+1}{6} * ( 2n^{2}+10n+12)
+$$
+$$
+=\frac{1}{6} (2n^{3}+2n^{2}+10n^{2}+10n+12n+12)
+$$
+$$
+=\frac{1}{6}(2n^{3}+12n^{2}+22n+12)
+$$
 #Induktionsschritt 
 $$
 \sum_{j=1}^{n+1} j (j+1)=\sum_{j=1}^{n} j (j+1) + (n+1)((n+1)+1)
@@ -476,19 +509,14 @@ $$
 = \frac{n}{6} ( 2n^{2}+6n+4) + (n+1)(n+2)
 $$
 $$
-= \frac{2n^{3}+6n^{2}+4+(n+1)(6n+12)}{6}
+=\frac{1}{6}*(2n^{3}+6n^{2}+4n+6*(n+1)(n+2))
 $$
 $$
-\frac{(n+1)(2n^{2}+4)+(n+1)(6n+12)}{6}
+=\frac{1}{6} * (2n^{3}+6n^{2}+4n + 6n^{2}+12n+6n+12)
 $$
 $$
-=\frac{n+1}{6}(2n^{2}+4+6n+12)
+=\frac{1}{6}*(2n^{3}+12n^{2}+22n+12)
 $$
-$$
-=\frac{n+1}{6}(2n^{2}+6*(n+2)+4)
-$$
-#### Nochmal anschauen
-
 ### c
 $$
 \sum_{j=1}^{n} \frac{1}{j(j+1)}=\frac{n}{n+1}
@@ -641,8 +669,10 @@ Man beweise mittels vollständiger Induktion: Ist $F_{0}=0, F_{1}=1$ und $F_{n+2
 $$
 F_{n}=\frac{1}{\sqrt{ 5 }} \left[\left( \frac{1+\sqrt{ 5 }}{2}\right)^{n} - \left( \frac{1-\sqrt{ 5 }}{2} \right)^{n}\right]
 $$
+
+### GRR
 ## Buch 1.3
-Man zeige, dass die Zahlen $\sqrt{ 3 }$, $\sqrt{ 5 }$ und $\sqrt[3]{ 2 }$
+Man zeige, dass die Zahlen $\sqrt{ 3 }$, $\sqrt{ 5 }$ und $\sqrt[3]{ 2 }$ irrational sind
 
 $m,n$ kleinste unkürzbare Darstellung
 $$
@@ -667,7 +697,19 @@ $$2=x^{3}=\left( \frac{m}{n} \right)^{3}$$
 $$
 m^{3}=n^{3}*2
 $$
-### Nochmal anschauen
+$$
+m=k*2
+$$
+$$
+(k*2)^{3}=n^{3}*2
+$$
+$$
+k^{3}*8=n^{3}*2
+$$
+$$
+(2*k^{3})*2=n^{3}
+$$
+Widerspruch da in der annahme m und n unkürbar sind
 
 ## Buch 1.4
 Nach der so genannten "abessinischen Bauernmethode" werden zwei Zahlen z.B. 21 und 17 wie folgt multipliziert.
@@ -710,8 +752,9 @@ $$
 \arctan\left( \frac{a_{1}b_{2}+a_{2}b_{1}}{a_{1}a_{2}-b_{1}b_{2}} \right) = \arctan \left(  \frac{a_{1}b_{2}}{a_{1}a_{2}-b_{1}b_{2}} + \frac{a_{2}b_{1}}{a_{1}a_{2}-b_{1}b_{2}}\right)
 $$
 
-### Nochmal anschauen
-
+$$
+\arctan \left( \frac{y_{1}}{x_{1}} \right) + \arctan\left( \frac{y_{2}}{x_{2}} \right) = 
+$$
 ## Buch 1.7
 
 Man stelle alle Lösungen der quadratischen $z^{2}+2z+4=0$ sowohl in der Form $a+ib$, $a,b\in\mathbb{R}$, auch als Polarkoordinatenform $r(\cos \varphi+i\sin \varphi),r\geq 0,0 \leq \varphi<2\pi$, dar
@@ -726,51 +769,88 @@ $$
 z_{1,2} = -1\pm \sqrt{ -3 }
 $$
 $$
-z_{1} = -1 + 3*i, z_{2} = -1 - 3*i
+z_{1,2} = -1\pm i*\sqrt{ 3 }
 $$
 $$
-\arctan\left( \frac{-1}{3} \right)=\varphi_{1}, \arctan\left( -\frac{1}{-3} \right) = \varphi_{2}
+z_{1} = -1 + \sqrt{ 3 }*i, z_{2} = -1 - \sqrt{ 3 }*i
 $$
 $$
-1+\left( \frac{1}{3} \right)^{2} = \tan(\varphi_{1})
+z_{1}=[2,], z_{2}=[2,]
 $$
 $$
-z_{1}=[10,], z_{2}=[10,]
+\cos = \frac{a}{r} = \frac{1}{2}
 $$
-
+$$
+\sin = \frac{b}{r} = \frac{\sqrt{ 3 }}{2}
+$$
 ### Nochmal anschauen
 ## Buch 1.8
 Man finde alle sechsten Wurzeln von $z=8i$ bzw. alle fünften Wurzeln von $z=\sqrt{ 2 }-\sqrt{ 6 }i$ in $\mathbb{C}$ und stelle sie in der Gauß'schen Zahlenebene dar.
 
 $$
-r= 64, \varphi=\pi
+r= 64, \varphi=\frac{\pi}{2}
 $$
 $$
-w_{0} = \sqrt[6] 8 , \frac{\pi}{6}
+w_{0} = \sqrt[6] 8 , \frac{\pi}{12}
 $$
 $$
-w_{1}=\sqrt[6]{ 8 },\frac{\pi}{6} + \frac{2\pi}{6}
+w_{1}=\sqrt[6]{ 8 },\frac{\pi}{12} + \frac{2\pi}{6}
 $$
 $$
-w_{2}=\sqrt[6]{ 8 }, \frac{\pi}{6} + \frac{4\pi}{6}
+w_{2}=\sqrt[6]{ 8 }, \frac{\pi}{12} + \frac{4\pi}{6}
 $$
 $$
-w_{3} = \sqrt[6]{ 8 }, \frac{\pi}{6} + \frac{6\pi}{6}
+w_{3} = \sqrt[6]{ 8 }, \frac{\pi}{12} + \frac{6\pi}{6}
 $$
 $$
 \vdots
 $$
 $$
-w_{5}=\sqrt[6]{ 8 }, \frac{\pi}{6} + \frac{10\pi}{6}
+w_{5}=\sqrt[6]{ 8 }, \frac{\pi}{12} + \frac{10\pi}{6}
 $$
 $$
-r= \sqrt[2]{ 8 }, \varphi=
+r= 2 * \sqrt{ 2 }, \varphi=\arctan\left( -\frac{\sqrt{ 6 }}{\sqrt{ 2 }} \right) = \arctan(- \sqrt{ 3 })
+$$
+$$
+\sqrt[5]{ 2*\sqrt[2]{ 2 } } = (2*2^{1/2})^{1/5} = 2^{1/5}*2^{1/10} = 2^{3/10}
+$$
+$$
+w_{0} = \sqrt[10]{ 2^{3} }, \frac{\pi}{15} + \frac{2*\pi*0}{5}
+$$
+$$
+
 $$
 ### Nochmal anschauen
 
 ## Buch 1.9
+Man beantworte die nachstehenden Fragen
 
-### Nochmal anschauen
+### a
+Für welche komplexen Zahlen gilt $\overline{z}=\frac{1}{z}$
+
+$$
+\frac{1}{z}=\frac{\overline{z}}{z*\overline{z}}=\frac{\overline{z}}{|z|^{2}}
+$$
+Gilt für alle komplexen Zahlen mit einem Betrag von 1
+### b
+Man zeige  $|\frac{z_{1}+z_{2}}{2}|^{2}+|\frac{z_{1}-z_{2}}{2}|^{2}=\frac{1}{2}(|z_{1}|^{2}+|z_{2}|^{2})$
+
+$$
+\left | \frac{a_{1}+a_{2}}{2} + i \frac{(b_{1}+b_{2})}{2} \right |^{2} + \left|\frac{a_{1}-a_{2}}{2} + i \frac{b_{1}-b_{2}}{2}\right|^{2} 
+$$
+$$
+= \frac{a_{1}+a_{2}}{2}+\frac{b_{1}+b_{2}}{2} + \frac{a_{1}-a_{2}}{2} + \frac{b_{1}-b_{2}}{2}
+$$
+$$
+= 
+$$
+#### Nochmal anschauen
+### c
+Man beschreibe die Menge jener komplexen Zahlen $z$ die $\mathrm{Re}\left( \frac{z-a}{b}  \right) > 0$ erfüllen 
+#### Nochmal anschauen
+### d
+Welche Teilmenge der komplexen Zahlen wird durch die Ungleichung $|\frac{z+4}{z-4}| <3$ beschrieben
+[[Hausübung 2#48)]]
 
 ## Buch 1.10
 Man bestimme die Richtigkeit der folgenden Behauptungen
@@ -790,21 +870,20 @@ Wenn $n$ nicht gerade ist, ist das Quadrat $n^{2}$ auch nicht gerade. $n$ kann d
 Die Aussage von a mittels eines Beweises durch vollständige Induktion
 #Induktionsvoraussetzung 
 $$
-3*p=n^{3}-n
+3*p=(n-1)(n)(n+1) ~~~~~p \in \mathbb{Z}
 $$
 #Induktionsanfang 
 $$
-0^{3}-0 = 3 * p = 3*0
+(1-1)(1)(1+1)=0 = 3*0 
 $$
 #Induktionsbehauptung 
 $$
-3*p=(n+1)^{3} - (n+1)
+3*p=((n+1)-1)(n+1)((n+1)+1)
 $$
 #Induktionsschritt 
 $$
-3*p=3*q
+=(n)(n+1)(n+2) ~~| ~3
 $$
-#### Nochmal anschauen
 
 ## Buch 1.11
 Man zeige, dass für alle natürlichen Zahlen $n$ die beiden Teilbarkeitseigenschaften $2|(n^{2}+n)$ und $6|(n^{3}-n+12)$ gelten.
@@ -976,17 +1055,55 @@ $$
 x^{2}-3x+2\equiv0 \mod 5
 $$
 $$
-x^{2}-3x+2=0+5*q
+2 \equiv 3x-x^{2} \mod 5
 $$
 $$
-(x-1)(x-2)=5*q
+2 \equiv x(3-x) \mod 5
 $$
-#### Nochmal anschauen
-
+$$
+x=0 \implies 2 \equiv 0  \mod 5
+$$
+$$
+x = 1 \implies 2 \equiv 2 \mod 5
+$$
+$$
+x = 2 \implies 2 \equiv 2 \mod 5
+$$
+$$
+x = 3 \implies 2 \equiv 0 \mod 5
+$$
+$$
+x = 4 \implies2 \equiv 1 \mod 5
+$$
+$$
+x=1 +5*p, x=2+5*q
+$$
 ### f
 $$
 x^{2}-3x+2\equiv0 \mod 6
 $$
+$$
+2\equiv x(3-x) \mod 6
+$$
+$$
+x = 0 \implies 2 \equiv 0 \mod 6
+$$
+$$
+x=1 \implies 2 \equiv 2 \mod 6
+$$
+$$
+x = 2 \implies 2 \equiv 2 \mod 6
+$$
+$$
+x = 3 \implies 2 \equiv 0 \mod 6
+$$
+$$
+x = 4 \implies 2 \equiv 2 \mod 6
+$$
+$$
+x = 5 \implies 2 \equiv 2 \mod 6
+$$
+
 ## Buch 1.17
 Im europäischen Artikelnummersystem EAN werden Zahlen mit 13 Dezimalziffern der Form $a_{1},a_{2},\dots,a_{12}p$ verwendet. Dabei wird die letzte der 13 Ziffern, das ist die Prüfziffer $p$, im EAN-Code so bestimmt, dass
 $$
