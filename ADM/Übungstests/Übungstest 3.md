@@ -1,18 +1,58 @@
 ## 1. (7 Punkte) 
-Überprüfen Sie, ob nX
+Überprüfen Sie, ob 
 
 $$
-\sum_{i=1}^{n}(4i - 1)=2n^{2}+n
+\sum_{k=1}^{n}(4k - 1)=2n^{2}+n
 $$
 
 für alle $n ∈ N_{0}$ gilt und beweisen Sie Ihre Aussage.
+
+#Induktionsvoraussetzung
+$$
+\sum = 2n^{2}+n
+$$
+#Induktionsanfang
+$$
+4*1-1 = 2*1^{2}+1
+$$
+$$
+3 = 3
+$$
+#Induktionsbehauptung
+$$
+\sum_{k=1}^{n+1}(4k-1) = 2(n+1)^{2}+(n+1)
+$$
+$$
+= 2n^{2}+4n+2+n+1
+$$
+$$
+= 2n^{2}+ 5n+3
+$$
+#Induktionsschritt
+$$
+= 2n^{2}+n + (4(n+1)-1)
+$$
+$$
+= 2n^{2}+n+(4n+3)
+$$
+$$
+= 2n^{2} + 5n +3
+$$
+
 ## 2. (2 Punkte) 
-Seien $f : A → B, g : B → C$ und $h : C → D$ Funktionen. Mit $◦$ bezeichnen wir die Verknüpfung von Funktionen: $g ◦ f : A → C, x 7 → g(f (x))$. Zeigen Sie
+Seien $f : A → B, g : B → C$ und $h : C → D$ Funktionen. Mit $◦$ bezeichnen wir die Verknüpfung von Funktionen: $g ◦ f : A → C, x  → g(f (x))$. Zeigen Sie
 
 $h ◦ (g ◦ f ) = (h ◦ g) ◦ f.$
 
 Hinweis: Funktionen stimmen genau dann überein, wenn ihre Funktionswerte für alle Argumente
 übereinstimmen.
+
+$$
+h \circ g(f(x)) = h(g(x)) \circ f
+$$
+$$
+h(g(f(x))) = h(g(f(x)))
+$$
 ## 3. (a) (3 Punkte) 
 Sei $(G, ◦)$ eine Gruppe und $e$ das neutrale Element. Zeigen Sie, dass für alle $m, n ∈ N_{0}$ und $x ∈ G$ gilt:
 
@@ -34,6 +74,6 @@ Kreuzen Sie in folgender Tabelle an, ob die angegebene Aussage gültig ist oder 
 
 | Aussage                                     | gültig | nicht gültig | keine Angabe |
 | ------------------------------------------- | ------ | ------------ | ------------ |
-| $∃x ∈ (0, 1) : ∀y ∈ (0, 1) : x ≥ y$         |        |              |              |
-| $(A ∧ B) ∨ C ⇒ (B ∨ C) ∧ A$                |        |              |              |
-| Die leere Menge ist Element von jeder Menge |        |              |              |
+| $∃x ∈ (0, 1) : ∀y ∈ (0, 1) : x ≥ y$         | x      |              |              |
+| $(A ∧ B) ∨ C ⇒ (B ∨ C) ∧ A$                 |        | X            |              |
+| Die leere Menge ist Element von jeder Menge |        | X            |              |
