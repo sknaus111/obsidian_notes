@@ -483,7 +483,7 @@ $$
 $$
 =\frac{n+1}{6}(2n^{2}+6*(n+2)+4)
 $$
-#### Nochmal anschauen
+
 ### c
 $$
 \sum_{j=1}^{n} \frac{1}{j(j+1)}=\frac{n}{n+1}
@@ -756,7 +756,19 @@ $$
 ### Nochmal anschauen
 
 ## Buch 1.9
+Man beantworte die nachstehenden Fragen:
 
+### a
+Für welche komplexen Zahlen gilt $\overline{z} = \frac{1}{z}$
+
+### b
+Man zeige $\left| \frac{z_{1}+z_{2}}{2}\right|^{2}+\left| \frac{z_{1}+z_{2}}{2}\right|^{2} = \frac{1}{2}(|z_{1}|^{2}+|z_{2}|^{2})$
+
+### c
+Man beschreibe die Menge jener komplexen Zahlen $z$ die $\mathrm{Re}\left( \frac{z-a}{b} \right) > 0$ erfüllen $(a,b \in \mathbb{C}, b\not=0)$
+
+### d
+Welche Teilmenge der komplexen Zahlenebene wird durch die Ungleichung $\left| \frac{z+4}{z-4}\right| <3$ beschrieben
 ### Nochmal anschauen
 
 ## Buch 1.10
@@ -977,13 +989,11 @@ $$
 x^{2}-3x+2\equiv0 \mod 5
 $$
 $$
-x^{2}-3x+2=0+5*q
+2 \equiv x(3-x) \mod 5
 $$
 $$
-(x-1)(x-2)=5*q
+x = 1 *  5*p, x=2+5*q
 $$
-#### Nochmal anschauen
-
 ### f
 $$
 x^{2}-3x+2\equiv0 \mod 6
