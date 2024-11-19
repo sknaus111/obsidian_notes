@@ -1,109 +1,98 @@
-## Frage 1 (8 Punkte)
-Wie viele siebenrelementige Teilmengen von $\{1,2,3,4,5,6,7,8,9, 10\}$ enthalten genau vier ungerade Zahlen?
-Der Lösungsweg muss verbal beschrieben und begründet werden, sodass Ihre Lösung nachvollziehbar ist.
+## (7 Punkte) 
+Überprüfen Sie, ob Folgendes gilt und beweisen Sie ihre Aussage.
 
 $$
-\binom{5}{4}\binom{5}{3}
+\sum_{k=1}^{n}(4k-2)=2n^{2}
 $$
-## Frage 2 (9 Punkte)
-Erklären Sie das Verfahren der vollständigen Induktion anhand eines Beweises der folgenden Behauptung:
-
-Für alle positiven natürlichen Zahlen $n$ gilt
-
-$$
-\sum_{k=1}^{n} \frac{1}{k^{2}(k+1)} <  1- \frac{1}{2n^{2}}
-$$
-
-Alle Schritte des Beweises müssen genau erklärt werden (verbal!) und die Präsentation muss der Logik des Beweises Rechnung tragen. Insbesondere darf eine zu beweisende Behauptung nicht am Anfang des Beweises stehen, sondern muss sich als dessen letzte Schlussfolgerung ergeben.
-
 #Induktionsvoraussetzung
 $$
-\sum_{k=1}^{n} \frac{1}{k^{2}(k+1)} \leq  1- \frac{1}{2n^{2}}
+\sum_{k=1}^{n} (4k-2)=2n^{2}
 $$
 #Induktionsanfang
 $$
-\frac{1}{1(1+1)} \leq 1- \frac{1}{2*1}
+4-2 = 2*1
 $$
 $$
-\frac{1}{2} < 1= - \frac{1}{2}
+2=2
 $$
 #Induktionsbehauptung
 $$
-\sum_{k=1}^{n+1} \frac{1}{k^{2}(k+1)} \leq  1- \frac{1}{2(n+1)^{2}}
-$$
-$$
-\leq 1- \frac{1}{2n^{2}+4n+2}
+\sum_{k=1}^{n+1} (4k-2) = 2(n+1)^{2}
 $$
 #Induktionsschritt
 $$
-\leq 1-\frac{1}{2n^{2}} + \frac{1}{(n+1)^{2}((n+1)+1)}
+ = 2n^{2} + (4(n+1)-2)
 $$
 $$
-\leq 1- \left( \frac{1}{2n^{2}} - \frac{1}{(n^{2}+2n+1)(n+2)}\right)
+= 2n^{2} + 4n +4 -2
 $$
 $$
-\leq 1- \left(\frac{1}{2n^{2}} - \frac{1}{n^{3}+ 2n^{2}+2n^{2}+4n+n+2}\right)
+= 2n^{2} + 4n +2
 $$
 $$
-\leq 1- \left(\frac{1}{2n^{2}}- \right)
+= 2*(n^{2}+2n+1)
 $$
-## Frage 3 (8 Punkte)
-Bestimmen Sie alle ganzen Zahlen $x$, die folgende Kongruenz erfüllen:
+$$
+= 2(n+1)^{2}
+$$
+## 2. (2 Punkte) 
+Überprüfen Sie, ob folgende Funktion bijektiv ist und geben sie gegebenenfalls eine Umkehrfunktion an.
+$$
+f : \mathbb{R} \setminus  \{1, 2\} → \mathbb{R} \setminus \{−2, 1\}
+$$
+$$
+f (x) := \frac{x}{x-1}
+$$
+Injektiv
+$$
+f(x_{1}) = f(x_{2}) \implies x_{1} = x_{2}
+$$
+$$
+\frac{x_{1}}{x_{1}-1} = \frac{x_{2}}{x_{2}-1}
+$$
+$$
+x_{1}(x_{2}-1) = x_{2}(x_{1}-1)
+$$
+$$
+x_{1}x_{2}-x_{1}=x_{2}x_{1}-x_{2}
+$$
+$$
+-x_{1}=-x_{2}
+$$
+$$
+x_{1}=x_{2}
+$$
+	Surjektiv
+$$
+\forall y \in R\setminus \{ -2,1 \}:f(x)=y
+$$
+$$
+\frac{x}{x-1} = y
+$$
+$$
+x = y(x-1)
+$$
+$$
+x = xy -y
+$$
+$$
+x - xy = -y
+$$
+$$
+x(1-y) = -y
+$$
+$$
+x = \frac{-y}{1-y}
+$$
+Umkehrfunktion
+$$
+f(x)^{-1} = -\frac{x}{1-x}
+$$
+## 4. (6 Punkte) 
+Kreuzen Sie den richigen Wahrheitsgehalt der folgenden Aussagen an. Eine richtige Antwort führt zu zwei Punkten, eine falsche zu keinem Punkt. Ein Ankreuzen von ”42/keine Angabe” führt zu einem Punkt.
 
-$$362x = 4 \mod 398.$$
-$$
-ggT(362,398) = ?
-$$
-$$
-398 = 362 * 1 + 36
-$$
-$$
-362 = 36 * 10 + 2
-$$
-$$
-36 = 2*18 +0
-$$
-$$
-ggT=2
-$$
-$$
-181x \equiv 2 \mod 199
-$$
-$$
-2 = 362 - 36 * 10
-$$
-$$
-2 = 362 - (398-362*1)*10
-$$
-$$
-2 = 362*11 - 398 *10
-$$
-$$
-181x *11\equiv 2 * 11 \mod 199 
-$$
-$$
-x \equiv 22 \mod 199
-$$
-$$
-x = 22 + p* 199 
-$$
-## Frage 4 (2 Punkte)
-Was versteht man unter dem kartesischen Produkt zweier Mengen M und N?
-Geben Sie zwei Elemente des kartesischen Produkts von M und N an, wenn
-$M = \{1,2,3\}$ und $N = \{a, b, c, d, e\}$.
-
-$$
-M\times N = \{ \dots, (1,a) ,(1,b),\dots \}
-$$
-### Frage 5 (3 Punkte)
-Bestimmen Sie die Polarkoordinatendarstellung aller komplexen Zahlen $z$ mit
-
-$$
-z^{4}=-16i
-$$
-
-$$
-z_{0}=\left[ 2, \frac{−π}{8}​ \right],$$
-$$z_{1}=\left[ 2, \frac{3π}{8} \right]$$$$z_{2}=\left[ 2, \frac{7\pi}{8} \right],
-$$$$z_{3}=\left[ 2, \frac{11\pi}{8} \right]
-$$
+| Aussage                                          | gültig | nicht gültig | 42/keine Angabe |
+| ------------------------------------------------ | ------ | ------------ | --------------- |
+| $∃x ∈ \mathbb{Z} : ∀y ∈ \mathbb{Z} : x + y < 0$. |        | X            |                 |
+| $A ∧ B → B ∧ A$                                  | X      |              |                 |
+| $(¬A → B) → (A ∨ ¬B)$                            |        | X            |                 |
