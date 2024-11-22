@@ -139,16 +139,35 @@ Befüllen Sie die zugehörige Wahrheitstafel:
 
 b) Entwerfen Sie grafisch die 3-aus-4-Schaltung und beschriften Sie entsprechend alle Ein- und Ausgänge, wobei Ihnen nur folgende Bausteine zur Verfügung stehen: vier NAND-Gatter mit je drei Eingängen und ein NAND-Gatter mit vier Eingängen:
 
-$$
-(\lnot a \land b \land c \land d) \lor (a \land \lnot b \land c \land d) \lor(a \land b \land \lnot c \land d) \lor (a \land b \land c \land \lnot d) \lor (a \land b \land c \land d)
-$$
-$$
-\lnot(\lnot(\lnot a \land b \land c \land d)\land \lnot(a \land \lnot b \land c \land d)\land \lnot(a \land b \land \lnot c \land d) \land \lnot(a \land b \land c \land \lnot d)\land \lnot(a \land b \land c \land d))
-$$
-$$
-\lnot(\lnot(\lnot (a \land a) \land b \land c \land d)\land \lnot(a \land \lnot (b \land b) \land c \land d)\land \lnot(a \land b \land \lnot (c \land c)\land d) \land \lnot(a \land b \land c \land \lnot (d\land d))\land \lnot(a \land b \land c \land d))
-$$
+| a   | b   | c   | d   | f(a, b, c, d) | $a \land b \land c$ | $a \land b \land d$ | $a \land c \land d$ | $b \land c \land d$ | $(\dots)\lor(\dots)\lor(\dots)\lor(\dots)$ |
+| --- | --- | --- | --- | ------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------------------------------ |
+| 0   | 0   | 0   | 0   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 0   | 0   | 0   | 1   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 0   | 0   | 1   | 0   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 0   | 0   | 1   | 1   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 0   | 1   | 0   | 0   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 0   | 1   | 0   | 1   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 0   | 1   | 1   | 0   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 0   | 1   | 1   | 1   | 1             | 0                   | 0                   | 0                   | 1                   | 1                                          |
+| 1   | 0   | 0   | 0   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 1   | 0   | 0   | 1   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 1   | 0   | 1   | 0   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 1   | 0   | 1   | 1   | 1             | 0                   | 0                   | 1                   | 0                   | 1                                          |
+| 1   | 1   | 0   | 0   | 0             | 0                   | 0                   | 0                   | 0                   | 0                                          |
+| 1   | 1   | 0   | 1   | 1             | 0                   | 1                   | 0                   | 0                   | 1                                          |
+| 1   | 1   | 1   | 0   | 1             | 1                   | 0                   | 0                   | 0                   | 1                                          |
+| 1   | 1   | 1   | 1   | 1             | 1                   | 1                   | 1                   | 1                   | 1                                          |
 
+$$
+(a \land b \land c) \lor (a \land b \land c) \lor ( a \land c \land d) \lor ( b \land c \land d)
+$$
+$$
+\lnot\lnot((a \land b \land c) \lor (a \land b \land c) \lor ( a \land c \land d) \lor ( b \land c \land d))
+$$
+$$
+\lnot(\lnot(a \land b \land c) \land \lnot(a \land b \land c) \land \lnot( a \land c \land d) \land \lnot( b \land c \land d))
+$$
+![[Unbenannt 5.png]]
 ## Aufgabe 4: Demultiplexer
 Erstellen Sie ein Schaltbild für die in der Wahrheitstabelle gegebene Funktion mit Hilfe der unten gegebenen Bausteine (DEMUX ist ein Demultiplexer) und den Konstanten log 1 und log 0. Verwenden Sie jeden Baustein nur einmal und vergessen Sie nicht, alle Eingänge und Ausgänge Ihrer Lösung zu beschriften.
 Hinweis: Beachten Sie dass beim DEMUX die Zahl $(e_{1}e_{0})_{}2$ den Index des ausgewählten Ausgangs angibt.
