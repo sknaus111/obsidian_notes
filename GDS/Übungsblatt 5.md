@@ -351,10 +351,44 @@ relation gilt $(\vDash)$ oder nicht gilt $(\nvDash)$ und begründen Sie Ihr Erge
 Wahrheitstabelle. Sie dürfen dabei irrelevante Fälle zusammenfassen.
 
 • Gilt C, D, E |= ϕ ?
+
+| A   | B   | C   | D   | E   | $B \implies C$ | $A \lor (B\implies C)$ | $\lnot(D \land E)$ | ϕ   |
+| --- | --- | --- | --- | --- | -------------- | ---------------------- | ------------------ | --- |
+| 0   | 0   | 1   | 1   | 1   | 1              | 1                      | 0                  | 1   |
+| 0   | 1   | 1   | 1   | 1   | 1              | 1                      | 0                  | 1   |
+| 1   | 0   | 1   | 1   | 1   | 1              | 1                      | 0                  | 1   |
+| 1   | 1   | 1   | 1   | 1   | 1              | 1                      | 0                  | 1   |
+
+Konsequenz gültig
+
 • Gilt ¬A, ¬B, C, D, E |= ϕ ?
+
+| $A$ | $B$ | $C$ | D   | E   | $B \implies C$ | $A \lor (B\implies C)$ | $\lnot(D \land E)$ | ϕ   |
+| --- | --- | --- | --- | --- | -------------- | ---------------------- | ------------------ | --- |
+| 0   | 0   | 1   | 1   | 1   | 1              | 1                      | 0                  | 1   |
+Konsequenz gültig
+ 
 • Gilt A ↓ B, A ⇎ B |= A ?
+
+| A   | B   | $\lnot(A \lor B)$ | $A ⇎ B$ | $\lnot(A\lor B) \land (A ⇎ B)$ |
+| --- | --- | ----------------- | ------- | ------------------------------ |
+| 0   | 0   | 1                 | 0       | 0                              |
+| 0   | 1   | 0                 | 1       | 0                              |
+| 1   | 0   | 0                 | 1       | 0                              |
+| 1   | 1   | 0                 | 0       | 0                              |
+Da Prämisse immer falsch ist, ist die Konsequenz wahr also gültig
+
+
 • Gilt A ⇐ B |= ¬B ?
 
+| A   | B   | $A \impliedby B$ | $\lnot B$ |
+| --- | --- | ---------------- | --------- |
+| 0   | 0   | 1                | 1         |
+| 0   | 1   | 0                | 0         |
+| 1   | 0   | 1                | 1         |
+| 1   | 1   | 1                | 0         |
+Konsequenz gilt im Falle $A=1,B=1$ nicht, somit erfüllbar bzw. widerlegbar
+ 
 Hinweis: hier setzen Sie sich mit dem Begriff der logischen Konsequenz auseinander. Wie oben
 ist es hilfreich, sich zuerst zu überlegen, was es bedeutet, wenn eine Formel G die Konsequenz
 der Formel F ist und wie die mathematische Schreibweisen $F1, F2 \vDash G$ bzw. $F \nvDash G$ oder $\vDash G$ zu
@@ -365,7 +399,68 @@ durch den anderen zu ersetzen?
 Bestimmen Sie für die folgenden Formeln, ob diese unerfüllbar, widerlegbar, erfüllbar und / oder gültig sind. Geben Sie im Fall von erfüllbaren / widerlegbar Formeln eine entsprechende Wahrheitsbelegung an. Geben Sie bei gültigen / unerfüllbaren Formeln an, warum es kein Beispiel / Gegenbeispiel geben kann. Sie können dazu die aus der Vorlesung bekannten Äquivalenzumformungen verwenden, um die Formel zu vereinfachen und / oder die Wahrheitstabelle skizzieren.
 
 - a) $(A ⇒ (B ⇒ C)) ⇔ ((A ∧ B) ⇒ C)$
+
+| A   | B   | C   | $(B ⇒ C)$ | $A⇒(B⇒ C)$ | $A \land B$ | $(A \land B) ⇒ C$ | $\iff$ |
+| --- | --- | --- | --------- | ---------- | ----------- | ----------------- | ------ |
+| 0   | 0   | 0   | 1         | 1          | 0           | 1                 | 1      |
+| 0   | 0   | 1   | 1         | 1          | 0           | 1                 | 1      |
+| 0   | 1   | 0   | 0         | 1          | 0           | 1                 | 1      |
+| 0   | 1   | 1   | 1         | 1          | 0           | 1                 | 1      |
+| 1   | 0   | 0   | 1         | 1          | 0           | 1                 | 1      |
+| 1   | 0   | 1   | 1         | 1          | 0           | 1                 | 1      |
+| 1   | 1   | 0   | 0         | 0          | 1           | 0                 | 1      |
+| 1   | 1   | 1   | 1         | 1          | 1           | 1                 | 1      |
+
+Gültig
+Es kann kein Gegenbeispiel geben weil die oben skizzierte Wahrheitstabelle alle möglichen Belegungen an Wahrheitswerten abdeckt und diese beweist, dass die Formel gültig ist
+
 - b) $(A ∨ (⊤ ⇒ C)) ⇎ (⊥ ↑ E)$
+$$
+( A \lor C) ⇎ ⊤
+$$
+
+| A   | C   | $A \lor C$ | $⊤$ | $( A \lor C) ⇎ ⊤$ |
+| --- | --- | ---------- | --- | ----------------- |
+| 0   | 0   | 0          | 1   | 1                 |
+| 0   | 1   | 1          | 1   | 0                 |
+| 1   | 0   | 1          | 1   | 0                 |
+| 1   | 1   | 1          | 1   | 0                 |
+erfüllbar mit $I(A)=0,I(C)=0$
+widerlegbar mit allen anderen Interpretationen
+
 - c) $(A ⇎ B) ⇎ C$
+
+| A   | B   | C   | $(A⇎B)$ | $(A⇎B)⇎C$ |
+| --- | --- | --- | ------- | --------- |
+| 0   | 0   | 0   | 0       | 0         |
+| 0   | 0   | 1   | 0       | 1         |
+| 0   | 1   | 0   | 1       | 1         |
+| 0   | 1   | 1   | 1       | 0         |
+| 1   | 0   | 0   | 1       | 1         |
+| 1   | 0   | 1   | 1       | 0         |
+| 1   | 1   | 0   | 0       | 0         |
+| 1   | 1   | 1   | 0       | 1         |
+erfüllbar mit $I(A)=0,I(B)=0,I(C)=1$
+widerlegbar mit $I(A)=0,I(B)=0,I(C)=0$
+
 - d) $(A ⇎ B) ⇎ (B ⇎ A)$
-- e) $(A1 ∧ . . . ∧ An) ∧ (¬A1 ∨ . . . ∨ ¬An) mit n ≥ 1.$
+
+| A   | B   | $A⇎B$ | $B⇎A$ | $(A⇎B)⇎(B⇎A)$ |
+| --- | --- | ----- | ----- | ------------- |
+| 0   | 0   | 0     | 0     | 0             |
+| 0   | 1   | 1     | 1     | 0             |
+| 1   | 0   | 1     | 1     | 0             |
+| 1   | 1   | 0     | 0     | 0             |
+unerfüllbar da $A⇎B$ und $B⇎A$ semantisch die exakt gleichen Formeln sind und somit keine Belegung entsteht in denen diese Formeln einen unterschiedlichen Wert haben
+
+- e) $(A_{1} ∧ . . . ∧ An) ∧ (¬A_{1} ∨ . . . ∨ ¬An) \text{ mit } n ≥ 1.$
+
+| A        |         | $A_{n}$ | $\lnot A$ |         | $\lnot A_{n}$ | $(A_{1}\dots A_{n})\land(\lnot A_{1} \lor \lnot)$ |
+| -------- | ------- | ------- | --------- | ------- | ------------- | ------------------------------------------------- |
+| 0        | $\dots$ | 0       | 1         | $\dots$ | 1             | 0                                                 |
+| $\vdots$ |         |         | $\vdots$  |         |               | 0                                                 |
+| $\vdots$ |         |         | $\vdots$  |         |               | 0                                                 |
+| 1        |         | 1       | 0         |         | 0             | 0                                                 |
+In der einzigen Belegung in der alle nicht negierten A zusammen mit und verknüpft 1 ergeben ist der Fall in denen mit oder verknüpften negierten A 0 ergeben.
+
+unerfüllbar
