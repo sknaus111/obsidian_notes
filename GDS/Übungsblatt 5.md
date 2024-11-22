@@ -206,16 +206,44 @@ y mag keine $z_{2}$
 y mag $z_{1}$
 
 Gültige Inferenzregel
+
+Alle Jugendlichen mögen Snus oder Zigaretten
+Aleks ist ein Jugendlicher
+Aleks mag keine Zigaretten
+- - - - - - - 
+Aleks mag Snus
 ### b) 
 Alle Hobbits haben haarige Füße, aber Frodo hat keine haarigen Füße. Frodo ist daher sicher kein
 Hobbit.
 
+Alle x haben y                       ... x Hobbits, y haarige Füße
+z hat keine y                         ... z Frodo
+- - - - - - - 
+z ist kein x
 
-Wahr
+Gültige Inferenzegel
+
+Alle Studenten haben Depressionen
+Simon hat keine Depressionen
+- - - - - - - 
+Simon ist kein Student
 ### c) 
 Alle Clowns mit einem pinken Hut haben einen Luftballon, außerdem haben alle Clowns mit einem grünen Hut eine Masche. Deshalb hat kein Clown einen Luftballon und eine Masche.
 
-Falsch
+
+Alle x mit $y_{1}$ haben $z_{1}$                     ... x Clowns, $y_{1}$ pinkten Hut, $z_{1}$ Luftballon
+Alle x mit $y_{2}$ haben $z_{2}$                     ... $y_{2}$ grünen Hut, $z_{2}$ Masche
+- - - - - 
+Kein x hat $z_{1}$ und $z_{2}$
+
+Ungültige Inferenzregel
+
+Alle Menschen mit linkem Arm haben ein linkes Auge
+Alle Menschen mit rechtem Arm haben ein rechtes Auge
+- - - - - - 
+Kein Mensch hat ein linkes und rechtes Auge
+
+
 ## Aufgabe 7: Syntax der Aussagenlogik
 Betrachten Sie die formale Definition der Syntax von aussagenlogischen Formeln für Variablen $V = \{A, B, C, . . . , Z\}$ aus der Vorlesung. 
 
@@ -225,22 +253,35 @@ sich dabei um eine syntaktisch korrekte aussagenlogische Formel handelt. Begrün
 Antworten!
 
 i ) $(A ⊤ X)$
+Nein, da kein Verkettung zwischen den Formeln ist
 ii ) $¬¬B$
+Korrekte Syntax, da $\lnot B$ eine korrekte Formel ist und $\lnot \lnot B$ daher auch eine korrekte Formel ist
 iii ) $((B ∨ C) ⇔ A ⇔ D)$
+Nein, da für die Formeln vor der Äquivalenz zum D Klammern fehlen
 iv ) $((A ∧ B) ⊕ C)$
+Nein, da $⊕$ kein vordefiniertes binäre Operationssymbol ist
 v ) $(A ⇐ ¬⊥)$
+Richtige Syntax da keine Fehler gemacht wurden
 vi ) $∃X (X ⇒ A)$
+Nein, da Quantoren nicht zugelassen sind
 vii ) $¬((A ⇎ ¬B) ⇔ 0)$
+Nein, da der Wert 0 nicht zugelassen ists
 viii ) $((A ⇒ ¬(B ∧ C)) ∨ ¬D)$
+Richtige Syntax da alles passt
 ix ) $(A ⇎ B(E, F))$
+Nein, da die Formel B(E,F) in dieser Form Syntaktisch nicht zugelassen ist
 x ) $↑ (A ∨ B)$
+Nein da vor dem Nand Operator keine Formel ist
 ### b) 
 In der Praxis wird die Definition nicht so streng ausgelegt. Betrachten Sie die folgenden Beispiele
 und erklären Sie wieso (a) diese genau genommen nicht der Definition von aussagenlogischen
 Formeln entsprechen und (b) wieso das in der Praxis kein Problem ist.
 i ) $A ⇎ B$
+Ansich falsch da Klammern fehlen doch ist offensichtlich welche beiden Formeln durch $⇎$ verbunden werden
 ii ) $(A ∨ ¬B ∨ C)$
+Ansich falsch da drei verschiedene Formeln in einer Klammer verknüpft werden, doch da es sich um zwei Oder Verknpüfungen handelt ist die Semantik in allen möglichen Interpretationen von Klammersetzungen gleich
 iii ) $(A ∨ (D ⇔ E) ∨ C) ∧ D ∧ ¬E$
+Ansich wieder falsch aufgrund von mangelnder Klammersetzung. Doch da es sich in den einzelnen Klammern immer um das gleiche binäre Operationssymbol handelt führen verschieden Klammersetzungen wie $((A \lor(D \iff E)) \lor C)$ oder $(A \lor ((D \iff E)\lor C))$ zum gleichen semantischen Ergebnis
 
 ## Aufgabe 8: Interpretationen, Auswertung von Formeln, Logische Konsequenz
 ## a) 
