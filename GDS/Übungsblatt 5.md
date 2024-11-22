@@ -288,8 +288,58 @@ Ansich wieder falsch aufgrund von mangelnder Klammersetzung. Doch da es sich in 
 Sei $ϕ$ die Formel $(A ∨ (B ⇒ C)) ⇎ (D ↑ E)$. Die Interpretationen $I, J$ und $K$ sind jeweils nur teil weise bekannt (d.h. sie weisen nicht jeder Variable in $ϕ$ einen Wahrheitswert zu). Lassen sich trotzdem $valI(ϕ), valJ(ϕ), valK(ϕ)$ eindeutig bestimmen? Wenn ja, was ist das Ergebnis? Wenn nein, vervollständigen Sie die Interpretation einmal so, dass die Formel zu wahr auswertet und einmal so, dass sie zu falsch auswertet.
 
 -  Interpretation $I$ mit $I(C) = 1, I(E) = 0$
+$$
+(A \lor (B \implies 1)) ⇎ \lnot(D \land 0)
+$$
+$$
+(A \lor 1) ⇎ \lnot(0)
+$$
+$$
+1 ⇎ 1
+$$
+Wertet als falsch aus
+
+
 -  Interpretation $J$ mit $J(B) = 1, J(D) = 0$
+$$
+(A \lor (1 \implies C)) ⇎ \lnot(0 \land E)
+$$
+$$
+(A \lor (0 \lor C)) ⇎  \lnot (0)
+$$
+$$
+(A \lor C) ⇎ 1
+$$
+
+Nicht eindeutig
+$$
+J(A)=0,J(C)=0
+$$
+$$
+0 ⇎ 1
+$$
+Wertet als richtig aus
+$$
+J(A)=1
+$$
+$$
+1 ⇎ 1
+$$
+Wertet als falsch aus
+
 -  Interpretation $K$ mit $K(C) = K(D) = K(E) = 1$
+
+$$
+(A \lor (B \implies 1)) ⇎ \lnot(1 \land 1)
+$$
+$$
+(A \lor 1) ⇎ \lnot(1)
+$$
+$$
+1 ⇎ 0
+$$
+Wertet als richtig aus
+
 
 Hinweis: um das Beispiel zu lösen, müssen Sie sich zuerst mit dem Begriff der Interpretation von
 aussagenlogischen Formeln auseinandersetzen. Versuchen Sie für sich selbst, in einem oder zwei
@@ -297,7 +347,7 @@ Sätzen zu erklären, was eine Interpretation ist.
 
 ### b) 
 Sei $ϕ$ die Formel aus der letzten Teilaufgabe. Bestimmen Sie in jedem Punkt, ob die Konsequenz-
-relation gilt $(|=)$ oder nicht gilt $(̸|=)$ und begründen Sie Ihr Ergebnis durch die Auswertung der
+relation gilt $(\vDash)$ oder nicht gilt $(\nvDash)$ und begründen Sie Ihr Ergebnis durch die Auswertung der
 Wahrheitstabelle. Sie dürfen dabei irrelevante Fälle zusammenfassen.
 
 • Gilt C, D, E |= ϕ ?
