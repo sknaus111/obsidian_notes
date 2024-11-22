@@ -10,7 +10,28 @@ Ermitteln Sie alle komplexen Lösungen der quadratischen Gleichung
 $$z^{2} − 2z + 2 = 0$$
 und geben Sie diese sowohl in kartesischer Form als auch in Polarform an.
 
-## 3) (7 Punkte) 
+$$
+z_{1,2} = - \frac{p}{2} \pm \sqrt{ \frac{p^{2}}{4}-q }
+$$
+$$
+z_{1,2} = -\frac{-2}{2}\pm \sqrt{ \frac{-2^2}{4}-2 }
+$$
+$$
+z_{1,2} = 1\pm \sqrt{-1 }
+$$
+$$
+z_{1,2} = 1\pm i
+$$
+$$
+z_{1} = 1+i, z_{2} = 1-i
+$$
+$$
+r_{1} = \sqrt{ 2 }, arg = \arctan\left( \frac{1}{1} \right) \mod 2\pi = \frac{\pi}{4}
+$$
+$$
+r_{2} = \sqrt{ 2 }, arg = \arctan\left( -\frac{1}{1} \right) \mod 2\pi = -\frac{\pi}{4}
+$$
+##   3) (7 Punkte) 
 Bestimmen Sie alle Lösungen der folgenden Kongruenzen bzw. beweisen Sie deren Unlösbarkeit in $\mathbb{Z}$.
 
 a) $x^{2} ≡ 3 \mod 8$
