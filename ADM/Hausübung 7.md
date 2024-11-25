@@ -1,4 +1,4 @@
-# 327
+## 327
 Bestimmen Sie mit dem Algorithmus von Dijkstra einen kürzesten Weg zwischen den Knoten
 $x$ und $y$ im folgenden Graphen:
 
@@ -45,3 +45,20 @@ $x$ und $y$ im folgenden Graphen:
 \end{tikzpicture} 
 \end{document}
 ```
+## 354) 
+Untersuchen Sie, ob die Menge M mit der Operation ◦ ein Gruppoid, eine Halbgruppe,
+ein Monoid bzw. eine Gruppe ist:
+$$M = \mathbb{Q} \setminus \{1\}, a ◦ b = a + b − ab$$
+
+## 368
+Beweisen Sie, dass in einer Gruppe $(G, ·)$ die folgenden Rechenregeln für alle $a, b, c ∈ G$
+gelten:
+
+- (a) $a · b = a · c ⇒ b = c$
+- (b) $(a^{-1})^{-1} = a$
+- (c) $(ab)^{-1} = b^{-1} · a^{-1}$
+- (d) Die Gleichung $a · x = b$ ist in G immer eindeutig lösbar
+
+## 375) 
+Sei $U$ die von $(2)(13)$ erzeugte Untergruppe der $S_{3}$. Man bestimme die Linksnebenklassen
+von $U$. Ist $U$ Normalteiler von $S_{3}$?
