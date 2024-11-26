@@ -37,9 +37,15 @@ $0.000010110~0111~00$
 
 $1.1001~1010~1100~0~$
 $0.0000~1011~0011~1-$
-$1.1000~1111~1001~1$
+$1.1000~1111~1000~1$
+$1.1000~1111~10$
+ 
+$1.1001~1010~1100~0$
+$0.0000~1011~0011~1+$
+$1.1010~0101~1111~1$
+$1.1010~0110~00~$
 
-$1.1000~1111~1001~1$
+
 ## Aufgabe 2: Binäre Gleitpunkt-Arithmetik – Multiplikation & Division  
 Gegeben sind die folgenden im 16-Bit-Gleitpunktformat (vgl. Aufgabe 1) codierten Zahlen:  
 $A = 0 11001 0100100001$  
