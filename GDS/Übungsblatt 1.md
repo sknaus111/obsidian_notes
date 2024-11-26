@@ -214,20 +214,64 @@ $10000000$
 ## Aufgabe 6: Genauigkeit von Zahlenumwandlungen
 Wandeln Sie die Zahl $(14.8198)_{10}$ in eine Binärzahl mit 2 Nachkommastellen um – alle weiteren Nachkommastellen werden abgeschnitten (truncate, Rundung durch Abschneiden).
 
-
-# VIDEO
-
 - a) Berechnen Sie den absoluten und den relativen Rundungsfehler, der bei der Umrechnung ins Binärsystem entstanden ist.
+
+$14 \mod 2 = 0$
+$7 \mod 2 = 1$
+$3 \mod 2 = 1$
+$1 \mod 2 = 1$
+
+$1110.$
+
+$0.8198 *2 = 1.6396 = 1$
+$0.6 * 2 = 1$
+
+$1110.11_{2} = 14.75$
+
+abs: $.8198-.75=.0598$
+
+$.8198$
+$.7500-$
+$.0698$
+
+rel: 0.0698/14.8198 =  
 
 - b) Durch die Rundung werden alle reellen Zahlen aus einem Intervall $[a, b[ ∈ \mathbb{R}$ auf dieselbe Binärzahl abgebildet. Geben Sie die dezimalen Werte $a, b$ für das Intervall an, in dem $(14.8198)_{10}$ liegt.
 
+im Intervall zwischen $14.75$ und $15$
+$1110.110000000\dots$
+$1110.111111111\dots$
 ## Aufgabe 7: IEEE 754 Gleitpunktzahlen
 Stellen Sie die nachfolgenden Zahlen A und B im Single Precision-Format (mit implizitem ersten Bit) des IEEE 754 Gleitpunkt-Zahlensystems dar.
 $$A = (–101.375)_{10}$$
-# VIDEO
 
-$$ B = (0.6B)_{16}$$
-	
+$- 1100101.011$
+$-1.100101011 * 2^{6}$
+$6=0110$
+
+$e=0111~1111$
+
+$~~~~~~~~0110$
+$01111111$
+$00000000$
+$10000101$
+
+$1~~1000~0101~~1001~0101~1000~0000~0000~000$
+
+$$B = (0.6B)_{16}$$
+
+$0.0110~1011$
+$1.101011 * 2^{-2}$
+
+$e=01111111$
+$01111111$
+$00000010-$
+$01111101$
+
+
+$0~~0111~1101~~0110~1011~0000~0000~0000~000$
+
+
 ## Aufgabe 8: Codierung von Gleitpunktzahlen
 Gegeben ist ein Gleitpunkt-Zahlensystem $F(2, 5, –14, 15, true)$, die Codierung erfolgt analog zum IEEE 754 Single Precision-Format.
 
@@ -235,11 +279,33 @@ Hinweis: Durch diese Vorgabe folgt unter anderem, dass obiges Format eine impliz
 
 In diesem Gleitpunkt-Zahlensystem sind die nachfolgenden Codewörter gegeben. Geben Sie zu jedem Codewort die entsprechende Dezimalzahl oder die symbolische Bedeutung $(z.B.: +∞, NaN, . . .)$ an.
 
-# VIDEO
 
 - a) 0 10001 0111
+
+$10001$
+$01111-$
+$00010$ = 2
+
+$1.0111 * 2^{2} = 101.11 =5.75$
+
 - b) 1 00000 0000
-- c) 0 00000 1000
+
+$-0$
+
+- c) 0 00000 1000 
+
+$01111=15$
+
+$0-15 = -15$
+
+$0.1 * 2^{-14}$
+$1*2^{-15}$
+
+
 - d) 0 11111 0000
+
+$+\infty$
+
 - e) 0 11111 1000
 
+$NaN$
