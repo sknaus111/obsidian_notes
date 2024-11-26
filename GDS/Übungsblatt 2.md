@@ -10,11 +10,36 @@ Stellen Sie A und B in diesem Gleitpunktformat dar! Verwenden Sie Guard- und Rou
 das Sticky-Bit zur Vermeidung von numerischen Ungenauigkeiten. Runden Sie mittels round to  
 nearest zusammen mit round to even.  
 
+$0.31525$
+$0.011~001~101~010~101$
+
+$1.100~1101~0101~01 *2^{-2}$
+$e=01111$
+$0~~01101~~1001~1010~1010~1$
+$0~~01101~~1001~1010~11$
+
+$-0.02CE$
+$-0.0000~0010~1100~1110$
+
+$-1.01100111 * 2^{-7}$
+$e=01111$
+
+$1~~01000~~0110~0111~00$
 ### b)
 Berechnen Sie anschließend $A + B$ sowie $A – B$ und stellen Sie das Ergebnis wieder als Gleitpunkt-  
 zahl im angegebenen Format dar. Runden Sie die Ergebnisse wieder mittels round to nearest in  
 Kombination mit round to even.
 
+$1.0110~0111~00$
+$-7-(-2)=-5$
+$0.000010110~0111~00$
+
+
+$1.1001~1010~1100~0~$
+$0.0000~1011~0011~1-$
+$1.1000~1111~1001~1$
+
+$1.1000~1111~1001~1$
 ## Aufgabe 2: Binäre Gleitpunkt-Arithmetik – Multiplikation & Division  
 Gegeben sind die folgenden im 16-Bit-Gleitpunktformat (vgl. Aufgabe 1) codierten Zahlen:  
 $A = 0 11001 0100100001$  
