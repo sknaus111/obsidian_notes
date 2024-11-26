@@ -93,7 +93,68 @@ $$
 Untersuchen Sie, ob die Menge M mit der Operation ◦ ein Gruppoid, eine Halbgruppe,
 ein Monoid bzw. eine Gruppe ist:
 $$M = \mathbb{Q} \setminus \{1\}, a ◦ b = a + b − ab$$
+### Abgeschlossenheit
 
+$$
+a+b-ab=1
+$$
+$$
+a-ab=1-b
+$$
+$$
+a(1-b)=1(1-b)
+$$
+$$
+a=1
+$$
+Da dies vorhinein ausgeschlossen ist, ist die Gruppe Abgeschlossen
+### Assoziativ
+
+$$
+(a \circ b) \circ c = a\circ(b \circ c)
+$$
+$$
+(a \circ b) = (a+b-ab)
+$$
+$$
+(b \circ c) = (b+c-bc)
+$$
+$$
+(a+b-ab) + c - (a+b-ab)c = a+(b+c-bc)-a(b+c-bc)
+$$
+$$
+a+b-ab+c-ca-cb+cab=a+b+c-bc-ab-ac+abc
+$$
+$$
+-ab -ac -bc +abc = -bc -ab -ac +abc
+$$
+
+### Neutrales Element
+
+$$
+(a \circ e) = a
+$$
+$$
+(a \circ e)=(a+e-ae)=a
+$$
+$$
+a+0-a0=a
+$$
+### Inverse Elemente
+
+$$
+(a\circ a')=e=0
+$$
+$$
+a+a'-aa'=0
+$$
+$$
+a'(1-a)=a
+$$
+$$
+a'=\frac{a}{(1-a)}
+$$
+Handelt sich um eine Gruppe  
 ## 368
 Beweisen Sie, dass in einer Gruppe $(G, ·)$ die folgenden Rechenregeln für alle $a, b, c ∈ G$
 gelten:
@@ -103,6 +164,63 @@ gelten:
 - (c) $(ab)^{-1} = b^{-1} · a^{-1}$
 - (d) Die Gleichung $a · x = b$ ist in G immer eindeutig lösbar
 
+### a
+$$
+a*b=a*c
+$$
+$$
+b=e*b = (a*a')*b=a'*(a*b)=a'*(a*c)=(a'*a)*c=e*c=c
+$$
+### b
+
+$$
+(a')' = a
+$$
+$$
+e = (a*a')
+$$
+$$
+e = (a'*(a')')
+$$
+$$
+a=a*e=a*(a'*(a')')=(a*a')*(a')'=e*(a')'=(a')'
+$$
+### c
+
+$$
+ab' = b' * a'
+$$
+$$
+e = (ab*ab')
+$$
+$$
+e= (ab' * (ab')')
+$$
+$$
+e = (a*a')
+$$
+$$
+e = (b*b')
+$$
+$$
+(b' * a') * e = (b'*a')*(ab*ab') = (b' * a')*a*b*(a*b)' = b' * a' * a * b * (a*b)'
+$$
+$$
+= b' * (a'*a) * b * (a*b)' = b'* e * b *(a*b)' = b'*b*(a*b)' = (b'*b)*(a*b)'=e*(a*b)'
+$$
+$$
+= (a*b)' =(ab)'=ab'
+$$
+### d
+
+$$
+a*x=b
+$$
+$$
+x = x*e = x*(a*a') = (x*a)*a'=b*a'
+$$
+
 ## 375) 
 Sei $U$ die von $(2)(13)$ erzeugte Untergruppe der $S_{3}$. Man bestimme die Linksnebenklassen
 von $U$. Ist $U$ Normalteiler von $S_{3}$?
+
