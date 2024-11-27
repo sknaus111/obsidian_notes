@@ -60,11 +60,43 @@ Hinweis: Beachten Sie das implizite erste Bit.
 $$
 A * B
 $$
+Minus nicht vergessen
+$e=01111=15$
+$11001=16+8+1-15=25-15=10$
+$00101=5-15=-10$
 
+Exponent ausrechnen
+$11001$
+$00101+$
+$11110$
+$01111-$
+$01111$
+
+Mantisse ausrechnen
+$1.0100~1000~01*1.0110~1000~00$
+
+$~~10100100001*101101$
+$~~~~~~10100100001$
+$~~~~~~~~10100100001$
+$~~~~~~~~~~~~10100100001$
+$~~1110011011001101$
+
+$1.1100~1101~10~011$
+
+GRS
+$011$
+
+$1.1100~1101~10$
+
+$1~~01111~~1100~1101~10$
 ### b) 
 $$
 \frac{A}{C}
 $$
+
+Exponenten minus rechnen
+
+Mantissen stehen lassen, minus punkte hinnehmen
 
 ## Aufgabe 3: Binäre Gleitpunkt-Arithmetik – Sonderfälle  
 Gegeben sind die folgenden im 16-Bit-Gleitpunktformat (vgl. Aufgabe 1) codierten Zahlen:  
@@ -79,10 +111,22 @@ angegebenen Gleitpunktformat! Verwenden Sie Guard- und Round-Digit sowie das Sti
 $$
 A*B
 $$ 
+Exponent
+$00001$
+$00010+$
+$00011$
+$01111-$
+$-01100$
+
+Exponent zu klein
+12 Stellen außerhalb des Bereiches, nicht mal mit denormalisierung im bereich
+$0~~00000~0000000000$
+
 ### b)
 $$
 B+D
-$$  
+$$
+
 ### c) 
 $$
 \frac{C}{D}
