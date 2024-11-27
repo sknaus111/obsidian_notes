@@ -10,16 +10,47 @@ Stellen Sie A und B in diesem Gleitpunktformat dar! Verwenden Sie Guard- und Rou
 das Sticky-Bit zur Vermeidung von numerischen Ungenauigkeiten. Runden Sie mittels round to  
 nearest zusammen mit round to even.  
 
+$0.31525$
+$0.011~001~101~010~101$
+
+$1.100~1101~0101~01 *2^{-2}$
+$e=01111$
+$0~~01101~~1001~1010~1010~1$
+$0~~01101~~1001~1010~11$
+
+$-0.02CE$
+$-0.0000~0010~1100~1110$
+
+$-1.01100111 * 2^{-7}$
+$e=01111$
+
+$1~~01000~~0110~0111~00$
 ### b)
 Berechnen Sie anschließend $A + B$ sowie $A – B$ und stellen Sie das Ergebnis wieder als Gleitpunkt-  
 zahl im angegebenen Format dar. Runden Sie die Ergebnisse wieder mittels round to nearest in  
 Kombination mit round to even.
 
+$1.0110~0111~00$
+$-7-(-2)=-5$
+$0.000010110~0111~00$
+
+
+$1.1001~1010~1100~0~$
+$0.0000~1011~0011~1-$
+$1.1000~1111~1000~1$
+$1.1000~1111~10$
+ 
+$1.1001~1010~1100~0$
+$0.0000~1011~0011~1+$
+$1.1010~0101~1111~1$
+$1.1010~0110~00~$
+
+
 ## Aufgabe 2: Binäre Gleitpunkt-Arithmetik – Multiplikation & Division  
 Gegeben sind die folgenden im 16-Bit-Gleitpunktformat (vgl. Aufgabe 1) codierten Zahlen:  
-$A = 0 11001 0100100001$  
-$B = 1 00101 0110100000$  
-$C = 1 10101 0100010000$  
+$A = 0 ~11001~ 0100100001$  
+$B = 1~ 00101~ 0110100000$  
+$C = 1~ 10101~ 0100010000$  
 Führen Sie mit den Zahlen folgende Berechnungen durch und codieren Sie das Ergebnis jeweils im 
 angegebenen Gleitpunktformat! Verwenden Sie Guard- und Round-Digit sowie das Sticky-Bit zur Vermeidung von numerischen Ungenauigkeiten. Runden Sie mittels round to nearest zusammen mit round away from zero.
 
@@ -29,17 +60,50 @@ Hinweis: Beachten Sie das implizite erste Bit.
 $$
 A * B
 $$
+Minus nicht vergessen
+$e=01111=15$
+$11001=16+8+1-15=25-15=10$
+$00101=5-15=-10$
+
+Exponent ausrechnen
+$11001$
+$00101+$
+$11110$
+$01111-$
+$01111$
+
+Mantisse ausrechnen
+$1.0100~1000~01*1.0110~1000~00$
+
+$~~10100100001*101101$
+$~~~~~~10100100001$
+$~~~~~~~~10100100001$
+$~~~~~~~~~~~~10100100001$
+$~~1110011011001101$
+
+$1.1100~1101~10~011$
+
+GRS
+$011$
+
+$1.1100~1101~10$
+
+$1~~01111~~1100~1101~10$
 ### b) 
 $$
 \frac{A}{C}
 $$
 
+Exponenten minus rechnen
+
+Mantissen stehen lassen, minus punkte hinnehmen
+
 ## Aufgabe 3: Binäre Gleitpunkt-Arithmetik – Sonderfälle  
 Gegeben sind die folgenden im 16-Bit-Gleitpunktformat (vgl. Aufgabe 1) codierten Zahlen:  
-$A = 0 00001 0000000000$  
-$B = 0 00010 0000100101$  
-$C = 1 11101 0001100001$  
-$D = 0 00000 0010000000$  
+$A = 0~ 00001~ 0000000000$  
+$B = 0~ 00010 ~0000100101$  
+$C = 1~ 11101~ 0001100001$  
+$D = 0~ 00000~ 0010000000$  
 Führen Sie mit den Zahlen folgende Berechnungen durch und codieren Sie das Ergebnis jeweils im 
 angegebenen Gleitpunktformat! Verwenden Sie Guard- und Round-Digit sowie das Sticky-Bit zur Vermeidung von numerischen Ungenauigkeiten. Runden Sie mittels round to nearest zusammen mit round toward plus inﬁnity (= gerichtetes Aufrunden)!  
 
@@ -47,10 +111,22 @@ angegebenen Gleitpunktformat! Verwenden Sie Guard- und Round-Digit sowie das Sti
 $$
 A*B
 $$ 
+Exponent
+$00001$
+$00010+$
+$00011$
+$01111-$
+$-01100$
+
+Exponent zu klein
+12 Stellen außerhalb des Bereiches, nicht mal mit denormalisierung im bereich
+$0~~00000~0000000000$
+
 ### b)
 $$
 B+D
-$$  
+$$
+
 ### c) 
 $$
 \frac{C}{D}

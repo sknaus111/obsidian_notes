@@ -78,6 +78,7 @@ Zu einem Square vereinfachbar
 
 Erstellen Sie die ITE-Darstellung Ihres BDDs aus Unteraufgabe (a).
 
+```python 
 if x1 then:
 	if x3 then:
 		if x5 then:
@@ -94,7 +95,7 @@ else:
 		0
 	else:
 		1
-
+```
 
 
 ## Aufgabe 2: Substitution mit NAND Gattern
@@ -406,7 +407,7 @@ Da Prämisse immer falsch ist, ist die Konsequenz wahr also gültig
 | 0   | 1   | 0                | 0         |
 | 1   | 0   | 1                | 1         |
 | 1   | 1   | 1                | 0         |
-Konsequenz gilt im Falle $A=1,B=1$ nicht, somit erfüllbar bzw. widerlegbar
+Konsequenz gilt im Falle $A=1,B=1$ nicht somit ungültig
  
 Hinweis: hier setzen Sie sich mit dem Begriff der logischen Konsequenz auseinander. Wie oben
 ist es hilfreich, sich zuerst zu überlegen, was es bedeutet, wenn eine Formel G die Konsequenz
