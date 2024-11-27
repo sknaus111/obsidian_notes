@@ -89,6 +89,15 @@ $$
 p(y)=g, p(g)=c,=p(c)=f,p(f)=e,p(e)=b,p(b)=x
 $$
 
+|     |  x  |    b     |    c     |    d     |    e     |    f     |    g     |    y     |
+| :-: | :-: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+|  0  | *0* | $\infty$ | $\infty$ | $\infty$ | $\infty$ | $\infty$ | $\infty$ | $\infty$ |
+|  1  |     |  *4/x*   | $\infty$ | $\infty$ |   7/x    | $\infty$ | $\infty$ | $\infty$ |
+|  2  |     |          |   11/b   | $\infty$ |  *6/b*   | $\infty$ | $\infty$ | $\infty$ |
+|  3  |     |          |   11/e   | $\infty$ |          |  *9/e*   | $\infty$ | $\infty$ |
+|  4  |     |          |  *10/f*  | $\infty$ |          |          |   14/f   | $\infty$ |
+|  5  |     |          |          |   14/c   |          |          |  *12/c*  | $\infty$ |
+|  6  |     |          |          |   13/g   |          |          |          |  *13/g*  |
 ## 354) 
 Untersuchen Sie, ob die Menge M mit der Operation ◦ ein Gruppoid, eine Halbgruppe,
 ein Monoid bzw. eine Gruppe ist:
@@ -194,7 +203,7 @@ $$
 ab'=(a*b)'=e*(a*b)'=(b'*b)*(a*b)'=b'*e*b*(a*b)'='b*('a*a)*b*(a*b)'=
 $$
 $$
-(b'*a')*((a*b)*(a*b'))=b'*a'*e=b'*a'
+(b'*a')*((a*b)*(a*b)')=b'*a'*e=b'*a'
 $$
 ### d
 
@@ -209,3 +218,10 @@ $$
 Sei $U$ die von $(2)(13)$ erzeugte Untergruppe der $S_{3}$. Man bestimme die Linksnebenklassen
 von $U$. Ist $U$ Normalteiler von $S_{3}$?
 
+## Präsenzaufgabe
+Gruppe $S_{4}$ mit $e$ als neutrales Element. Finden $a,b,c \in S_{k}$, sodass $U=\{ e,a,b,c \}$ vierelementige Untergruppe von $S_{4}$ ist, sodass:
+$(i) a^{2}=b^{2}=c^{2}=e$
+$(ii)x \circ y=z$ für alle paare verschiedener
+$x,y,z \in U\setminus\{ e \}$
+
+$U=\{e, (1~2)(3~4),(1~3),(2~4),(1~4)(2~3) \}$

@@ -48,9 +48,9 @@ $1.1010~0110~00~$
 
 ## Aufgabe 2: Binäre Gleitpunkt-Arithmetik – Multiplikation & Division  
 Gegeben sind die folgenden im 16-Bit-Gleitpunktformat (vgl. Aufgabe 1) codierten Zahlen:  
-$A = 0 11001 0100100001$  
-$B = 1 00101 0110100000$  
-$C = 1 10101 0100010000$  
+$A = 0 ~11001~ 0100100001$  
+$B = 1~ 00101~ 0110100000$  
+$C = 1~ 10101~ 0100010000$  
 Führen Sie mit den Zahlen folgende Berechnungen durch und codieren Sie das Ergebnis jeweils im 
 angegebenen Gleitpunktformat! Verwenden Sie Guard- und Round-Digit sowie das Sticky-Bit zur Vermeidung von numerischen Ungenauigkeiten. Runden Sie mittels round to nearest zusammen mit round away from zero.
 
@@ -60,6 +60,7 @@ Hinweis: Beachten Sie das implizite erste Bit.
 $$
 A * B
 $$
+
 ### b) 
 $$
 \frac{A}{C}
@@ -67,10 +68,10 @@ $$
 
 ## Aufgabe 3: Binäre Gleitpunkt-Arithmetik – Sonderfälle  
 Gegeben sind die folgenden im 16-Bit-Gleitpunktformat (vgl. Aufgabe 1) codierten Zahlen:  
-$A = 0 00001 0000000000$  
-$B = 0 00010 0000100101$  
-$C = 1 11101 0001100001$  
-$D = 0 00000 0010000000$  
+$A = 0~ 00001~ 0000000000$  
+$B = 0~ 00010 ~0000100101$  
+$C = 1~ 11101~ 0001100001$  
+$D = 0~ 00000~ 0010000000$  
 Führen Sie mit den Zahlen folgende Berechnungen durch und codieren Sie das Ergebnis jeweils im 
 angegebenen Gleitpunktformat! Verwenden Sie Guard- und Round-Digit sowie das Sticky-Bit zur Vermeidung von numerischen Ungenauigkeiten. Runden Sie mittels round to nearest zusammen mit round toward plus inﬁnity (= gerichtetes Aufrunden)!  
 
