@@ -38,13 +38,6 @@ $\overline{2}=\overline{2}$
 
 $\varphi^{-1}(\overline{1})=\overline{1}, \varphi^{-1}(\overline{2})=\overline{5}$
 
-Ansatz_VOWI:
-$\varphi^{-1}(\varphi(\overline{5}))=\varphi^{-1}(\varphi(\overline{5}))* \varphi^{-1}(\varphi(\overline{1}))$
-$\varphi^{-1}(\overline{2})=\varphi^{-1}(\overline{2})*\varphi^{-1}(\overline{1})$
-$\overline{5}=\overline{5}*\overline{1}$
-$\overline{5}=\overline{5}$
-
-Ansatz_Meiner:
 Definieren Abbildung als
 $\varphi:\mathbb{Z}^{*}_{3} \rightarrow \mathbb{Z}^{*}_{6}$
 
@@ -54,6 +47,8 @@ $\overline{5}=\overline{5}$
 ## 434) 
 Sei $〈R, +, ·〉$ ein Ring, in dem $a^{2} = a$ für alle $a ∈ R$ gilt. Man zeige, dass dann $R$ kommutativ
 ist. (Hinweis: Man betrachte $(a + a)^{2}$ und $(a + b)^{2}$.)
+
+z.z. $\forall a,b \in R:ab=ba$
 
 $$
 (a+a)^{2}=(a+a)\cdot(a+a)= a\cdot(a+a)+a \cdot(a+a) =a^{2}+a^{2}+a^{2}+a^{2}
@@ -74,18 +69,27 @@ $$
 $$
 (a+b)^{2}=(a+b)\cdot(a+b)= a\cdot(a+b)+b\cdot(a+b) =a^{2}+ab+ba+b^{2}
 $$
+$$
+(a+b)^{2}=a^{2}+ab+ba+b^{2}
+$$
 ursprüngliche Voraussetzung $a^{2}=a$
 $$
 a+b=a+ab+ba+b
 $$
 $$
+-a +a +b -b = -a +a +ab +ba +b -b
+$$
+$$
 0=ab+ba
 $$
 $$
--ab=ba
+ab+ab=ab+ba
 $$
 $$
--ab+0=ba \implies -ab+ab+ab=ba
+-ab+ab+ab=-ab+ab+ba
+$$
+$$
+ab=ba
 $$
 ## 436) 
 Man ermittle, ob beim Übergang von $R$ zu $R × R$ (Bsp. 431) die folgenden Eigenschaften
@@ -126,5 +130,53 @@ $$
 $$
 \text{ Neutrales Element }(1,1)
 $$
+##  Präsenzbeispiel
+Für Ring $R$ beweise $\forall x,y \in R: (-x)y=-(xy),x(-y)=-(xy),(-x)(-y)=xy$
 
- 
+$$
+x + (-x)=0
+$$
+$$
+(x+(-x))y=0
+$$
+$$
+xy+(-x)y=0
+$$
+$$
+-(xy)+xy+(-x)y=-(xy)
+$$
+$$
+(-x)y=-(xy)
+$$
+
+
+
+$$
+y+(-y)=0
+$$
+$$
+x(y+(-y))=0
+$$
+$$
+xy+x(-y)=0
+$$
+$$
+-(xy)+(xy)+x(-y)=-(xy)
+$$
+$$
+x(-y)=-(xy)
+$$
+
+
+$$
+(-x)(-y)=xy
+$$
+$$
+\implies (-(x(-y)))
+$$
+$$
+\implies(-(-(xy)))
+$$
+$$
+\implies xy
+$$
