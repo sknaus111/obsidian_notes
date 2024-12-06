@@ -401,15 +401,93 @@ Gegeben sei folgender Automat $A$:
 ### a) 
 Speziﬁzieren Sie $A$ als Tupel und geben sie $δ$ in tabellarischer Form an. Handelt es sich bei $A$ um  
 einen deterministischen oder nichtdeterministischen Automaten?  
+
+$$
+A=\{ Q,\Sigma,\delta,q_{0},F \}
+$$
+$$
+Q=\{ s_{1},s_{2},s_{3},s_{4} \}
+$$
+$$
+\Sigma = \{ a,b \}
+$$
+$$
+q_{0}=s_{1}
+$$
+$$
+F=\{ s_{4} \}
+$$
+| $\delta$ | $a$     | $b$     |
+| -------- | ------- | ------- |
+| $s_{1}$  | $s_{1}$ | $s_{2}$ |
+| $s_{2}$  | $s_{3}$ | $s_{2}$ |
+| $s_{3}$  | $s_{1}$ | $s_{4}$ |
+| $s_{4}$  | $s_{3}$ | $s_{2}$ |
+Deterministischer Automat
 ### b) 
 Berechnen Sie schrittweise $δ^{*}(s_{1}, baaabab)$. Zu welchem Zustand führt dieses Wort? Wird es von  
 $A$ akzeptiert?  
+
+$$
+\delta^{*}(s_{1},baaabab)=\delta^{*}(\delta(s_{1},b),aaabab)
+$$
+$$
+= \delta^{*}(\delta(s_{2},a),aabab)
+$$
+$$
+=\delta^{*}(\delta(s_{3},a),abab)
+$$
+$$
+=\delta^{*}(\delta(s_{1},a),bab)
+$$
+$$
+=\delta^{*}(\delta(s_{1},b),ab)
+$$
+$$
+=\delta^{*}(\delta(s_{2},a),b)
+$$
+$$
+=\delta^{*}(s_{3},b)
+$$
+$$
+=\delta^{*}(s_{4},\epsilon)
+$$
+$$
+=s_{4}
+$$
+Wird akzeptiert
+
 ### c) 
 Geben Sie alle akzeptierten Wörter mit einer Länge bis zu fünf Zeichen an.  
+
+Überlegung: alle Wörter mit bis zu Länge 4 nach $s_{3}$
+
+nur von $s_{2}$ möglich außer mit
+babab
+
+alle Wörter mit bis zu Länge 3 nach $s_{2}$
+
+b
+ab
+bb
+aab
+abb
+bbb
+
+Alle Wörter mit bis zu fünf
+bab
+abab
+bbab
+aabab
+abbab
+bbbab
+babab
+
 ### d) 
 Welchem Muster folgen akzeptierte Wörter von $A$? Beschreiben Sie die Sprache $L_{A}$ in eigenen  
 Worten.
 
+Endet immer in der Folge bab, an den Stellen $s_{1}$ und $s_{2}$ können beliebig viele a bzw. b hinzugefügt werden.
 ## Aufgabe 7: Modellierung mit deterministischen Automaten  
 Modellieren Sie die folgenden Problemstellungen als deterministische endliche Automaten (DEAs), indem Sie folgende Aufgaben erfüllen:
 
@@ -421,10 +499,31 @@ Modellieren Sie die folgenden Problemstellungen als deterministische endliche Au
 Problemstellung:  
 ### a) 
 Wir betrachten Codewörter über dem Alphabet $\{0, 1\}$, die mit einem Parity-Bit für die Fehlererkennung ausgestattet wurden. Der Automat soll beliebig lange Codewörter überprüfen und sie akzeptieren, wenn kein Fehler erkannt wird. Codewörter müssen mindestens ein Zeichen enthalten (wir erlauben hier den Extremfall, bei dem nur das Parity-Bit übertragen wird). Entwerfen Sie jeweils einen Automaten für Even Parity und Odd Parity.  
+
+Zwei Zustände, einen für das Codewort ist gerade gerade und einen für das Codewort ist gerade ungerade.
+
+Jede 1 verändert den Zustand
+
+Automat für Even Parity
+![[Unbenannt 7.png]]
+
+Automat für Odd Parity
+![[Unbenannt 8.png]]
+
+$L_{gerade}(A)=\{ w \in \{ 0,1 \}^{*} | \text{ gerade Anzahl an 1er} \}$
+
+$L_{ungerade}(A)=\{ w \in \{ 0,1 \}^{*} | \text{ ungerade Anzahl an 1er} \}$
 ### b) 
 Adaptieren Sie Ihren Automaten für Even Parity, sodass nur Codewörter der Länge 4 akzeptiert  
 werden.
 
+Notwendige Zustände sind Start, End und 6 Zwischenspeicherzustände plus impliziter Fehlerzustand.
+
+8 Zustände
+
+0 und 1 führen beide in andere Zustände über (0 ändert aktuelle Wortlänge)
+
+![[Unbenannt 9.png]]
 ## Aufgabe 8: Modellierung mit nichtdeterministischen Automaten  
 Modellieren Sie den folgenden Sachverhalt mit einem NEA ohne $ϵ$-Übergänge. Wir bekommen als Eingabe eine Binärzahl, wobei die Zahl vom LSB Bit zum MSB eingeben wird (die Zahl $11011101$ entspricht also der Eingabe $10111011$), und interessieren uns für Eigenschaften der entsprechenden Darstellung als Hexadezimalzahl.
 
