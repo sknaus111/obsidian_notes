@@ -521,9 +521,11 @@ Notwendige Zustände sind Start, End und 6 Zwischenspeicherzustände plus impliz
 
 8 Zustände
 
-0 und 1 führen beide in andere Zustände über (0 ändert aktuelle Wortlänge)
+0 und 1 führen beide in andere Zustände über (0 ändert aktuelle Wortlänge) (1 ändert Wortlänge und ob Odd/Even)
 
 ![[Unbenannt 9.png]]
+
+$L(A)=\{ w\in \{ 0,1 \}^{*} : |w^{*}| \leq 4 \land (2| |\{ 1 \} \in w^{*}|) \}$
 ## Aufgabe 8: Modellierung mit nichtdeterministischen Automaten  
 Modellieren Sie den folgenden Sachverhalt mit einem NEA ohne $ϵ$-Übergänge. Wir bekommen als Eingabe eine Binärzahl, wobei die Zahl vom LSB Bit zum MSB eingeben wird (die Zahl $11011101$ entspricht also der Eingabe $10111011$), und interessieren uns für Eigenschaften der entsprechenden Darstellung als Hexadezimalzahl.
 
@@ -531,12 +533,28 @@ Modellieren Sie den folgenden Sachverhalt mit einem NEA ohne $ϵ$-Übergänge. W
 Entwerfen Sie einen NEA, der nur Eingaben akzeptiert, deren Hexadezimaldarstellung die Ziffer $A$  
 oder die Ziffer $D$ enthält.
 
+$A=1010$
+$D=1101$
+
+![[Unbenannt 11.png]]
 ### b) 
 Erweitern Sie Ihren NEA, sodass noch zusätzlich überprüft wird, ob die höchstwertige Ziffer der 
 Hexadezimaldarstellung ein F ist.  
+
+![[Unbenannt 12.png]]
 ### c) 
 Geben Sie je ein Beispiel an für Wörter, die beide Automaten akzeptieren, die der erste Automat  
 akzeptiert aber nicht der zweite, bzw. die keiner der beiden Automaten akzeptiert.
+
+Beide akzeptieren
+
+11110101
+
+Erste akzeptiert, zweite nicht
+00000101
+
+Keiner akzeptiert
+00000000
 
 ## Aufgabe 9: Determinisierung eines Automaten  
 Sei $A$ der folgende nichtdeterministische endliche Automat. $ε$ bezeichnet das Leerwort.  
@@ -546,19 +564,19 @@ Geben Sie für jedes Wort über dem Alphabet $\{a, b\}$ mit **höchstens drei Sy
 
 | Wortlänge | Wörter in der Sprache | Wörter nicht in der Sprache |
 | --------- | --------------------- | --------------------------- |
-| $0$       |                       |                             |
-| $1$       |                       |                             |
-| $2$       |                       |                             |
-| $3$       |                       |                             |
+| $0$       | $\epsilon$            |                             |
+| $1$       | $a$                   | $b$                         |
+| $2$       | $aa,ba$               | $ab,bb$                     |
+| $3$       | $aaa,aba,baa,bba$     | $aab,abb,bab,bbb$           |
   
 ## b) 
 Konstruieren Sie einen deterministischen endlichen Automaten, der zu $A$ äquivalent ist. Verwenden Sie dafür das in der Vorlesung besprochene Verfahren. Geben Sie den Start- und die Endzustände an.
 
-| $δ^{*}$ | $a$ | $b$ |
-| ------- | --- | --- |
-| $1$     |     |     |
-| $2$     |     |     |
-| $3$     |     |     |
+| $δ^{*}$ | $a$       | $b$         |
+| ------- | --------- | ----------- |
+| $1$     | $\{ 1 \}$ | $\{ 2,3 \}$ |
+| $2$     |           | $$          |
+| $3$     |           |             |
  
 | $\hat{δ}$ | a   | b   |
 | --------- | --- | --- |
