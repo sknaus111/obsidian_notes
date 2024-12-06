@@ -572,25 +572,55 @@ Geben Sie für jedes Wort über dem Alphabet $\{a, b\}$ mit **höchstens drei Sy
 ## b) 
 Konstruieren Sie einen deterministischen endlichen Automaten, der zu $A$ äquivalent ist. Verwenden Sie dafür das in der Vorlesung besprochene Verfahren. Geben Sie den Start- und die Endzustände an.
 
-| $δ^{*}$ | $a$       | $b$         |
-| ------- | --------- | ----------- |
-| $1$     | $\{ 1 \}$ | $\{ 2,3 \}$ |
-| $2$     |           | $$          |
-| $3$     |           |             |
+| $δ^{*}$ | $a$           | $b$         |
+| ------- | ------------- | ----------- |
+| $1$     | $\{ 1,2,3 \}$ | $\{ 2,3 \}$ |
+| $2$     |               |             |
+| $3$     | $\{ 1 \}$     |             |
  
-| $\hat{δ}$ | a   | b   |
-| --------- | --- | --- |
-|           |     |     |
-|           |     |     |
-|           |     |     |
-|           |     |     |
-|           |     |     |
-|           |     |     |
-Startzustand:  
-Endzustände:
+| $\hat{δ}$     | a             | b           |
+| ------------- | ------------- | ----------- |
+| $\{ 1,2,3 \}$ | $\{ 1,2,3 \}$ | $\{ 2,3 \}$ |
+| $\{ 2,3 \}$   | $\{ 1,2,3 \}$ | $\{ 2,3 \}$ |
+| $\{ 1 \}$     | $\{ 1 \}$     |             |
+|               |               |             |
+|               |               |             |
+|               |               |             |
+Startzustand:  $\{ 1,2,3 \}$
+Endzustände: $\{ 1,2,3 \}, \{ 1 \}$
 
 ### c) 
 Geben Sie Ihren DEA als Graph an.  
+
+![[Unbenannt 13.png]]
+
+$\{ 1 \}$ weglasbar
 ### d) 
 Überprüfen Sie Ihre Arbeit, indem Sie testen, ob das Wort $abbaabba$ sowohl vom NEA als auch  
 von Ihrem DEA akzeptiert wird.
+
+NEA
+$\delta^{*}(1,abbaabba)=\delta^{*}(\delta(1,a),bbaabba)$
+$=\delta^{*}(\delta(3,b),baabba)$
+$=\delta^{*}(\delta(2,b),aabba)$
+$=\delta^{*}(\delta(3,a),abba)$
+$=\delta^{*}(\delta(1,a),bba)$
+$=\delta^{*}(\delta(3,b),ba)$
+$=\delta^{*}(\delta(2,b),a)$
+$=\delta^{*}(\delta(3,a),\epsilon)$
+$=\delta^{*}(1,\epsilon)$
+$=1$
+wird akzeptiert
+
+DEA
+$\delta^{*}(123,abbaabba)=\delta^{*}(\delta(123,a),bbaabba)$
+$=\delta^{*}(\delta(123,b),baabba)$
+$=\delta^{*}(\delta(23,b),aabba)$
+$=\delta^{*}(\delta(23,a),abba)$
+$=\delta^{*}(\delta(123,a),bba)$
+$=\delta^{*}(\delta(123,b),ba)$
+$=\delta^{*}(\delta(23,b),a)$
+$=\delta^{*}(\delta(23,a),\epsilon)$
+$=\delta^{*}(123,\epsilon)$
+$=123$
+wird akzeptiert
