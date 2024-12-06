@@ -576,25 +576,24 @@ Konstruieren Sie einen deterministischen endlichen Automaten, der zu $A$ äquiva
 | ------- | ------------- | ----------- |
 | $1$     | $\{ 1,2,3 \}$ | $\{ 2,3 \}$ |
 | $2$     |               |             |
-| $3$     | $\{ 1 \}$     |             |
+| $3$     |               |             |
  
 | $\hat{δ}$     | a             | b           |
 | ------------- | ------------- | ----------- |
 | $\{ 1,2,3 \}$ | $\{ 1,2,3 \}$ | $\{ 2,3 \}$ |
 | $\{ 2,3 \}$   | $\{ 1,2,3 \}$ | $\{ 2,3 \}$ |
-| $\{ 1 \}$     | $\{ 1 \}$     |             |
+|               |               |             |
 |               |               |             |
 |               |               |             |
 |               |               |             |
 Startzustand:  $\{ 1,2,3 \}$
-Endzustände: $\{ 1,2,3 \}, \{ 1 \}$
+Endzustände: $\{ 1,2,3 \}$
 
 ### c) 
 Geben Sie Ihren DEA als Graph an.  
 
 ![[Unbenannt 13.png]]
 
-$\{ 1 \}$ weglasbar
 ### d) 
 Überprüfen Sie Ihre Arbeit, indem Sie testen, ob das Wort $abbaabba$ sowohl vom NEA als auch  
 von Ihrem DEA akzeptiert wird.
