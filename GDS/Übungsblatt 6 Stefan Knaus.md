@@ -2,12 +2,39 @@
 Analysieren Sie die folgenden Sätze und identifizieren Sie ihre logische Struktur sowie die Elementaraussagen.
 
 - (1) Wir haben den Baum umgeschnitten, weil er nicht mehr gesund war.
+
+$$
+\lnot x \implies y~~~~~x\dots \text{Baum gesund }~~~y\dots\text{Baum umschneiden}
+$$
+
 - (2) Fischers Fritz fischt frische Fische.
+
+$$
+x \implies y ~~~~~~x\dots\text{Fischer Fritz heißen}~~~~y\dots\text{frische Fische fischen}
+$$
+
 - (3) Obelix jagt entweder gerade Wildschweine oder er rauft mit Römern.
+
+$$
+x \nLeftrightarrow y ~~~~~x\dots\text{Obelix jagt Wildschweine}~~~y\dots\text{Obelix rauft mit Römern}
+$$
+
 - (4) Bring kein Eis oder Schokolade mit!
+
+$$\lnot(x \lor y)~~~~~x\dots\text{Eis mitbringen}~~~y\dots\text{Schockolade mitbringen}$$
+
 - (5) Mama und Papa können nur beide mitgehen, wenn es eine Familienermäßigung gibt, sonst muss einer von ihnen zu Hause bleiben.
+
+$$
+\lnot f \implies (m \nLeftrightarrow p) ~~~~~f\dots\text{gibt eine Familienermäßigung }~~~m\dots\text{Mama geht mit}~~~~p\dots\text{Papa geht mit}
+$$
+
 - (6) Wenn du Informatik studierst, musst du GDS machen, aber du musst es nicht lieben.
 
+
+$$
+(s \implies g) \land (\bot \implies l)~~~~~g\dots\text{GDS machen }~~~s\dots\text{Informatik studieren}~~~l\dots\text{GDS lieben}
+$$
 ## Aufgabe 2: Aussagenlogik  
 Sechs Kinder möchten im Prater mit dem Blumenrad fahren. Es sind sich alle einig, dass zumindest  
 zwei Kinder mitfahren sollen. Petra und Silvio haben Höhenangst und fahren nicht mit. Die anderen vier Kinder diskutieren, wer fahren soll.  
@@ -18,11 +45,41 @@ Susanna: ”Jun oder ich müssen mit, aber nicht gleichzeitig!“
 Hannah: ”Nur wenn mich Jun oder Emil begleiten, fahre ich auch mit.“  
 
 - a) Formalisieren Sie die beschriebene Situation inklusive aller Anhaltspunkte mittels aussagenlogischer Formeln. Geben Sie die Bedeutung der Aussagenvariablen an.  
-- b) Können sich die Kinder entscheiden, wer im Blumenrad mitfahren soll, sodass alle Anhaltspunkte ber¨ucksichtigt werden? Wer kommt in Frage? Ist die Antwort eindeutig? Begründen Sie Ihre Antwort mithilfe Ihrer aussagenlogischen Modellierung.
+
+$$
+s \dots \text{Susanna fährt mit}~~~j\dots\text{Jun fährt mit}~~~h\dots\text{Hannah färhrt mit}~~~e\dots\text{Emil föhrt mit}
+$$
+$$
+p\dots\text{Petra fährt mit}~~~si\dots\text{Silvio fährt mit}
+$$
+$$\lnot p \land \lnot si \land (e\nLeftrightarrow h)\land(e\implies j)\land(s \nLeftrightarrow j)\land(h \implies (j \lor e))$$
+
+- b) Können sich die Kinder entscheiden, wer im Blumenrad mitfahren soll, sodass alle Anhaltspunkte berücksichtigt werden? Wer kommt in Frage? Ist die Antwort eindeutig? Begründen Sie Ihre Antwort mithilfe Ihrer aussagenlogischen Modellierung.
+
+| s   | j   | h   | e   | $e \nLeftrightarrow h$ | $e \implies j$ | $(s \nLeftrightarrow j)$ | $h \implies (j \lor e)$ | $(\dots)\land(\dots)\dots$ |
+| --- | --- | --- | --- | ---------------------- | -------------- | ------------------------ | ----------------------- | -------------------------- |
+| 0   | 0   | 0   | 0   | 0                      | 1              | 0                        | 1                       | 0                          |
+| 0   | 0   | 0   | 1   | 1                      | 0              | 0                        | 1                       | 0                          |
+| 0   | 0   | 1   | 0   | 1                      | 1              | 0                        | 1                       | 0                          |
+| 0   | 0   | 1   | 1   | 0                      | 0              | 0                        | 1                       | 0                          |
+| 0   | 1   | 0   | 0   | 0                      | 1              | 1                        | 1                       | 0                          |
+| 0   | 1   | 0   | 1   | 1                      | 1              | 1                        | 1                       | 1                          |
+| 0   | 1   | 1   | 0   | 1                      | 1              | 1                        | 1                       | 1                          |
+| 0   | 1   | 1   | 1   | 0                      | 1              | 1                        | 1                       | 0                          |
+| 1   | 0   | 0   | 0   | 0                      | 1              | 1                        | 1                       | 0                          |
+| 1   | 0   | 0   | 1   | 1                      | 0              | 1                        | 1                       | 0                          |
+| 1   | 0   | 1   | 0   | 1                      | 1              | 1                        | 0                       | 0                          |
+| 1   | 0   | 1   | 1   | 0                      | 0              | 1                        | 1                       | 0                          |
+| 1   | 1   | 0   | 0   | 0                      | 1              | 0                        | 1                       | 0                          |
+| 1   | 1   | 0   | 1   | 1                      | 1              | 0                        | 1                       | 0                          |
+| 1   | 1   | 1   | 0   | 1                      | 1              | 0                        | 1                       | 0                          |
+| 1   | 1   | 1   | 1   | 0                      | 1              | 0                        | 1                       | 0                          |
+
+Es ist nicht ganz eindeutig, wer fahren. Es können entweder Jun mit Emil oder Jun mit Hannah fahren.
 
 ## Aufgabe 3: Aussagenlogik  
 ###  a) 
-Zeigen Sie, dass die Menge $\{f2.0, f2.2, f2.15\}$ vollständig für die Klasse der aussagenlogischen Funktionen ist. Zur Erinnerung die Deﬁnition der drei Funktionen:  
+Zeigen Sie, dass die Menge $\{f_{2.0}, f_{2.2}, f_{2.15}\}$ vollständig für die Klasse der aussagenlogischen Funktionen ist. Zur Erinnerung die Deﬁnition der drei Funktionen:  
 
 | $e_{1}$ | $e_{2}$ | $f_{2.0}$ | $f_{2.2}$ | $f_{2.15}$ |
 | ------- | ------- | --------- | --------- | ---------- |
@@ -30,11 +87,66 @@ Zeigen Sie, dass die Menge $\{f2.0, f2.2, f2.15\}$ vollständig für die Klasse 
 | $1$     | $0$     | $0$       | $0$       | $1$        |
 | $0$     | $1$     | $0$       | $1$       | $1$        |
 | $1$     | $1$     | $0$       | $0$       | $1$        |
+$f_{2,0}\iff\bot$
+$f_{2.15}\iff\top$
+$f_{2.2}\iff$
+checke nicht
+same
 ### b) 
 Sei F die Formel $((A ⇎ B) ⇒ C) ∧ (C ↑ A)$.  
 - (1) Bestimmen Sie eine zu $F$ äquivalente Formel in konjunktiver Normalform. Verwenden Sie die semantische Methode (d.h. mit Hilfe einer Wahrheitstabelle).  
+
+| A   | B   | C   | $A\nLeftrightarrow B$ | $(A \nLeftrightarrow B) \implies C$ | $\lnot(C \land A)$ | $((A \nLeftrightarrow B)\implies C) \land \lnot(C\land A)$ |
+| --- | --- | --- | --------------------- | ----------------------------------- | ------------------ | ---------------------------------------------------------- |
+| 0   | 0   | 0   | 0                     | 1                                   | 1                  | 1                                                          |
+| 0   | 0   | 1   | 0                     | 1                                   | 1                  | 1                                                          |
+| 0   | 1   | 0   | 1                     | 0                                   | 1                  | 0                                                          |
+| 0   | 1   | 1   | 1                     | 1                                   | 1                  | 1                                                          |
+| 1   | 0   | 0   | 1                     | 0                                   | 1                  | 0                                                          |
+| 1   | 0   | 1   | 1                     | 1                                   | 0                  | 0                                                          |
+| 1   | 1   | 0   | 0                     | 1                                   | 1                  | 1                                                          |
+| 1   | 1   | 1   | 0                     | 1                                   | 0                  | 0                                                          |
+$$
+\lnot((\lnot A\land B\land \lnot C)\lor(A \land \lnot B \land \lnot C)\lor(A \land \lnot B \land C)\lor(A \land B \land C))
+$$
+$$
+((A \lor \lnot B \lor C)\land(\lnot A \lor B \lor C)\land(\lnot A \lor B \lor \lnot C)\land(\lnot A \lor \lnot B \lor \lnot C))
+$$
+
 - (2) Bestimmen Sie eine zu $F$ äquivalente Formel in disjunktiver Normalform. Verwenden Sie die  algebraische Methode (d.h. mit Hilfe von algebraischen Umformungen).
 
+$$
+((A \nLeftrightarrow B)\implies C) \land \lnot(C\land A)
+$$
+$$
+((( A \land \lnot B)\lor( \lnot A \land B))\implies C) \land \lnot( C \lor A)
+$$
+$$
+(\lnot((A \land \lnot B) \lor(\lnot A \land B)) \lor C) \land \lnot(C \lor A)
+$$
+$$
+(((\lnot A \lor B) \land (A \lor \lnot B))\lor C) \land \lnot(C \lor A)
+$$
+
+
+
+
+
+$$
+(((\lnot A \land A) \lor ( \lnot A \land \lnot B) \lor (B \land A)\lor(B \land \lnot B))\lor C) \land \lnot (C \lor A)
+$$
+$$
+((\lnot A \land \lnot B) \lor (A \land B) \lor C) \land \lnot (C \lor A)
+$$
+$$
+(((\lnot A \land \lnot B) \land  (\lnot C \land \lnot A)) \lor ((A \land B) \land (\lnot C \land \lnot A)) \lor (C \land  (\lnot C \land \lnot A)))
+$$
+$$
+((\lnot A \land \lnot B \land \lnot C) \lor ())
+$$
+$$
+ 
+$$
 ## Aufgabe 4: SAT Solver, Konsequenzbeziehung  
 In diesem Beispiel entwickeln wir eine Methode, mit einem SAT-Solver eine beliebige aussagenlogische Formel auf Gültigkeit zu prüfen, d.h. zu entscheiden, ob die Konsequenz $\vDash F$ gilt.  
 
@@ -46,8 +158,20 @@ Informieren Sie sich$^{1}$ zu logischer Konsequenz und SAT-Solvern, sodass Sie f
 	ii. $\nvDash F$  
 	iii. $\vDash ¬F$  
 	iv. $\nvDash ¬F$  
-- (2) Wann ist eine Formel $F$ gültig / erfüllbar / widerlegbar / unerfüllbar?  
+
+i. F ist gültig
+ii. F ist widerlegbar
+iii. F ist unerfüllbar
+iv. F ist erfüllbar
+
+- (2) Wann ist eine Formel $F$ gültig / erfüllbar / widerlegbar / unerfüllbar?
+
+Gültig wenn immer Wahr, Unerfüllbar wenn immer falsch, erfüllbar mind. 1 Interpretation wahr, widerlegbar mind. 1 Interpretation falsch
+
 - (3) Was ist der Input für einen SAT-Solver? Welches Problem lässt sich damit lösen – was ist der  Output?  
+Input ist eine Formel in DIMACS Format
+Erfüllbarkeit lässt sich lösen.
+Output ist eine gültige Interpretation der Variablen für die die Formel bzw. deren Unerfüllbarkeit
 ### b) 
 Bestimmen Sie mit einem SAT-Solver, ob die folgenden Formeln erfüllbar sind. Dabei kann es  
 vorkommen, dass Sie eine Formel umformen müssen, die der SAT-Solver verarbeiten kann. Do-  
@@ -60,12 +184,122 @@ von Minisat zur Verfügung. Informationen zu DIMACS, dem Eingabe-Format von Mini
 Sie z.B. unter https://dwheeler.com/essays/minisat-user-guide.html bzw. bei den Folien zur  
 Aussagenlogik.  
 
-- (1) $(A ∨ B) ∧ A$  
+- (1) $(A ∨ B) ∧ A$ 
+
+Ist bereits in KNF kein umforen nötig
+
+Input
+A ist 1 und B ist 2
+
+p cnf 2 2
+1 2 0
+1 0
+
+Output: 
+
+1 -2
+
+Beispielsweise wahr mit A und $\lnot B$
+
 - (2) $¬((A ∨ B) ∧ A)$  
+
+$$
+\lnot(A \lor B) \lor \lnot A
+$$
+$$
+(\lnot A \land \lnot B) \lor \lnot A
+$$
+$$
+((\lnot A \lor \lnot A)\land \lnot B \lor \lnot A)
+$$
+$$
+(\lnot B \lor \lnot A)
+$$
+
+Input
+A ist 1 und B ist 2
+
+p cnf 2 1
+-1 -2 0
+
+Output: 
+
+-1 -2
+
+Beispielsweise wahr mit $\lnot A$ und $\lnot B$
+
 - (3) $(A ⇒ B) ⇒ ((A ⇒ ¬B) ⇒ ¬A)$
+
+$$
+(\lnot A \lor B) \implies ((\lnot A \lor \lnot B)\implies \lnot A)
+$$
+$$
+\lnot(\lnot A \lor B) \lor (\lnot(\lnot A \lor \lnot B) \lor \lnot A)
+$$
+$$
+(A \land \lnot B) \lor ((A \land B) \lor \lnot A)
+$$
+$$
+(A \land \lnot B) \lor (B \lor \lnot A)
+$$
+$$
+((A \lor B \lor \lnot A  ) \land (\lnot B  \lor B \lor \lnot A))
+$$
+$$
+\top \land \top
+$$
+Formel ist gültig
+
+Input
+A ist 1 und B ist 2
+
+p cnf 2 3
+-1 1 2 0
+-1 2 -2 0
+
+Output
+-1 -2
+Beispielsweise wahr mit $\lnot A$ und $\lnot B$
+
 - (4) $¬((A ⇒ B) ⇒ ((A ⇒ ¬B) ⇒ ¬A))$  
+
+$$
+\lnot((\lnot A \lor B) \implies ((\lnot A \lor \lnot B) \implies \lnot A))
+$$
+$$
+\lnot(\lnot(\lnot A \lor B) \lor (\lnot(\lnot A \lor \lnot B) \lor \lnot A))
+$$
+$$
+(\lnot A \lor B) \land \lnot(\lnot(\lnot A \lor \lnot B) \lor \lnot A)
+$$
+$$
+(\lnot A \lor B) \land ((\lnot A \lor \lnot B) \land A)
+$$
+$$
+(\lnot A \lor B) \land (\lnot B \land A)
+$$
+$$
+(\lnot A \lor B) \land \lnot B \land A
+$$
+Input
+A ist 1 und B ist 2
+
+p cnf 2 3
+-1 2 0
+-2 0
+1 0
+
+Output: 
+
+UNSAT
+
+unerfüllbar
 ### c) 
 In der vorigen Aufgabe haben wir jeweils eine Formel und danach ihre Negation auf ihre Erfüllbarkeit geprüft. In $(1)$ und $(2)$ war das $(A ∨ B) ∧ A$, in $(3)$ und $(4)$ war das $((A ⇒ B) ⇒ ((A ⇒ ¬B) ⇒ ¬A))$. Sie sollten bei den Formeln in $(1)$ und $(3)$ dieselbe Beurteilung bezüglich Erfüllbarkeit / Unerfüllbarkeit erhalten haben, bei den negierten Formeln in $(2)$ und $(4)$ aber eine unterschiedliche. Woran liegt das?  
+
+Da 1 widerlegbar/erfüllbar ist ist deren Negation auch widerlegbar/erfüllbar
+Da 3 gültig ist ist die Negation von 3 unerfüllbar
+
 
 ## Aufgabe 5: Mehrdeutigkeiten / Vagheit in der Modellierung mittels Aussagenlogik
 In diesem Beispiel analysieren Sie den folgenden Text in Hinblick auf eine Modellierung durch eine 
@@ -79,6 +313,12 @@ Formalisieren Sie den Text mittels einer Formel, die alle Einkaufskombinationen 
 Markieren Sie unklare Stellen im Text (mindestens zwei) und beschreiben Sie, worin die Unklar-  
 heit besteht.  
 
+Die Unsicherheit bei Alishon Oolong und Long Jing kann nicht als logische Aussage übersetzt werden
+
+Sie möchte keinen Darjeeling Tee wenn sie einen Risheehat Tee nimmt, aber Risheehat Tee kommt aus der Region Darjeeling
+
+Was arg teuer in diesem Kontext als Konsequenz hat wird auch nicht beschrieben
+
 Hinweise:  
 - Manches Mal wird derselbe Begriff / Name für unterschiedliche Konzepte verwendet.  
 - Manches Mal werden unterschiedliche Begriffe / Namen für dasselbe Konzept verwendet.  
@@ -87,10 +327,28 @@ Hinweise:
 ### b) 
 Legen Sie aussagenlogische Variablen für die elementaren Aussagen im Text fest und geben Sie  
 jeweils die Bedeutung an.  
+
+gr ... grüner Tee
+sch ... schwarzer Tee
+ri ... risheehat Tee
+da ... darjeeling Tee
+wi ... Wintermischung
+br ... brenneseltee
+al ... Alishan
+ol .. Oolong
+lj ... Long Jing
 ### c) 
 Finden Sie zwei unterschiedliche Formeln $G_{1}$ und $G_{2}$ die den Sachverhalt modellieren. Bei jeder  
 der gefunden Unklarheiten aus a) sollen sich die beiden Formeln für verschiedene Möglichkeiten  
 entscheiden. 
+
+$F_{1}=(gr \land sch)$
+$F_{2_{1}}=ri \implies \lnot da$
+$F_{2_{2}}=\lnot(ri)$
+$F_{3}=wi\nLeftrightarrow br$
+
+$G_{1}=F_{1}\land F_{2_{1}}\land F_{3}$
+$G_{2}=F_{1}\land F_{2_{2}}\land F_{3}$
 
 Hinweis: Teilen Sie die Aufgabe in kleinere Aspekte$^{2}$ und modellieren Sie diese getrennt als Formeln $F_{1}, . . . , F_{n}$. Sie können dann $G_{1}$ und $G_{2}$ aus diesen zusammensetzen und gemeinsame Formeln wiederverwenden.  
 
@@ -99,13 +357,20 @@ $^{2}$ Seite 78 Aussagenlogik
 Vergleichen Sie $G_{1}$ und $G_{2}$ in Bezug auf ihre Interpretationen. Eine Unklarheit führt üblicherweise auch dazu, dass $G_{1}$ und $G_{2}$ nicht semantisch äquivalent sind. Finden Sie eine entsprechende  
 Wahrheitsbelegung (Interpretationen) $I$, die nachweist, dass sich $G_{1}$ und $G_{2}$ semantisch unterscheiden, d.h., es muss $val_{I}(G_{1}) \not= val_{I}(G_{2})$ gelten.
 
+| $gr$ | $sch$ | $ri$ | $da$ | $wi$ | $br$ | $gr \land sch$ | $ri \implies \lnot da$ | $\lnot ri$ | $wi\nLeftrightarrow br$ | $G_{1}$ | $G_{2}$ |
+| ---- | ----- | ---- | ---- | ---- | ---- | -------------- | ---------------------- | ---------- | ----------------------- | ------- | ------- |
+| 1    | 1     | 1    | 0    | 1    | 0    | 1              | 1                      | 0          | 1                       | 1       | 0       |
+Unterschiedlich für $ri=1$ und $da=0$ aufgrund des widerspruchs in der angabe zu risheehat tee
+
 Falls die Formeln äquivalent sind: was bedeutet das in Bezug auf die Unklarheit?  
+Wären sie äquivalent hätte die unklarheit keine bedeutung bzw. wäre sie vlt gar keine unklarheit
 
 Hinweis: Eine vollständige Wahrheitstabelle ist hier nicht notwendig, Sie werden aber einzelne Zeilen auswerten müssen (und können dann auch gleich eine Interpretation ablesen).  
 ### e) 
 Es kann auch vorkommen, dass eine Ihrer Varianten eine unerfüllbare Formel ist. Was bedeutet  
 das für die Modellierung?  
 
+Dass die Modellierung wahrscheinlich falsch ist und die Angabe neu interpretiert werden muss. Rein theoretisch kann es aber auch sein, dass die Angabe nicht erfüllbar ist.
 ### Zusatzinformationen zu Aufgabe 5  
 Tee $[...]$ bezeichnet ein heißes Aufgussgetränk und Genussmittel, das aus den Blättern und Blattknospen, manchmal auch den Stängeln (Kukicha), der Teepﬂanze zubereitet wird. Tee enthält je nach aufgebrühtem Pﬂanzenteil rund 25–75 mg Coffein pro Tasse (250 ml). Im weiteren Sinne wird als ”Tee“ auch ein heißes Aufgussgetränk bezeichnet, das aus Blättern, Knospen, Blüten, Stängeln, Rinden oder auch Wurzeln anderer Pﬂanzen, insbesondere Kräutern oder Früchten, zubereitet wird.  
 $[...]$  
@@ -121,7 +386,7 @@ Es gibt zahlreiche Teegärten in Darjeeling, die jeweils Tee mit unterschiedlich
 
 Quelle: https://de.wikipedia.org/wiki/Darjeeling_(Tee)  
 
-Long Jing, auch Longjing, ist ein gerösteter Grüntee aus der Umgebung des Dorfes Longjing nahe der Stadt Hangzhou in der ostchinesischen Provinz Zhejiang. Der Longjing der Region Xihu (Westsee) geh¨ort zu den ”zehn bekanntesten Teesorten Chinas“  
+Long Jing, auch Longjing, ist ein gerösteter Grüntee aus der Umgebung des Dorfes Longjing nahe der Stadt Hangzhou in der ostchinesischen Provinz Zhejiang. Der Longjing der Region Xihu (Westsee) gehört zu den ”zehn bekanntesten Teesorten Chinas“  
 
 Quelle: https://de.wikipedia.org/wiki/Long_Jing  
 
