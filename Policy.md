@@ -145,3 +145,17 @@ keine interesse geld an schuel nzu investieren
 reform bei schulbuch verlagen
 offenes schulbuch format
 geld darf nur für schulbuch ausgegeben werden aber nicht für interaktive ressourcen 
+
+## Zusammenfassung
+## Was war besonders spannend
+
+## Wo haben sie etwas neues dazugelernt
+
+## Wo waren sie anderer Meinung
+
+## Wurde eine Ihrer Fragen beantwortet
+
+## Welche der vertretenen Personen/Antworten hat bei Ihnen am meisten Zustimmung gefunden bzw. ist auf Ablehnung gestoßen. 
+
+## Diskussionsbeiträge
+## Feedback
