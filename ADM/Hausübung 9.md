@@ -44,6 +44,7 @@ $e^{-1}=e$
 ### inverses Element
 von Definition gegeben
 
+
 ## 453) 
 Sei $M$ die Menge aller positiven Teiler von $60$. Bestimmen Sie alle Komplemente in $(M, ggT, kgV)$.
 Ist diese Struktur eine Boolesche Algebra?
@@ -94,3 +95,44 @@ $$(x_{1}, x_{2}) + (y_{1}, y_{2}) = (x_{1} + y_{1}, 0)$$
 Vektorräume sind eine Gruppe und haben daher ein neutrales Element
 $(x_{1},x_{2})+(e_{1},e_{2})=(x_{1},0)$
 es gibt kein neutrales Element, daher keine Gruppe, daher kein Vektorraum
+
+## Präsenzaufgabe
+$(\{ x,y,z \},\vartriangle,*)$ ein Körper
+
+| $\vartriangle$ | $x$ | $y$ | $z$ |
+| -------------- | --- | --- | --- |
+| $x$            | x   | y   | z   |
+| $y$            | y   | z   | x   |
+| $z$            | z   | x   | y   |
+Assoziativ: $(x\vartriangle y)\vartriangle z=x \vartriangle (y \vartriangle  z)$
+$x=x$
+Distributiv:
+$x\vartriangle(y* z)=(x\vartriangle y) * (x\vartriangle z)$
+$y=y$
+Symmetrisch also kommutativ
+neutrales Element $x$
+Inverse:
+$x \vartriangle x = x$
+$y \vartriangle z=x$
+$z \vartriangle y = x$
+
+
+| $*$ | $x$ | $y$ | $z$ |
+| --- | --- | --- | --- |
+| $x$ | x   | x   | x   |
+| $y$ | x   | z   | y   |
+| $z$ | x   | y   | z   |
+$\mathbb{Z}_{3},+,\cdot$
+
+
+Nullelement: $x$
+
+| *   | y   | z   |
+| --- | --- | --- |
+| y   | z   | y   |
+| z   | y   | z   |
+Symmetrisch also kommutativ
+neutrales Element $z$
+Inverse:
+$y * y=z$
+$z * z=z$
