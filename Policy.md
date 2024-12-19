@@ -188,4 +188,6 @@ Meine Frage wurde leider nicht beantwortet. Dies war jedoch bei der schieren Anz
 Fand am meisten Zustimmung bei Thomas Lohninger wie er über das wirtschaftliche Versagen Europas geredet hat und die Masse an zu vielen einzelnen Gesetzen mit denen keiner hinterherkommt. 
 
 ## Diskussionsbeiträge
+![[Pasted image 20241219172617.png]]
+
 ## Feedback
