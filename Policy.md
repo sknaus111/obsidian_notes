@@ -51,25 +51,6 @@ Meine Frage wurde leider nicht beantwortet. Dies war jedoch bei der schieren Anz
 Fand am meisten Zustimmung bei Thomas Lohninger wie er über das wirtschaftliche Versagen Europas geredet hat und die Masse an zu vielen einzelnen Gesetzen mit denen keiner hinterherkommt. 
 
 ## Diskussionsbeiträge
-
-Hallo Kollegen und Kolleginnen,
-
-Ich habe letztens gehört dass man in Südkorea für verschiedene Plattformen sich mit einem Pass oder Lichtbild Ausweis anmelden muss -> daher keine anonymität.
-
-Dazu habe ich mir ein paar Gedanken gemacht und würde gerne eure Meinungen dazu hören :)
-
-Folgende Gedanken hab ich mir gemacht:
-
-Die Befürworter sagen, dass ein solches Verbot Straftaten wie Cybermobbing, Hate Speech oder Betrug reduzieren könnte. Menschen wären online verantwortungsvoller, wenn sie mit ihrem echten Namen auftreten müssten.
-
-Kritiker warnen jedoch davor, dass dadurch die Meinungsfreiheit eingeschränkt wird, vor allem für Whistleblower, Aktivisten oder Menschen in repressiven Regimen. Zudem könnte ein Verlust der Anonymität Datenmissbrauch und Überwachung fördern und die Privatsphäre der Nutzer gefährden.
-
-Eine Alternative wäre, Plattformen zu verpflichten, die Identität der Nutzer zu kennen, diese aber nur bei Rechtsverstößen offenzulegen. Auch strengere Plattformregeln oder mehr digitale Bildung könnten helfen, ohne die Anonymität ganz aufzugeben. Was denkt ihr: Führt ein Verbot der Anonymität zu mehr Sicherheit, oder geht es zu weit? Gibt es bessere Wege, um den Missbrauch im Netz einzudämmen?
-
-Ich freue mich auf eure Meinungen!
-
-
-
 Hallo Linda,
 
 meiner Meinung nach muss das Internet auf jeden Fall anonym bleiben. Da hast ja bereits das Beispiel Südkorea genannt und da würde ich gerne noch mal mehr darauf eingehen. Vor knapp zwei Wochen ist es ja passiert, dass der südkoreanische Präsident das Kriegsrecht ausgerufen hat und das Land fast in eine Diktatur gestürzt hat. So kann es auch in demokratischen Regierungen zu solchen Ausnahmezuständen kommen. Aufgrund dessen muss die Anonymität im Netz bewahrt werden, um die. Überwachungsfähigkeiten der Regierung einzuschränken.
@@ -88,4 +69,7 @@ https://www.dw.com/de/anonymit%C3%A4t-im-internet-sinnvoll-oder-gef%C3%A4hrlich/
 
 MFG 
 Stefan
+=======
+![[Pasted image 20241219172617.png]]
+
 ## Feedback
