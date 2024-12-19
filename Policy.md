@@ -45,7 +45,7 @@ Viel Über Dark Patterns dazugelernt. Wie diese von Unternehmen genutzt werden u
 War teilweise anderer Meinung, dass es nur schlecht war den Technologiebereich unreguliert zu lassen. Hätte man von Anfang an stark eingegriffen wären wir technologisch wahrscheinlich nicht auf dem Stand auf dem wir heute sind. Auch bei den selbst fahrenden Autos sehe ich es fragwürdig die Entwickler für die Unfälle verantwortlich zu machen. Wenn das Management mit Zeit und Geld einspart um schneller und billiger die Software zu entwickeln und die Programmierer und Stress und Crunch leiden sollte die Verantwortung nicht bei ihnen liegen.
 
 ## Wurde eine Ihrer Fragen beantwortet
-
+![[Screenshot 2024-12-12 141613.png]]
 Meine Frage wurde leider nicht beantwortet. Dies war jedoch bei der schieren Anzahl an Fragen auch eher unwahrscheinlich
 
 ## Welche der vertretenen Personen/Antworten hat bei Ihnen am meisten Zustimmung gefunden bzw. ist auf Ablehnung gestoßen.
