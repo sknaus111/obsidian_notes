@@ -45,6 +45,7 @@ Viel Über Dark Patterns dazugelernt. Wie diese von Unternehmen genutzt werden u
 War teilweise anderer Meinung, dass es nur schlecht war den Technologiebereich unreguliert zu lassen. Hätte man von Anfang an stark eingegriffen wären wir technologisch wahrscheinlich nicht auf dem Stand auf dem wir heute sind. Auch bei den selbst fahrenden Autos sehe ich es fragwürdig die Entwickler für die Unfälle verantwortlich zu machen. Wenn das Management mit Zeit und Geld einspart um schneller und billiger die Software zu entwickeln und die Programmierer und Stress und Crunch leiden sollte die Verantwortung nicht bei ihnen liegen.
 
 ## Wurde eine Ihrer Fragen beantwortet
+
 Meine Frage wurde leider nicht beantwortet. Dies war jedoch bei der schieren Anzahl an Fragen auch eher unwahrscheinlich
 
 ## Welche der vertretenen Personen/Antworten hat bei Ihnen am meisten Zustimmung gefunden bzw. ist auf Ablehnung gestoßen.
@@ -57,3 +58,7 @@ Fand am meisten Zustimmung bei Thomas Lohninger wie er über das wirtschaftliche
 ![[Pasted image 20241219172617.png]]
 
 ## Feedback
+Meiner Meinung nach war das Panel relativ gut organisiert. Verbesserungswürdig ist vielleicht die Vorgabe, genau eine Frage zu stellen. Somit stellt jeder wirklich eine Frage um das Kriterium zu erfüllen obwohl man ja auch während des Panels mit Kommentaren an anderen Beiträgen mitdiskutieren könnte. 
+
+Allgemein ist das Format sehr wirksam und ich habe viel über Policy Thinking gelernt.
+
