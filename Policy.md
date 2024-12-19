@@ -1,77 +1,3 @@
-nternet ist mehr als nur ein wirtschaftlicher Antrieb, sondern soll die Menschen generell empowern. Dennoch sind zu viele Gesetze, die die EU macht wo die Qualität der Gesetzgebung auch darunter leidet. 
-
-In China ist jedoch auch große Regulierung und trotzdem wirtschaftlich stark.
-
-
-Eu ist in den letzten Jahren in der Warnehumung zu einem Regulierungsmonster geworden. Fokus auf europäische Werte verloren gegangen. 
-
-In den USA geht es der Wirtschaft im digitalen sehr gut aber den Menschen nicht so.
-
-Letzten 20 Jahre an Unregulierungne müssen jedoch gearbeitet werden.
-
-Mangelnde Kommunikation an außen. 
-
-Sehr europäische Art alles aufzuzählen was verboten ist, und nicht dass was gut sein soll. Dadurch ewig lang
-Sollte mehr auf idealem Modell und interpretation basieren.
-
-Technollgie steigt rasant. 
-3 Jahre pro EU gesetz. 
-2-5
-
-veraltet immer 
-
-angst vor zu viel staatlicher kontrolle
-strafen gegen google, facebook, apple dauern jahre durchzusetzten, umgehen regelungen
-
-bei ai act wird versucht zu regulieren was nicht verstanden wird
-
-verbot an gesichtserkennun, usw vorgeschlagen
-
-drohnen 
-automatisierte tötungsentscheidungne
-politik muss auf diese aspekte mehr schützen
-
-automatisierung wird schnell groß
-
-gesellschaftlicher 0-day für den staat
-sinvolle regulierungen schnell zu treffen schwer
-
-pase layering
-governance langsamer da weittragende effekte
-
-china reguliert big tech mittlerweile auch sehr stark
-wirkungsvolle regulierung
-
-lobbying nimmt auch einfluss auf regulierungen
-kleinere firmen werden durch ai-act ausgedrenckt, monopol
-
-ams algorithmus hat transparenz, vlt mehr transparenz allgemein als regulierung
-
-dsgvo automatisiert lösbar
-cookie banner 
-standard hat pay or consent erfunden
-
-2026 id-austira ablösen
-eidas
-
-widersprechen oft nicht wirklich möglich
-
-keine aktive verfolgung von gesetzeswidrigen cookiebannern
-allg. design sicherheit nicht wichtig genung 
-
-autos hatten keine regulierungne am anfang
-heutzutage genau reguliert
-organisationen die sich nur um regulierungen von verkehr kümmern
-
-bräuchte datenschutzpolizei so dass nciht jeder mensch verantwortunbg trägt
-
-datenschutzbehörde nur behörde, beispiel ams algorithmus
-
-cyber resilience akt für  sicherheit von an internet anhängenden devices, keine ausnahmen für kleine mittlere unternehmen
-
-von der regierung ressourcen die sich mit datenschutz beschäftigen
-
-dark patterns verboten
 ## Gäste
 Die beiden Gäste, welche über das Thema Policy Thinking gesprochen haben, waren Thomas Lohninger und Fares Kayali
 ### Thomas Lohninger
@@ -109,69 +35,6 @@ In den Schulen werden Schüler praktisch dazu gezwungen Programme wie Google Cla
 
 Vielen Schulen mangelt es aktuell noch an Ressourcen um auf Open-Source Lösungen umzusteigen und somit sind diese an die Programme amerikanischer Unternehmen wie Microsoft gebunden. Wie das Geld an Schulen ausgegeben ist muss auch überdacht werden. Das aktuelle Schulbuchformat ist sehr veraltet und sollte reformiert werden. 
 
-
-
-selbstfahrende autos unfall schwierig phisosophishc
-persönliche Moral in frage stellen, wie können systeme missbraucht werden / fehlschlagen
-große verantwortung
-
-verwantwortung vlt bei entwickler/ persönlioche meinung bei projektleitung crunch
-
-verantwortung liegt bei allen, hersteller fahrer entwickler
-
-engeneure protestiert gegen vetrag mit polizei und google in usa
-
-drittel der autopannen fehler in der elektronik
-
-in letzten jahren mehr passanten die in unfällen sterben
-
-
-auftragsdatenverabeiter vetrag mit tuwien und zoom das dsgvo konform ist
-
-in schulen google classrooms, windows usw gezwungen wird
-nicht dsgvo konform, streit mit bildungsministerium
-optionen die dsgvo konform sind
-daten in usa zu übertragen nicht rechtens
-
-
-schulverwaltung nicht bei microsoft schon geschafft
-
-alternativen zu kommerzieller software aus usa sollte genutzt werden
-mehr anstregung nötig in europa gehostet 
-
-digital soverignty
-selbstständiges europa mit digitalen optionen
-gerechtes anpassbares internet nicht kontrolliert von riesigen amerikanischen unternehmen
-
-digitale grundbildung nur msoffice keine alternativen
-
-europäische alternativen zu ai zu schaffen
-katastrophe amerikanische big tech ai in schulsystem einfließen zu lassen
-
-schulen wenig geld für techn. infrastruktur
-keine ressourcen für open source lösungen
-
-
-abgaben in alternative formaten mittlerweile möglich
-vetrag mit zoom und tuwien datenverarbeitung in europa
-dennoch kann usa daten einfordern
-zoom beste lösung am markt
-
-tuwien leiter tu it ausgeworfen
-aktueller it leiter kurs digitaler soverenität
-vorreiterrolle als techn uni
-
-europäisch projekt akademisch software unabhängig von usa
-
-kein microsoft usw.
-
-keine lösung für zu wenig ressourcen an schulen in sicht
-keine interesse geld an schuel nzu investieren
-
-reform bei schulbuch verlagen
-offenes schulbuch format
-geld darf nur für schulbuch ausgegeben werden aber nicht für interaktive ressourcen 
-
 ## Was war besonders spannend
 Besonders spannend war, wie China die Regulierung von riesigen Tech Konzernen in den Griff bekommt. Doch ist meiner Meinung nach überdenklich ob so ein Konzept auch in Europa funktionieren kann. Schließlich hat die chinesische Regierung deutlich mehr Kontrolle als hier und das staatliche Eingreifen dort ist frei für Interpretation, wobei hier der Staat den Regeln folgen muss, welche er selber aufgestellt hat.
 
@@ -188,4 +51,41 @@ Meine Frage wurde leider nicht beantwortet. Dies war jedoch bei der schieren Anz
 Fand am meisten Zustimmung bei Thomas Lohninger wie er über das wirtschaftliche Versagen Europas geredet hat und die Masse an zu vielen einzelnen Gesetzen mit denen keiner hinterherkommt. 
 
 ## Diskussionsbeiträge
+
+Hallo Kollegen und Kolleginnen,
+
+Ich habe letztens gehört dass man in Südkorea für verschiedene Plattformen sich mit einem Pass oder Lichtbild Ausweis anmelden muss -> daher keine anonymität.
+
+Dazu habe ich mir ein paar Gedanken gemacht und würde gerne eure Meinungen dazu hören :)
+
+Folgende Gedanken hab ich mir gemacht:
+
+Die Befürworter sagen, dass ein solches Verbot Straftaten wie Cybermobbing, Hate Speech oder Betrug reduzieren könnte. Menschen wären online verantwortungsvoller, wenn sie mit ihrem echten Namen auftreten müssten.
+
+Kritiker warnen jedoch davor, dass dadurch die Meinungsfreiheit eingeschränkt wird, vor allem für Whistleblower, Aktivisten oder Menschen in repressiven Regimen. Zudem könnte ein Verlust der Anonymität Datenmissbrauch und Überwachung fördern und die Privatsphäre der Nutzer gefährden.
+
+Eine Alternative wäre, Plattformen zu verpflichten, die Identität der Nutzer zu kennen, diese aber nur bei Rechtsverstößen offenzulegen. Auch strengere Plattformregeln oder mehr digitale Bildung könnten helfen, ohne die Anonymität ganz aufzugeben. Was denkt ihr: Führt ein Verbot der Anonymität zu mehr Sicherheit, oder geht es zu weit? Gibt es bessere Wege, um den Missbrauch im Netz einzudämmen?
+
+Ich freue mich auf eure Meinungen!
+
+
+
+Hallo Linda,
+
+meiner Meinung nach muss das Internet auf jeden Fall anonym bleiben. Da hast ja bereits das Beispiel Südkorea genannt und da würde ich gerne noch mal mehr darauf eingehen. Vor knapp zwei Wochen ist es ja passiert, dass der südkoreanische Präsident das Kriegsrecht ausgerufen hat und das Land fast in eine Diktatur gestürzt hat. So kann es auch in demokratischen Regierungen zu solchen Ausnahmezuständen kommen. Aufgrund dessen muss die Anonymität im Netz bewahrt werden, um die. Überwachungsfähigkeiten der Regierung einzuschränken.
+
+https://www.diepresse.com/19144350/praesident-in-suedkorea-scheitert-an-kriegsrecht-coup
+
+Weiters muss man darüber nachdenken, wie Anonymität gehandhabt wird. Ist jeder mit seinem echten Namen im Netz? Faschisten und andere Gruppen hätten damit eine einfache Zeit, ihre Opfer zu finden und auf Hexenjagd zu gehen. Einzelne Personen könnten diesen Gruppen nur schwer entgegenstehen. Ist die Identität nur in den Händen der Regierung, lässt sich trotzdem die fragen, ob die Daten nicht von Hackern oder Spionen anderer Länder genutzt werden können um enormen Schaden anzurichten. So einen gigantischen Risikofaktor gäbe es bei einem anonymen Netz nicht. 
+
+Sicher hat die Anonymität im Netz auch Schattenseiten. Verbrecher bleiben durch die Anonymität geschützt und eine Strafverfolgung ist nur schwer möglich. Auch ermöglicht die Anonymität ein Umfeld, indem Hass und Hetzrede einfacher durchgehen, schließlich trägt man im echten Leben nie Konsequenzen daraus.
+
+https://files.ifi.uzh.ch/hilty/t/examples/IEG/Chancen_und_Risiken_der_%20Anonymitaet_im_Internet_Kuenzler_Scheibli_Schweizer.pdf
+
+Doch bleibt aufgrund dieser Nachteile die Anonymität im Internet unabwendbar. Klarnamen stehen der freien Meinungsäußerung im Weg, einem Grundpfeiler der Demokratie. Auch könnten, wie bereits oben erwähnt, Opfer leichter ausfindig gemacht werden. 
+
+https://www.dw.com/de/anonymit%C3%A4t-im-internet-sinnvoll-oder-gef%C3%A4hrlich/a-51994066
+
+MFG 
+Stefan
 ## Feedback
