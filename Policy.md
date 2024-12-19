@@ -51,25 +51,9 @@ Meine Frage wurde leider nicht beantwortet. Dies war jedoch bei der schieren Anz
 Fand am meisten Zustimmung bei Thomas Lohninger wie er über das wirtschaftliche Versagen Europas geredet hat und die Masse an zu vielen einzelnen Gesetzen mit denen keiner hinterherkommt. 
 
 ## Diskussionsbeiträge
-Hallo Linda,
-
-meiner Meinung nach muss das Internet auf jeden Fall anonym bleiben. Da hast ja bereits das Beispiel Südkorea genannt und da würde ich gerne noch mal mehr darauf eingehen. Vor knapp zwei Wochen ist es ja passiert, dass der südkoreanische Präsident das Kriegsrecht ausgerufen hat und das Land fast in eine Diktatur gestürzt hat. So kann es auch in demokratischen Regierungen zu solchen Ausnahmezuständen kommen. Aufgrund dessen muss die Anonymität im Netz bewahrt werden, um die. Überwachungsfähigkeiten der Regierung einzuschränken.
-
-https://www.diepresse.com/19144350/praesident-in-suedkorea-scheitert-an-kriegsrecht-coup
-
-Weiters muss man darüber nachdenken, wie Anonymität gehandhabt wird. Ist jeder mit seinem echten Namen im Netz? Faschisten und andere Gruppen hätten damit eine einfache Zeit, ihre Opfer zu finden und auf Hexenjagd zu gehen. Einzelne Personen könnten diesen Gruppen nur schwer entgegenstehen. Ist die Identität nur in den Händen der Regierung, lässt sich trotzdem die fragen, ob die Daten nicht von Hackern oder Spionen anderer Länder genutzt werden können um enormen Schaden anzurichten. So einen gigantischen Risikofaktor gäbe es bei einem anonymen Netz nicht. 
-
-Sicher hat die Anonymität im Netz auch Schattenseiten. Verbrecher bleiben durch die Anonymität geschützt und eine Strafverfolgung ist nur schwer möglich. Auch ermöglicht die Anonymität ein Umfeld, indem Hass und Hetzrede einfacher durchgehen, schließlich trägt man im echten Leben nie Konsequenzen daraus.
-
-https://files.ifi.uzh.ch/hilty/t/examples/IEG/Chancen_und_Risiken_der_%20Anonymitaet_im_Internet_Kuenzler_Scheibli_Schweizer.pdf
-
-Doch bleibt aufgrund dieser Nachteile die Anonymität im Internet unabwendbar. Klarnamen stehen der freien Meinungsäußerung im Weg, einem Grundpfeiler der Demokratie. Auch könnten, wie bereits oben erwähnt, Opfer leichter ausfindig gemacht werden. 
-
-https://www.dw.com/de/anonymit%C3%A4t-im-internet-sinnvoll-oder-gef%C3%A4hrlich/a-51994066
-
-MFG 
-Stefan
-=======
+[[https://tuwel.tuwien.ac.at/mod/forum/discuss.php?d=468086#p1068350]]
+![[Pasted image 20241219184937.png]]
+[[https://tuwel.tuwien.ac.at/mod/forum/discuss.php?d=467591#p1068269]]
 ![[Pasted image 20241219172617.png]]
 
 ## Feedback
