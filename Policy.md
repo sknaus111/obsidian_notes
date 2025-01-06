@@ -52,9 +52,9 @@ Meine Frage wurde leider nicht beantwortet. Dies war jedoch bei der schieren Anz
 Fand am meisten Zustimmung bei Thomas Lohninger wie er über das wirtschaftliche Versagen Europas geredet hat und die Masse an zu vielen einzelnen Gesetzen mit denen keiner hinterherkommt. 
 
 ## Diskussionsbeiträge
-[[https://tuwel.tuwien.ac.at/mod/forum/discuss.php?d=468086#p1068350]]
+https://tuwel.tuwien.ac.at/mod/forum/discuss.php?d=468086#p1068350
 ![[Pasted image 20241219184937.png]]
-[[https://tuwel.tuwien.ac.at/mod/forum/discuss.php?d=467591#p1068269]]
+https://tuwel.tuwien.ac.at/mod/forum/discuss.php?d=467591#p1068269
 ![[Pasted image 20241219172617.png]]
 
 ## Feedback
