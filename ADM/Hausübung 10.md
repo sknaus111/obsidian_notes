@@ -156,3 +156,7 @@ $$
 \end{matrix}\right)
 $$
 Zwei linear unabhängige Spalten also Rang 2
+
+## Präsenzaufgabe
+Seien $v_{1},v_{2},v_{3}, w \in V$
+zu zeigen ist: $[\{ v_{1},v_{2},v_{3},w \}] = [\{ v_{1},v_{2},v_{3} \}] \iff$ $w$ kann als Linearkombination von $v_{1},v_{2},v_{3}$ dargestellt werden. 
