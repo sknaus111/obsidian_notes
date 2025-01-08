@@ -160,3 +160,17 @@ Zwei linear unabhängige Spalten also Rang 2
 ## Präsenzaufgabe
 Seien $v_{1},v_{2},v_{3}, w \in V$
 zu zeigen ist: $[\{ v_{1},v_{2},v_{3},w \}] = [\{ v_{1},v_{2},v_{3} \}] \iff$ $w$ kann als Linearkombination von $v_{1},v_{2},v_{3}$ dargestellt werden. 
+
+$\implies$
+Da $w\in [\{ v_{1},v_{2},v_{3},w \}]$ ist, ist $w\in[\{ v_{1},v_{2},v_{3} \}]$. Also kann $w$ als Linearkombination der Form
+$w=\lambda_{1}v_{1}+\lambda_{2}v_{2}+\lambda_{3}v_{3}$ dargestellt werden
+
+$\impliedby$
+Angenommen $w=\lambda_{1}v_{1}+\lambda_{2}v_{2}+\lambda_{3}v_{3}$
+Sei $x\in[\{ v_{1},v_{2},v_{3},w \}]$ also $x=\mu_{1}v_{1}+\mu_{2}v_{2}+\mu_{3}v_{3}+\mu_{4}w$ kann man $w$ einsetzen und ausklammern
+$x=\mu_{1}v_{1}+\mu_{2}v_{2}+\mu_{3}v_{3}+\mu_{4}\lambda_{1}v_{1}+\mu_{4}\lambda_{2}v_{2}+\mu_{4}\lambda_{3}v_{3}$
+$x=x_{1}\cdot(\mu_{1}+\mu_{4}\lambda_{1})+x_{2}\cdot(\mu_{2}+\mu_{4}\lambda_{2})+x_{2}\cdot(\mu_{3}+\mu_{4}\lambda_{3})$
+Also ist $x$ eine Linearkombination und somit auch in $x\in[\{ v_{1},v_{2},v_{3} \}]$
+$[\{ v_{1},v_{2},v_{3},w \}]\subseteq[\{ v_{1},v_{2},v_{3} \}]$
+Andere Richtung ist $\{ v_{1},v_{2},v_{3} \} \subseteq \{ v_{1},v_{2},v_{3},w \}$ und somit $[\{ \dots \}] \subseteq [\{ \dots \}]$
+somit ist $[\{ \dots \}]=[\{ \dots \}]$
