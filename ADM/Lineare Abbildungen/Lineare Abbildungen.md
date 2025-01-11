@@ -62,9 +62,11 @@ die dazu gehörige Matrix, d.h. $A\cdot x$ ist der um den Winkel $\varphi$ gedre
 Die Matrix $S=\left(\begin{matrix}1 & 0  \\0 & -1\end{matrix}\right)$ entspricht der Spiegelung an der $x_{1}$-Achse
 #### c
 Die Matrix $P=\left(\begin{matrix}1/2 & 1 / 2 \\1 / 2 & 1 / 2 \end{matrix}\right)$ projiziert auf die erste Mediane
-
+## Hintereinanderausführung linearer Abbildungen
 Offensichtlich ist die #Hintereinanderausführung $h=g \circ f$ zweier linearer Abbildungen $f$ und $g$ wieder eine lineare Abbildung. Ist insbesonder $f(x)=A\cdot x$ und $g(x)=B\cdot y$, so ist
 $$
 h(x)=g(f(x))=g(A\cdot x)=B\cdot (A\cdot x)=(B\cdot A)\cdot x=C\cdot x
 $$
-jene lineare Abbildung, die durch das Produkt 
+jene lineare Abbildung, die durch das Produkt $C=B\cdot A$ der beiden Matrizen $B$ und $A$ gebildet wird. Das Matrizenprodukt entspricht daher der Hintereinanderausführung von linearen Abbildungen.
+
+### Koordinatenwechsel
