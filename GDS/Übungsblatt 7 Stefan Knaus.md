@@ -73,19 +73,33 @@ Endzustände: $\{ Aez \}$
 ### c) 
 Vervollständigen Sie Ihren Automaten aus der ersten Teilaufgabe zu einem geeigneten Automaten, sodass es nach jeder Runde eine Ausgabe gibt. Nach einer Runde in der Person A (bzw. Person B) das Spiel gewonnen hat, soll der Automat win A (bzw. win B) ausgeben.
 
-|      | AB-0                    | $A-1$                   | $A-2$                   | $B-1$                    | $B-2$                   |
-| ---- | ----------------------- | ----------------------- | ----------------------- | ------------------------ | ----------------------- |
-| sz   | $\{ (Draw, sz) \}$      | $\{ (A ~Win,A 2) \}$    | $\{ (A ~Win,A 1) \}$    | $\{ (B ~Win,B 2) \}$     | $\{ (B ~Win,B 1) \}$    |
-| A2   | $\{ (Draw, A 2) \}$     | $\{ (A ~Win,A 1) \}$    | $\{ (A~Win,Aez) \}$     | $\{ (B~Win, A 2 B 2) \}$ | $\{ (B~Win,A 2 B 1) \}$ |
-| A1   | $\{ (Draw, A 1) \}$     | $\{ (A~Win,Aez) \}$     | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,A 1 B 2) \}$  | $\{ (B~Win,A 1 B 1) \}$ |
-| B2   | $\{ (Draw, B 2) \}$     | $\{ (A~win,A 2 B 2) \}$ | $\{ (A~Win,A 1 B 2) \}$ | $\{ (B ~Win,B 1) \}$     | $\{ (B~Win,Bez) \}$     |
-| B1   | $\{ (Draw, B 1) \}$     | $\{ (A~Win,A 2 B 1) \}$ | $\{ (A~Win,A 1 B 1) \}$ | $\{ (B~Win,Bez) \}$      | $\{ (B~Win,Bez) \}$     |
-| A1B1 | $\{ (Draw, A 1 B 1) \}$ | $\{ (A~Win,Aez) \}$     | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,Bez) \}$      | $\{ (B~Win,Bez) \}$     |
-| A1B2 | $\{ (Draw, A 1 B 2) \}$ | $\{ (A~Win,Aez) \}$     | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,A 1 B 1) \}$  | $\{ (B~Win,Bez) \}$     |
-| A2B1 | $\{ (Draw, A 2 B 1) \}$ | $\{ (A~Win,A 1 B 1) \}$ | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,Bez) \}$      | $\{ (B~Win,Bez) \}$     |
-| A2B2 | $\{ (Draw, A 2 B 2) \}$ | $\{ (A~Win,A 1 B 2) \}$ | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,A 2 B 1) \}$  | $\{ (B~Win,Bez) \}$     |
-| Aez  |                         |                         |                         |                          |                         |
-| Bez  |                         |                         |                         |                          |                         |
+|      | AB-0                    | $A-1$                   | $A-2$                   | $B-1$                    |
+| ---- | ----------------------- | ----------------------- | ----------------------- | ------------------------ |
+| sz   | $\{ (Draw, sz) \}$      | $\{ (A ~Win,A 2) \}$    | $\{ (A ~Win,A 1) \}$    | $\{ (B ~Win,B 2) \}$     |
+| A2   | $\{ (Draw, A 2) \}$     | $\{ (A ~Win,A 1) \}$    | $\{ (A~Win,Aez) \}$     | $\{ (B~Win, A 2 B 2) \}$ |
+| A1   | $\{ (Draw, A 1) \}$     | $\{ (A~Win,Aez) \}$     | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,A 1 B 2) \}$  |
+| B2   | $\{ (Draw, B 2) \}$     | $\{ (A~win,A 2 B 2) \}$ | $\{ (A~Win,A 1 B 2) \}$ | $\{ (B ~Win,B 1) \}$     |
+| B1   | $\{ (Draw, B 1) \}$     | $\{ (A~Win,A 2 B 1) \}$ | $\{ (A~Win,A 1 B 1) \}$ | $\{ (B~Win,Bez) \}$      |
+| A1B1 | $\{ (Draw, A 1 B 1) \}$ | $\{ (A~Win,Aez) \}$     | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,Bez) \}$      |
+| A1B2 | $\{ (Draw, A 1 B 2) \}$ | $\{ (A~Win,Aez) \}$     | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,A 1 B 1) \}$  |
+| A2B1 | $\{ (Draw, A 2 B 1) \}$ | $\{ (A~Win,A 1 B 1) \}$ | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,Bez) \}$      |
+| A2B2 | $\{ (Draw, A 2 B 2) \}$ | $\{ (A~Win,A 1 B 2) \}$ | $\{ (A~Win,Aez) \}$     | $\{ (B~Win,A 2 B 1) \}$  |
+| Aez  |                         |                         |                         |                          |
+| Bez  |                         |                         |                         |                          |
+
+|      | $B-2$                   |
+| ---- | ----------------------- |
+| sz   | $\{ (B ~Win,B 1) \}$    |
+| A2   | $\{ (B~Win,A 2 B 1) \}$ |
+| A1   | $\{ (B~Win,A 1 B 1) \}$ |
+| B2   | $\{ (B~Win,Bez) \}$     |
+| B1   | $\{ (B~Win,Bez) \}$     |
+| A1B1 | $\{ (B~Win,Bez) \}$     |
+| A1B2 | $\{ (B~Win,Bez) \}$     |
+| A2B1 | $\{ (B~Win,Bez) \}$     |
+| A2B2 | $\{ (B~Win,Bez) \}$     |
+| Aez  |                         |
+| Bez  |                         |
 Startzustände: $\{ sz \}$
 Endzustände: $\{ Aez,Bez \}$
 ### d) 
