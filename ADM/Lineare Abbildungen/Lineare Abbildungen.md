@@ -70,3 +70,66 @@ $$
 jene lineare Abbildung, die durch das Produkt $C=B\cdot A$ der beiden Matrizen $B$ und $A$ gebildet wird. Das Matrizenprodukt entspricht daher der Hintereinanderausführung von linearen Abbildungen.
 
 ### Koordinatenwechsel
+Der #Koordinatenwechsel zwischen zwei verschiedenen Basen $B=\{ b_{1},b_{2},\dots,b_{n} \}$ und $C=\{ c_{1},c_{2},\dots,c_{n} \}$ eines $n$-dimensionalen Vektorraums $V$, also die Frage, wie man die Koordinaten $\Phi_{B}(x)$ in die Koordinaten $\Phi_{C}(x)$ umrechnet, kann ebenfalls mit Hilfe einer Matrizenmultiplikation gelöst werden. Formal geschieht der Koordinatenwechsel einfach durch die 
+lineare Abbildung $\Phi_{C} \circ \Phi_{B}^{-1}:K^{n}\rightarrow K^{n}$. Dies kann aber durch eine Matrix
+
+$$
+T_{B,C} = \left(\begin{matrix}
+\Phi_{C}(b_{1}) & \Phi_{C}(b_{2}) & \dots & \Phi_{C}(b_{n})
+\end{matrix}\right)
+$$
+mit den Spalten $(\Phi_{c}\circ\Phi_{B}^{-1})(e_{j})=\Phi_{C}(b_{j})$ realisiert werden. Es gilt daher
+$$
+T_{B,C} \cdot \Phi_{B}(x)=\Phi_{C}(x)
+$$
+Abschließend definieren wir zwei wichtige Kenngrößen von linearen Abbildungen
+
+## Kern und Bild
+Es sei $f:V\rightarrow W$ eine lineare Abbildung. Die Mengen
+$$
+ker(f)=\{ x\in V|f(x)=0 \}
+$$
+und
+$$
+f(V)=\{ f(x)|x\in V \}
+$$
+heißen #Kern und #Bild von $f$. Die Dimension des Kerns und des Bilds sind der #Defekt und der #Rang von $f$
+$$
+def(f)=dim(ker(f))
+$$
+und
+$$
+rg(f)=dim(f(V))
+$$
+Es ist leicht zu sehen, dass $ker(f)$ und $f(V)$ Teilräume von $V$ bzw. $W$ sind. Defekt und Rang sind daher immer wohldefiniert. Außerdem entspricht der Rang einer linearen Abbildung der Form $f(x)=A\cdot x$ genau dem Rang der Matrix $A$, da die Spalten von $A$ die Bilder der kanonischen Basisvektoren sind und daher alle möglichen Bildvektoren aufspannen:
+$$
+rg(A)=rg(f)
+$$
+Rang und Defekt einer linearen Abbildung erfüllen eine einfache Beziehung
+### Rangformel
+Es sei $V$ ein eindlichdimensionaler Vektorraum und $f:V\rightarrow W$ eine lineare Abbildung. Dann gilt
+$$
+rg(f)+def(f)=dimV
+$$
+Eine lineare Abbildung $f:\mathbb{R}^{2}\rightarrow \mathbb{R}^{2}$ sei durch Angabe der zugehörigen Matrix
+$$
+A=\left(\begin{matrix}
+1 & 2  \\
+2 & 4
+\end{matrix}\right)
+$$
+gegeben. Der Raum $ker(f)$ bestimmt sich durch die Gleichung $f(x)=A\cdot x=0$ und $f(\mathbb{R}^{2})$ ist die lineare Hülle der Spalten von $A$. Nach kurzer Rechnung erhält man
+$$
+ker(f)=\left[\left(\begin{matrix}
+2 \\
+-1
+\end{matrix}\right)\right]
+$$
+und
+$$
+f(R^{2})=\left[\left(\begin{matrix}
+1 \\
+2
+\end{matrix}\right)\right]
+$$
+Beide Räume haben Dimension 1, also $def(f)=rg(f)=1$. Offensichtlich ist die Rangformel erfüllt: $1+1=2$
