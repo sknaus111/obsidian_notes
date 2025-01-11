@@ -5,7 +5,30 @@ $dim(ker(f )) + rg(f ) = dim \mathbb{R}^{2}$ und bestimmen Sie die Matrix von $f
 Basis.
 
 $$
-ker(f) =
+f\left(\begin{matrix}
+0 & 3 | 1 & 1 \\
+1 & 2 | -1 & -1
+\end{matrix}\right)
+$$
+$$
+f\left(\begin{matrix}
+3  & 0|1 & 1 \\ 
+2 & 1|-1 & -1
+\end{matrix}\right)
+$$
+$s_{1}=s_{1}-2s_{2}$
+$$
+f\left(\begin{matrix}
+3  & 0|-1 & 1 \\ 
+0 & 1|1 & -1
+\end{matrix}\right)
+$$
+$s_{1}=\frac{s_{1}}{3}$
+$$
+f\left(\begin{matrix}
+1  & 0|-\frac{1}{3} & 1 \\ 
+0 & \frac{1|1}{3} & -1
+\end{matrix}\right)
 $$
 ## 550)
 Bestimmen Sie mit dem Gaußschen Eliminationsverfahren die Lösung des Gleichungssystems über dem Körper $K$:
