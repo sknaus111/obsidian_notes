@@ -35,7 +35,7 @@ Das Bild des $j$-ten kanonischen Basisvektors ist also die $j$-te Spalte von $A$
 
 Umgekehrt kann einer linearen Abbildung eine Matrix zugeordnet werden, indem man die Bilder der kanonischen Basis bestimmt und zu einer Matrix zusammenfasst. Ist also $f:K^{n}\rightarrow K^{m}$ eine lineare Abbildung und 
 $$
-A=\left(f(e_{1}~~f(e_{2}~~\dots~~f(e_{n}))\right)
+A=\left(f(e_{1})~~f(e_{2})~~\dots~~f(e_{n})\right)
 $$
 so gilt für alle $x\in K^{n}$
 $$
