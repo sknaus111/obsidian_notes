@@ -24,12 +24,52 @@ f\left(\begin{matrix}
 \end{matrix}\right)
 $$
 $s_{1}=\frac{s_{1}}{3}$
+
 $$
-f\left(\begin{matrix}
+\left(\begin{matrix}
 1  & 0|-\frac{1}{3} & 1 \\ 
-0 & \frac{1|1}{3} & -1
+0 & 1|\frac{1}{3} & -1
 \end{matrix}\right)
 $$
+
+$$
+F(x) = \left(\begin{matrix}
+-\frac{1}{3} & 1 \\
+\frac{1}{3} & -1
+\end{matrix}\right)
+\left(\begin{matrix}
+x_{1} \\
+x_{2}
+\end{matrix}\right)
+=\left(\begin{matrix}
+-\frac{1}{3}x_{1} + x_{2} \\
+\frac{1}{3}x_{1}-x_{2}
+\end{matrix}\right)
+=x'
+$$
+ker
+$$
+\left(\begin{matrix}
+3 \\
+1
+\end{matrix}\right)
+$$
+dim ker
+1
+
+rang von f
+1
+
+dim ker rg f
+2
+
+1+1=2
+
+
+
+
+
+
 ## 550)
 Bestimmen Sie mit dem Gaußschen Eliminationsverfahren die Lösung des Gleichungssystems über dem Körper $K$:
 
