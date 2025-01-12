@@ -1,8 +1,13 @@
+$$
+f(x)+f(y)=f(x+y)
+$$
 ## 527) 
 Sei $f : \mathbb{R}^{2} → \mathbb{R}^{2}$ die lineare Abbildung mit $f\left(\begin{matrix} 0 \\ 1\end{matrix}\right)=f\left(\begin{matrix}3 \\ 2\end{matrix}\right) =\left(\begin{matrix}1 \\-1\end{matrix}\right)$. Bestimmen
 Sie $ker(f )$ und $f (\mathbb{R}^{2})$ sowie $dim(ker(f ))$ und den Rang von $f$. Verifizieren Sie die Beziehung
 $dim(ker(f )) + rg(f ) = dim \mathbb{R}^{2}$ und bestimmen Sie die Matrix von $f$ bezüglich der kanonischen
 Basis.
+
+
 
 $$
 f\left(\begin{matrix}
@@ -50,9 +55,13 @@ $$
 ker
 $$
 \left(\begin{matrix}
+-\frac{1}{3} + 1 \\
+\frac{1}{3}-1
+\end{matrix}\right)\left(\begin{matrix}
 3 \\
 1
-\end{matrix}\right)
+\end{matrix}\right)=
+0
 $$
 dim ker
 1
@@ -60,9 +69,20 @@ dim ker
 rang von f
 1
 
-dim ker rg f
-2
-
+dim ker f + rg f = dim R
+$$
+\left(\begin{matrix}
+1 \\
+0
+\end{matrix}\right)
+\left(\begin{matrix}
+0 \\
+1
+\end{matrix}\right)
+$$
+$$
+dim(r) = 2
+$$
 1+1=2
 
 
@@ -104,7 +124,25 @@ $$
 0 & 0 & 22 | & 22
 \end{matrix}\right)
 $$
-Unlösbar
+$$
+x_{3}=1
+$$
+$$
+-15x_{2}+8=-7
+$$
+$$
+-15x_{2}=-15
+$$
+$$
+x_{2}=1
+$$
+$$
+2x_{1}+5-2=5
+$$
+$$
+x_{1}=1
+$$
+
 ### b
 wie a aber
 $K=\mathbb{Z}_{11}$
