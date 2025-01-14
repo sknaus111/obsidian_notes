@@ -174,3 +174,4 @@ Also ist $x$ eine Linearkombination und somit auch in $x\in[\{ v_{1},v_{2},v_{3}
 $[\{ v_{1},v_{2},v_{3},w \}]\subseteq[\{ v_{1},v_{2},v_{3} \}]$
 Andere Richtung ist $\{ v_{1},v_{2},v_{3} \} \subseteq \{ v_{1},v_{2},v_{3},w \}$ und somit $[\{ \dots \}] \subseteq [\{ \dots \}]$
 somit ist $[\{ \dots \}]=[\{ \dots \}]$
+

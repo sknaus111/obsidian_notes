@@ -218,6 +218,8 @@ $$
 Sei $U$ die von $(2)(13)$ erzeugte Untergruppe der $S_{3}$. Man bestimme die Linksnebenklassen
 von $U$. Ist $U$ Normalteiler von $S_{3}$?
 
+
+
 ## Präsenzaufgabe
 Gruppe $S_{4}$ mit $e$ als neutrales Element. Finden $a,b,c \in S_{k}$, sodass $U=\{ e,a,b,c \}$ vierelementige Untergruppe von $S_{4}$ ist, sodass:
 $(i) a^{2}=b^{2}=c^{2}=e$
