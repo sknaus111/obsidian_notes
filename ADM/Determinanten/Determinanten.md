@@ -126,3 +126,117 @@ Sei $D_{ij} ~~(1\leq i,j\leq n)$ die Determinante jener Matrix aus $K^{(n-1)\tim
 A_{ij}=(-1)^{i+j}D_{ij}
 $$
 ## Laplace'scher Entwicklungssatz
+Sei $A=(a_{ij})\in K^{n\times n}$
+
+- (i) #Entwicklung_nach_der_i-ten_Zeile: Für jedes $i~~(1\leq i\leq n)$ gilt $$
+\det A=\sum_{j=1}^{n}a_{ij}A_{ij}=\sum_{j=1}^{n}(-1)^{i+j}a_{ij}D_{ij}
+$$
+- (ii) #Entwicklung_nach_der_j-ten_Spalte: Für jedes $j~~(1\leq j\leq n)$ gilt $$
+\det A=\sum_{i=1}^{n}a_{ij}A_{ij}=\sum_{i=1}^{n}(-1)^{i+j}a_{ij}D_{ij}
+$$
+Mit Hilfe dieses Satzes kann das Berechnen der Determinante einer $n\times n$-Matrix auf das Berechnen von $n$ Determinanten von $(n-1)\times(n-1)$-Matrizen zurückgeführt werden. Dabei kann die Determinante nach jeder beliebigen Zeile oder Spalte entwickelt werden.
+
+### Beispiele
+Entwickelt man die Determinante
+$$
+\left|\begin{matrix}
+1 & 2  & 3 \\
+4  & 5  & 6 \\
+7  & 8  & 9 
+\end{matrix}\right|
+$$
+nach der $1$. Zeile, so ergibt sich
+$$
+\left|\begin{matrix}
+1 & 2 & 3 \\
+4  & 5  & 6 \\
+7  & 8  & 9   
+\end{matrix}\right|
+= 1\cdot \left|\begin{matrix}
+5 & 6 \\
+8 & 9
+\end{matrix}\right|
+- 2\cdot \left|\begin{matrix}
+4 & 6 \\
+7 & 9
+\end{matrix}\right|
++3\cdot \left|\begin{matrix}
+4 & 5 \\
+7 & 8
+\end{matrix}\right|
+$$
+$$
+=(5\cdot9-6\cdot 8)-2\cdot(4\cdot9-6\cdot 7)+3\cdot(4 \cdot 8-5\cdot 7)=0
+$$
+Sei $A\in K^{n\times n}$ und berechne $\hat{A}=(A_{ij})\in K^{n\times n}$ die Matrix der Kofaktoren von $A$. Dann gilt $$
+A\cdot \hat{A}^{T}=(\det A)I_{n}
+$$
+### Kofaktor Eigenschaft
+Insbesondere gilt für reguläre Matrizen $A\in K^{n\times n}$
+$$
+A^{-1}=\frac{1}{\det A}\hat{A}^{T}=\left( \frac{A_{ij}}{\det A} \right)_{1\leq i,j\leq n}
+$$
+#### Beispiel
+Die inverse Matrix einer regulären $2\times2-$Matrix hat die folgende Form
+$$
+\left(\begin{matrix}
+a_{11} & a_{12} \\
+a_{21}   & a_{22} 
+\end{matrix}\right)^{-1}
+=\frac{1}{a_{11}a_{22}-a_{12}a_{21}}
+\left(\begin{matrix}
+a_{22} & -a_{12} \\
+-a_{21} & a_{11}
+\end{matrix}\right)
+$$
+
+Sei $A\in K^{n\times n}$ eine reguläre Matrix und $b\in K^{n}$. Dann kann das lineare Gleichungssystem $A\cdot x=b$ immer eindeutig gelöst werden. Die einzige Lösung ist durch $$
+x=A^{-1}\cdot b
+$$
+gegeben. Da $A^{-1}$ durch Determinanten explizit berechnet werden kann, ist damit die Lösung $x=A^{-1}\cdot b$ auch explizit anzugeben. Dieses Verfahren kann aber noch abgekürzt werden
+
+## Cramer'sche Regel
+Sei $A\in K^{n\times n}$ eine reguläre Matrix und $b\in K^{n}$. Bezeichnet man mit $A_{j} ~~(1\leq j\leq n)$ jene Matrix, die aus $A$ dadurch hervorgeht, dass man die $j$-te Spalte durch $b$ ersetzt, so ist die einzige Lösung des linearen Gleichungssystems $Ax=b$ durch
+$$
+x=\frac{1}{\det A}\left(\begin{matrix}
+\det A_{1} \\
+\det A_{2} \\
+\vdots \\
+\det A_{n}
+\end{matrix}\right)
+$$
+gegeben.
+
+Man kann also durch $x_{j}= \frac{\det A_{j}}{\det A}$ jede Koordinate der Lösung einzeln berechnen. 
+
+### Beispiel
+Die eindeutige Lösung $(x_{1},x_{2})$ eines regulären linearen Gleichungssystems 
+$$
+a_{11}x_{1} + a_{12}x_{2}=b_{1}
+$$
+$$
+a_{21}x_{1}+a_{22}x_{2}=b_{2}
+$$
+ist gegeben durch
+$$
+x_{1} = \frac{\left|\begin{matrix}
+b_{1} & a_{12} \\
+b_{2} & a_{22}
+\end{matrix}\right|}{\left|\begin{matrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{matrix}\right|}
+=\frac{b_{1}a_{22}-b_{2}a_{12}}{a_{11}a_{22}-a_{12}a_{21}}
+$$
+und 
+$$
+x_{2}= \frac{\left|\begin{matrix}
+a_{11} & b_{1} \\
+a_{21} & b_{2}
+\end{matrix}\right|}{\left|\begin{matrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22}
+\end{matrix}\right|}
+=\frac{-b_{1}a_{21}+b_{2}a_{11}}{a_{11}a_{22}-a_{12}a_{21}}
+$$
+
