@@ -215,6 +215,4 @@ $$
 $$
 =\lambda^{3}-8\lambda^{2}+21\lambda -18
 $$
-$$
-\lambda=9, 
-$$
+
