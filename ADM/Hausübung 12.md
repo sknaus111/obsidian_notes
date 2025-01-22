@@ -215,4 +215,15 @@ $$
 $$
 =\lambda^{3}-8\lambda^{2}+21\lambda -18
 $$
+$$
+(\lambda-3)(\lambda^{2}-5\lambda+6)=\lambda^{3}-5\lambda^{2}+6\lambda-3\lambda^{2}+15\lambda-18=\lambda^{3}-8\lambda^{2}+21\lambda-18
+$$
+$$
+(\lambda-3)(\lambda-2)(\lambda-3)
+$$
+$$
+\lambda=3,2
+$$
+## Präsenz
 
+Berechne $\sum_{i=0}^{n}(i\cdot(1+i))$ durch Aufstellen und Lösen einer Rekursion mittels Ansatzmethode
