@@ -1,4 +1,4 @@
-## Aufgabe 1: Formale Sprachen
+0## Aufgabe 1: Formale Sprachen
 ### a) 
 Berechnen Sie das Ergebnis der folgenden Ausdrücke.
 
