@@ -68,6 +68,16 @@ Als nächstes bestimmen wir die Eigenvektoren zum Eigenwert $\lambda_{1}=4$. Daz
 \end{matrix}\right)\cdot x=0
 $$
 lösen. Man sieht sofort, dass alle Eigenvektoren skalare Vielfache des Vektors
+
+$$
+3x_{1} -2x_{2} = 0
+$$
+$$
+-3 x_{1} + 2x_{2} = 0
+$$
+$$
+3x_{1}=2x_{2}
+$$
 $$
 x_{1}=\left(\begin{matrix}
 2 \\
@@ -77,6 +87,21 @@ $$
 sind. Die Menge aller Eigenvektoren zum Eigenwert $\lambda_{1}=4$ bildet daher einen eindimensionalen Unterraum von $\mathbb{R}^{2}$.
 
 Entsprechend kann man auch zum Eigenwert $\lambda_{2}=-1$ alle Eigenvektoren bestimmen. Es sind dies alle skalaren Vielfachen des Vektors
+$$
+\left(-1 \cdot I_{2} - A\right) \cdot x = \left(\begin{matrix}
+-2 & -2 \\
+-3 & -3
+\end{matrix}\right) \cdot x = 0
+$$
+$$
+-2 x_{1} -2x_{2} = 0
+$$
+$$
+-3 x_{1}-3x_{2} =0
+$$
+$$
+x_{1}=-x_{2}
+$$
 $$
 x_{2}=\left(\begin{matrix}
 1 \\
