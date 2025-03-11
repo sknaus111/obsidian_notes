@@ -37,9 +37,12 @@ $$\pi_{autor}(buch ⋉ (gelesen ⟗ ausleihen))$$
 $$
 \pi_{name}(leser ⋉
 $$
+ 
 $$
 (\sigma_{ausleiher.stadt=verleiher.stadt} (p_{ausleiher}(leser ⨝ ausleien) ⨝_{ausleiher.verleier=verleiher.name} p_{verleiher}(leser))) 
-$$$$
+$$
+  
+ $$
 )
 $$
 
@@ -48,12 +51,18 @@ $$\pi_{name}(leser)-\pi_{name}(\sigma_{titel=\text{"Elantris"}}(gelesen))$$
 
 (c) Finden Sie die Namen von den Lesern, die ein Buch ausgeliehen haben, das sie schon gelesen
 haben.
+
 $$
 \pi_{name}(leser ⋉ 
-$$$$(\sigma_{ausgeliehen.titel=gelesen.titel}(p_{ausgeliehen}(ausleihen) ⨝_{augeliehen.ausleiher=gelesen.name}p_{gelesen}(gelesen)))
-$$$$)
 $$
-
+ 
+$$
+(\sigma_{ausgeliehen.titel=gelesen.titel}(p_{ausgeliehen}(ausleihen) ⨝_{augeliehen.ausleiher=gelesen.name}p_{gelesen}(gelesen)))
+$$
+ 
+$$
+)
+$$
 ### 1.4 Geben Sie für jede der folgenden Anfragen einen entsprechenden Ausdruck in relationaler Algebra an:
 (a) Finden Sie die Anzahl an gelesenen Bücher pro Leser (einmal mit und einmal ohne den Personen, die keine Bücher gelesen haben).
 $$
@@ -95,4 +104,7 @@ Die nicht existierenden Tupel werden zu einer Liste der ersten Attribute vereinf
 $$
 π_{(R-S)}((π_{(R-S)}(R) × S) − R)$$
 Im letzten Schritt einfach die Tupel von der Liste alle Tupel abziehen, welche nicht eine Kombination mit jedem anderem zweiten Attribut haben.
-$$π_{(R-S)}(R) − π_{(R-S)}((π_{(R-S)}(R) × S) − R)$$
+
+$$
+π_{(R-S)}(R) − π_{(R-S)}((π_{(R-S)}(R) × S) − R)
+$$

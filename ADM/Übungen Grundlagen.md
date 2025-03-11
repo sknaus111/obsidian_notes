@@ -128,8 +128,8 @@ $$
 $$
 Aus der #Induktionsvoraussetzung, dass drei aufeinander folgende Zahlen multipliziert durch drei teilbar sind folgt die Wahrheit der #Induktionsbehauptung 
 
-## [[Hausübung 1#3)]]
-## [[Hausübung 1#4)]]
+## [[ADM/Hausübung 1#3)]]
+## [[ADM/Hausübung 1#4)]]
 ## 5)
 $$
 \sum^n_{j=1} \frac{1}{j*(j+1)}=\frac{n}{n+1}
@@ -442,8 +442,8 @@ $$
 = \frac{1}{\sqrt{ 5 }} 
 $$
 ### VOWI
-## [[Hausübung 1#15)]]
-## [[Hausübung 1#24)]] 
+## [[ADM/Hausübung 1#15)]]
+## [[ADM/Hausübung 1#24)]] 
 ## Buch. 1.1
 ### a ([[#Hausübung 1 4)]])
 ### b
