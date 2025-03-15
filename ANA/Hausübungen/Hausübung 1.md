@@ -80,6 +80,14 @@ $$
 c_{n}=\frac{a_{n}}{b_{n}}=\frac{\frac{c_{n}}{n\cdot(|c_{n}|+1)}}{\frac{1}{n\cdot(|c_{n}|+1)}} = \frac{c_{n}n(|c_{n}|+1)}{n(|c_{n}|+1)} = c_{n}
 $$
 Also lässt sich jedes beliebige $c_{n}$ als Division zweier Nullfolgen darstellen.
+
+Alternativ
+$$
+c_{n}= \frac{\frac{c_{n}}{|c_{n}|+1}}{\frac{1}{|c_{n}|+1}} = \frac{\frac{c_{n}}{(n+1)(|c_{n}|+1)}}{\frac{1}{(n+1)(|c_{n}|+1)}}
+$$
+
+
+
 ## 16) 
 Seien $(a_{n})_{n\in \mathbb{N}}$ und $(b_{n})_{n\in \mathbb{N}}$ zwei konvergente Folgen mit $\lim_{ n \to \infty }a_{n}=a$ und $\lim_{ n \to \infty }b_{n}=b$. Man zeige, dass die Folge $(c_{n})_{n\in \mathbb{N}} = (3a_{n} − b_{n})_{n\in \mathbb{N}}$ auch konvergiert mit $\lim_{ n \to \infty }c_{n}=c=3a-b$, indem man zu beliebigem $ε > 0$ ein $N (ε)$ angebe.
 
@@ -105,4 +113,31 @@ $$
 $$
 |(3a_{n}-3a)-(b_{n}-b)|\leq |3a_{n}-3a|+ |b_{n}-b|< \varepsilon
 $$
-für $n>max(N_{1},N_{2})$
+für $n>max\left( N_{1}\left( \frac{\varepsilon}{6} \right),N_{2}\left( \frac{\varepsilon}{2} \right) \right)$
+
+## Präsenzbeispiel
+Geben Sie eine Folge reeller Zahlen $a_{n}$ an mit folgenden Eigenschaften. 
+
+- $a_{n}\not\in \mathbb{N}\forall n\geq 0$
+- Die Häufungspunkte von $(a_{n})$ sind genau alle natürlichen Zahlen
+
+$$
+a_{n}=n+\frac{i}{n}
+$$
+
+Sei die Folge so konstruiert, dass $n_{0}$ zu 0, $n_{1}$ zu $1$ $n_{2}$ zu ,$0$ $n_{3}$ zu $2$           zu nicht natürlich $+\frac{i}{n}$
+
+
+0 0
+1 1
+2 0
+3 2
+4 0
+5 1
+6 0
+7 3
+8 0
+
+$$
+2^{n}+ \frac{i}{n}
+$$
