@@ -25,27 +25,24 @@ Buch gelesen haben, dass seit dem “01.01.2000” erschienen ist.
 $$\pi_{name}(\sigma_{stadt=\text{"Madrid"}}(leser ⋉ \sigma_{erscheinungsjahr\geq01.01.2000}(gelesen ⋈ buch)))$$
 ### 1.2 Geben Sie für jede der folgenden Anfragen einen entsprechenden Ausdruck in relationaler Algebra an:
 (a) Finden Sie die Namen aller Leser, die dieses Jahr ein Buch ausgeliehen haben.
-$$\pi_{name}(leser ⋉ \sigma_{datum\geq 01.01.2025} (ausleihen))$$
+$$\pi_{ausleiher}(\sigma_{datum\geq 01.01.2025} (ausleihen))$$
 (b) Finden Sie die Namen und Städte aller Leser, die dieses Jahr ein Buch ausgeliehen haben
-$$\pi_{name,stadt}(leser ⋉ \sigma_{datum\geq 01.01.2025} (ausleihen))$$
+$$\pi_{name,stadt}(leser ⋉ p_{ausleiher \leftarrow name}(\sigma_{datum\geq 01.01.2025)} (ausleihen))$$
 (c) Finden Sie die Titel der Bücher, die verliehen werden oder gelesen wurden.
-$$\pi_{titel}(buch ⋉ (gelesen ⟗ ausleihen))$$
+$$\pi_{titel}(gelesen)\cup \pi_{titel}(ausleihen)$$
+
 (d) Finden Sie die Autoren der Bücher, die verliehen werden oder gelesen wurden.
-$$\pi_{autor}(buch ⋉ (gelesen ⟗ ausleihen))$$
+$$
+\pi_{autor}(buch J (\pi_{titel}(gelesen) \cup \pi_{titel}(ausleihen)))
+$$
 ### 1.3 Geben Sie für jede der folgenden Anfragen einen entsprechenden Ausdruck in relationaler Algebra an:
 (a) Finden Sie die Namen aller Leser, die in der gleichen Stadt wohnen, wie eine Person von der sie ein Buch ausgeliehen haben.
+
+
 $$
-\pi_{name}(leser ⋉
-$$
- 
-$$
-(\sigma_{ausleiher.stadt=verleiher.stadt} (p_{ausleiher}(leser ⨝ ausleien) ⨝_{ausleiher.verleier=verleiher.name} p_{verleiher}(leser))) 
+\pi_{ausleiher}(p_{verleiher\leftarrow name.geburtsdatum2\leftarrow geburtsdatum}(leser) ⨝ ausleihen ⨝ p_{ausleiher\leftarrow name}(leser)) 
 $$
   
- $$
-)
-$$
-
 (b) Finden Sie die Namen aller Leser, die nicht das Buch “Elantris” gelesen haben. Bitte beachten Sie auch den Fall, dass eine Leser nicht in der Relation gelesen vorkommt.
 $$\pi_{name}(leser)-\pi_{name}(\sigma_{titel=\text{"Elantris"}}(gelesen))$$
 
@@ -77,6 +74,10 @@ $$
 $$
 
 (c) Finden Sie die Leser, die alle am besten bewerteten “fantasy” Bücher gelesen haben.
+
+$$
+\pi_{name}(gelesen / (\pi_{titel}(\sigma_{genre='fantasy'}(buch) J_{\sigma.genre=\gamma.genre\land \sigma.bewertung=\gamma.bewertung} \gamma_{genre})))
+$$
 $$
 \pi_{name}(gelesen ⋉ (\gamma_{genre;max(bewertung)} ⨝_{max(bewertung)=auswahl.bewrtung\land genre=\text{"Fantasy"}}p_{auswahl}(buch)))
 $$
